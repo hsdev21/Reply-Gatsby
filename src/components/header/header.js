@@ -30,35 +30,25 @@ const Header = ({ data ***REMOVED***) => {
                     fluid={data.logo.childImageSharp.fluid***REMOVED***
                     style={{
                       marginBottom: 0,
-                      width: "267px",
+                      width: "154px",
                     ***REMOVED******REMOVED***
-                    alt="Valley Radiology logo"
+                    alt="Reply OB/GYN &amp; Fertility logo"
                   />
                 </Link>
               </div>
               <div className={headerStyles.headerRight***REMOVED***>
-                <span>
-                  Call{" "***REMOVED***
-                  <a className="invoca" href="tel:910-486-5700">
-                    <strong>910-486-5700</strong>
-                  </a>
-                  <br />
-                  <small>
-                    <em>Serving Fayetteville, Angier, and surrounding areas</em>
-                  </small>
-                </span>
+                <Navigation />
                 <Button
                   variant={"primary"***REMOVED***
                   as={Link***REMOVED***
                   className={headerStyles.headerBtn***REMOVED***
                   to={"/contact/"***REMOVED***
                 >
-                  Book Online
+                  Contact Me
                 </Button>
               </div>
             </div>
           </div>
-          <Navigation />
         </>
       )***REMOVED***
     />

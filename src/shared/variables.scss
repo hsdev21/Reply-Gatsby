@@ -1,4 +1,17 @@
-$primary-color: #0E79BF;
-$brighter-primary: #00AEEF;
+$primary-color: #0e79bf;
+$brighter-primary: #00aeef;
 $gray: #707070;
-$yellow: #C1D72F;
+$yellow: #c1d72f;
+
+$light-blue: #55a3d7;
+
+$theme-colors: (
+  light-blue: #55a3d7,
+  dark-blue: #035baa,
+  darkest-blue: #003176,
+  turquoise: #92d0c5,
+  gray: #707070,
+  dark-gray: #494949,
+  darkest-gray: #353735,
+  yellow: #fcf7b4,
+);
