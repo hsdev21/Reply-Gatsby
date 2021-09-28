@@ -1,4 +1,4 @@
-.desktopNav {
+.desktopNav.navbar {
   display: none;
 
   @media screen and (min-width: 992px) {
@@ -6,7 +6,8 @@
   ***REMOVED***
 ***REMOVED***
 
-.mobileNav {
+.mobileNav.navbar {
+  background-color: #fff;
   display: flex;
 
   a {
