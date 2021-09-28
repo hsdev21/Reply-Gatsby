@@ -13,6 +13,7 @@
     > * {
       padding: 10px 0;
     ***REMOVED***
+    padding-bottom: 0;
   ***REMOVED***
 
   .header-right {
@@ -72,5 +73,11 @@
         padding: 5px 0;
       ***REMOVED***
     ***REMOVED***
+  ***REMOVED***
+***REMOVED***
+
+@media screen and (min-width: 992px) {
+  .mobileNav {
+    display: none;
   ***REMOVED***
 ***REMOVED***

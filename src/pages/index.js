@@ -10,12 +10,28 @@ import { GetHomePageMeta ***REMOVED*** from "../hooks/getHomePageMeta"
 import { graphql ***REMOVED*** from "gatsby"
 import Slider from "../components/slider/slider"
 
+// Insurance logos
 import aetna from "../images/aetna.jpg"
 import blueShield from "../images/blue.jpg"
 import cigna from "../images/cigna.jpg"
 import humana from "../images/humana.jpg"
+import healthyBlue from "../images/healthy-blue.jpg"
 import medicaid from "../images/medicaid.jpg"
+import medicare from "../images/medicare.jpg"
+import tricare from "../images/tricare.jpg"
 import united from "../images/united.jpg"
+import optum from "../images/optum.jpg"
+import wellcare from "../images/wellcare.jpg"
+import wellpath from "../images/wellpath.jpg"
+import careCredit from "../images/care-credit.jpg"
+
+// Section 2 icons
+import listen from "../images/listen.png"
+import diagnose from "../images/diagnose.png"
+import empower from "../images/empower.png"
+import help from "../images/help.png"
+import create from "../images/create.png"
+import partner from "../images/partner.png"
 
 import "./index.scss"
 
@@ -41,7 +57,7 @@ const IndexPage = ({ data ***REMOVED***) => {
         <Container>
           <Row className={homePageStyles.row***REMOVED***>
             <Col lg={6***REMOVED*** className={`${homePageStyles.text***REMOVED***`***REMOVED***></Col>
-            <Col lg={6***REMOVED*** className={homePageStyles.heroForm***REMOVED***>
+            <Col lg={6***REMOVED*** className={homePageStyles.homeForm***REMOVED***>
               <p>
                 <small>
                   Schedule Your Consultation
@@ -67,7 +83,7 @@ const IndexPage = ({ data ***REMOVED***) => {
         className={`${homePageStyles.section2***REMOVED*** ${homePageStyles.yellowBack***REMOVED***`***REMOVED***
       >
         <Container className={homePageStyles.genericSection***REMOVED***>
-          <Row className={homePageStyles.mobileReverse***REMOVED***>
+          <Row>
             <Col
               lg={12***REMOVED***
               className={`${homePageStyles.verticalCenter***REMOVED*** text-center mb-4`***REMOVED***
@@ -79,71 +95,53 @@ const IndexPage = ({ data ***REMOVED***) => {
                 ... and so is how we partner with you.
               </p>
             </Col>
+            <Col lg={2***REMOVED*** className={`text-center`***REMOVED***>
+              <img alt="listen icon" src={listen***REMOVED*** />
+              <h3>Listen</h3>
+              <p>
+                to you and gain a complete understanding of your unique health
+              </p>
+            </Col>
             <Col
               lg={2***REMOVED***
-              className={`${homePageStyles.verticalCenter***REMOVED*** text-center`***REMOVED***
+              className={`${homePageStyles.approachIcons***REMOVED*** text-center`***REMOVED***
             >
-              <p>Photo here</p>
-              <h3>Title Here</h3>
+              <img alt="diagnose icon" src={diagnose***REMOVED*** />
+              <h3>Diagnose</h3>
+              <p>
+                underlying causes and hidden contributing factors of your
+                condition
+              </p>
+            </Col>
+            <Col lg={2***REMOVED*** className={`text-center`***REMOVED***>
+              <img alt="empower icon" src={empower***REMOVED*** />
+              <h3>Empower</h3>
+              <p>
+                you with knowledge of your body and how to participate in your
+                own care, including education on fertility awareness cycle
+                tracking
+              </p>
+            </Col>
+            <Col lg={2***REMOVED*** className={` text-center`***REMOVED***>
+              <img alt="help icon" src={help***REMOVED*** />
+              <h3>Help</h3>
+              <p>
+                you optimize your overall health, including essential lifestyle
+                factors
+              </p>
+            </Col>
+            <Col lg={2***REMOVED*** className={`text-center`***REMOVED***>
+              <img alt="create icon" src={create***REMOVED*** />
+              <h3>Create</h3>
               <p>
                 a multi-step treatment plan that maximizes your chances of
                 natural conception and a healthy, happy baby
               </p>
             </Col>
-            <Col
-              lg={2***REMOVED***
-              className={`${homePageStyles.verticalCenter***REMOVED*** text-center`***REMOVED***
-            >
-              <p>Photo here</p>
-              <h3>Title Here</h3>
-              <p>
-                a multi-step treatment plan that maximizes your chances of
-                natural conception and a healthy, happy baby
-              </p>
-            </Col>
-            <Col
-              lg={2***REMOVED***
-              className={`${homePageStyles.verticalCenter***REMOVED*** text-center`***REMOVED***
-            >
-              <p>Photo here</p>
-              <h3>Title Here</h3>
-              <p>
-                a multi-step treatment plan that maximizes your chances of
-                natural conception and a healthy, happy baby
-              </p>
-            </Col>
-            <Col
-              lg={2***REMOVED***
-              className={`${homePageStyles.verticalCenter***REMOVED*** text-center`***REMOVED***
-            >
-              <p>Photo here</p>
-              <h3>Title Here</h3>
-              <p>
-                a multi-step treatment plan that maximizes your chances of
-                natural conception and a healthy, happy baby
-              </p>
-            </Col>
-            <Col
-              lg={2***REMOVED***
-              className={`${homePageStyles.verticalCenter***REMOVED*** text-center`***REMOVED***
-            >
-              <p>Photo here</p>
-              <h3>Title Here</h3>
-              <p>
-                a multi-step treatment plan that maximizes your chances of
-                natural conception and a healthy, happy baby
-              </p>
-            </Col>
-            <Col
-              lg={2***REMOVED***
-              className={`${homePageStyles.verticalCenter***REMOVED*** text-center`***REMOVED***
-            >
-              <p>Photo here</p>
-              <h3>Title Here</h3>
-              <p>
-                a multi-step treatment plan that maximizes your chances of
-                natural conception and a healthy, happy baby
-              </p>
+            <Col lg={2***REMOVED*** className={`text-center`***REMOVED***>
+              <img alt="partner icon" src={partner***REMOVED*** />
+              <h3>Partner</h3>
+              <p>with you every step of the way!</p>
             </Col>
           </Row>
         </Container>
@@ -172,24 +170,32 @@ const IndexPage = ({ data ***REMOVED***) => {
           </Row>
         </Container>
       </Container>
-      <Container fluid className={homePageStyles.yellowBack***REMOVED***>
+      <Container
+        fluid
+        className={`${homePageStyles.yellowBack***REMOVED*** ${homePageStyles.section4***REMOVED***`***REMOVED***
+      >
         <Container className={homePageStyles.genericSection***REMOVED***>
           <Row className={homePageStyles.mobileReverse***REMOVED***>
             <Col
               lg={12***REMOVED***
-              className={`${homePageStyles.verticalCenter***REMOVED*** text-center mb-5`***REMOVED***
+              className={`${homePageStyles.verticalCenter***REMOVED*** text-center mb-4`***REMOVED***
             >
-              <h2>Fertility Challenges</h2>
-              <p>
+              <h2>
+                <strong>Fertility</strong> Challenges:
+              </h2>
+              <p className={homePageStyles.subHeading***REMOVED***>
                 Some of the fertility challenges our team helps patients
                 overcome include:
               </p>
             </Col>
           </Row>
           <Row className={homePageStyles.mobileReverse***REMOVED***>
-            <Col lg={4***REMOVED*** className={`${homePageStyles.verticalCenter***REMOVED***`***REMOVED***>
-              <p>Image here</p>
-              <h3>Title Here</h3>
+            <Col lg={4***REMOVED***>
+              <Img
+                fluid={data.lifestyle.childImageSharp.fluid***REMOVED***
+                alt="A person eating from a bowl."
+              />
+              <h3>Lifestyle Issues</h3>
               <p>
                 Most people vastly underestimate the many ways their lifestyle
                 can impair their fertility. Common fertility inhibitors include
@@ -198,20 +204,25 @@ const IndexPage = ({ data ***REMOVED***) => {
                 resolve hidden lifestyle barriers to fertility.
               </p>
             </Col>
-            <Col lg={4***REMOVED*** className={`${homePageStyles.verticalCenter***REMOVED***`***REMOVED***>
-              <p>Image here</p>
-              <h3>Title Here</h3>
+            <Col lg={4***REMOVED***>
+              <Img
+                fluid={data.hormone.childImageSharp.fluid***REMOVED***
+                alt="A woman looking pensive."
+              />
+              <h3>Hormone Imablances</h3>
               <p>
-                Most people vastly underestimate the many ways their lifestyle
-                can impair their fertility. Common fertility inhibitors include
-                stress, nutritional deficiencies, medications, obesity, smoking,
-                alcohol, over-exercise, and more. We’ll help you uncover and
-                resolve hidden lifestyle barriers to fertility.
+                A leading cause of fertility challenges, hormone imbalances can
+                disrupt ovulation, impede conception, and threaten pregnancy.
+                Solutions include treatments that restore thyroid function,
+                normalize hormone levels, and promote healthy ovulation.
               </p>
             </Col>
-            <Col lg={4***REMOVED*** className={`${homePageStyles.verticalCenter***REMOVED***`***REMOVED***>
-              <p>Image here</p>
-              <h3>Title Here</h3>
+            <Col lg={4***REMOVED***>
+              <Img
+                fluid={data.medicalConditions.childImageSharp.fluid***REMOVED***
+                alt="Two woman sitting at a desk."
+              />
+              <h3>Medical Conditions</h3>
               <p>
                 Most people vastly underestimate the many ways their lifestyle
                 can impair their fertility. Common fertility inhibitors include
@@ -279,14 +290,15 @@ const IndexPage = ({ data ***REMOVED***) => {
           </div>
         </Container>
       </Container>
-      <Container fluid>
+      <Container fluid className={homePageStyles.section6***REMOVED***>
         <Container className={homePageStyles.genericSection***REMOVED***>
           <Row>
             <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
               <h2>
-                <strong>We Partner</strong> With You Every Step of The Way
+                <strong>We Partner</strong>
+                <br /> With You Every Step of The Way
               </h2>
-              <p className="lightBlue">
+              <p className={homePageStyles.lightBlue***REMOVED***>
                 You won’t feel alone or in the dark about your options or
                 timeline.
               </p>
@@ -310,7 +322,7 @@ const IndexPage = ({ data ***REMOVED***) => {
                 className={homePageStyles.homeImg***REMOVED***
                 fluid={data.section5.childImageSharp.fluid***REMOVED***
                 alt="Doctors Murali Meka and Bryan Swilley."
-                style={{ marginBottom: "5px" ***REMOVED******REMOVED***
+                style={{ marginBottom: "35px" ***REMOVED******REMOVED***
               />
               <p>
                 <Button
@@ -350,7 +362,7 @@ const IndexPage = ({ data ***REMOVED***) => {
                 fertilization (IVF) are the conventional go-to services, most
                 patients can have their babies naturally without IVF.
               </p>
-              <p className="lightBlue">
+              <p className={homePageStyles.lightBlue***REMOVED***>
                 At Reply, we have helped couples who have:
               </p>
               <ul>
@@ -374,7 +386,7 @@ const IndexPage = ({ data ***REMOVED***) => {
                 <br />
                 In Restorative Reproductive Medicine
               </h2>
-              <p className="lightBlue">
+              <p className={homePageStyles.lightBlue***REMOVED***>
                 Reply Ob/Gyn &amp; Fertility is a leader in the global movement
                 toward restorative reproductive medicine (“RRM”) for women
                 suffering from gynecologic problems and couples suffering from
@@ -411,7 +423,10 @@ const IndexPage = ({ data ***REMOVED***) => {
               <h3 className={`text-center`***REMOVED***>
                 <strong>We make payments</strong> as affordable as possible
               </h3>
-              <p className="text-center">
+              <p
+                className="text-center"
+                style={{ maxWidth: "850px", margin: "auto" ***REMOVED******REMOVED***
+              >
                 We offer a complimentary Welcome Appointment with one of our
                 fertility educators who can provide more information about our
                 program and our care. Our fertility packages typically combine
@@ -435,25 +450,39 @@ const IndexPage = ({ data ***REMOVED***) => {
               <img src={humana***REMOVED*** alt="Humana insurance logo" />
             </div>
             <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={healthyBlue***REMOVED*** alt="Healthy Blue insurance logo" />
+            </div>
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
               <img src={medicaid***REMOVED*** alt="Medicaid insurance logo" />
+            </div>
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={medicare***REMOVED*** alt="Medicare insurance logo" />
+            </div>
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={tricare***REMOVED*** alt="Tricare insurance logo" />
             </div>
             <div className={homePageStyles.insuranceItem***REMOVED***>
               <img src={united***REMOVED*** alt="United Healthcare insurance logo" />
             </div>
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={optum***REMOVED*** alt="Optum insurance logo" />
+            </div>
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={wellcare***REMOVED*** alt="Wellcare insurance logo" />
+            </div>
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={wellpath***REMOVED*** alt="Wellpath insurance logo" />
+            </div>
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={healthyBlue***REMOVED*** alt="Healthy Blue insurance logo" />
+            </div>
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={medicaid***REMOVED*** alt="Medicaid insurance logo" />
+            </div>
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={careCredit***REMOVED*** alt="Care Credit insurance logo" />
+            </div>
           </div>
-          <Row>
-            <Col lg={12***REMOVED*** className={`text-center`***REMOVED***>
-              <p>
-                <Button
-                  variant={"primary"***REMOVED***
-                  className={homePageStyles.mainBtn***REMOVED***
-                  href="/insurance/"
-                >
-                  Learn More
-                </Button>
-              </p>
-            </Col>
-          </Row>
         </Container>
       </Container>
       <BackgroundImage
@@ -464,27 +493,40 @@ const IndexPage = ({ data ***REMOVED***) => {
         <Container>
           <Row>
             <Col
-              lg={{ span: 6, offset: 3 ***REMOVED******REMOVED***
-              className={homePageStyles.formContainer***REMOVED***
+              lg={{ span: 3, offset: 9 ***REMOVED******REMOVED***
+              className={homePageStyles.homeForm***REMOVED***
             >
-              <h2>
-                Contact Us
-                <br />
-                We're Ready to Help.
-              </h2>
-              <p className="text-center">
-            ***REMOVED***" "***REMOVED***
-                Call <a href="tel:+1-919-230-2100">919-230-2100</a>
-                <br />
-                <small>Or Use Our Easy Online Form.</small>
+              <p>
+                <small>
+                  Schedule Your Consultation
+                  <br />
+                  <span className={homePageStyles.cta***REMOVED***>
+                    Call <a href="+1-919-230-2100">919-230-2100</a>
+                  </span>
+                  <br />
+                  <span className={homePageStyles.smaller***REMOVED***>
+                    or fill out the form below
+                  </span>
+                </small>
               </p>
-              <div className="gravityForm">
-                <GravityForm />
+              <div className={`${homePageStyles.gravityForm***REMOVED*** gravityForm`***REMOVED***>
+                <GravityForm className={homePageStyles.gravityForm***REMOVED*** />
               </div>
             </Col>
           </Row>
         </Container>
       </BackgroundImage>
+      <Container fluid>
+        <Container>
+          <Row className={homePageStyles.contactBottom***REMOVED***>
+            <Col lg={12***REMOVED***>
+              <h3>
+                <strong>Reimagine Fertility</strong> with Reply
+              </h3>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
     </Layout>
   )
 ***REMOVED***
@@ -499,6 +541,27 @@ export const query = graphql`
       ***REMOVED***
     ***REMOVED***
     section3: file(relativePath: { eq: "section-3.jpg" ***REMOVED***) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+    lifestyle: file(relativePath: { eq: "lifestyle.jpg" ***REMOVED***) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+    hormone: file(relativePath: { eq: "hormone.jpg" ***REMOVED***) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+    medicalConditions: file(relativePath: { eq: "medical-conditions.jpg" ***REMOVED***) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -522,20 +585,6 @@ export const query = graphql`
     section7: file(relativePath: { eq: "section-7.jpg" ***REMOVED***) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
-        ***REMOVED***
-      ***REMOVED***
-    ***REMOVED***
-    aetna: file(relativePath: { eq: "aetna.jpg" ***REMOVED***) {
-      childImageSharp {
-        fluid(quality: 90) {
-          ...GatsbyImageSharpFluid
-        ***REMOVED***
-      ***REMOVED***
-    ***REMOVED***
-    blue: file(relativePath: { eq: "blue.jpg" ***REMOVED***) {
-      childImageSharp {
-        fluid(quality: 90) {
           ...GatsbyImageSharpFluid
         ***REMOVED***
       ***REMOVED***

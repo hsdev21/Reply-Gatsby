@@ -5,6 +5,7 @@ import Navigation from "../navigation/navigation"
 import headerStyles from "./header.module.scss"
 import { StaticQuery, graphql ***REMOVED*** from "gatsby"
 import Img from "gatsby-image"
+import "./header.scss"
 
 const Header = ({ data ***REMOVED***) => {
   return (
@@ -36,7 +37,7 @@ const Header = ({ data ***REMOVED***) => {
                   />
                 </Link>
               </div>
-              <Navigation />
+              <Navigation className="desktopNav" />
               <div className={headerStyles.headerRight***REMOVED***>
                 <Button
                   variant={"primary"***REMOVED***
@@ -49,6 +50,7 @@ const Header = ({ data ***REMOVED***) => {
               </div>
             </div>
           </div>
+          <Navigation className="mobileNav" />
         </>
       )***REMOVED***
     />
