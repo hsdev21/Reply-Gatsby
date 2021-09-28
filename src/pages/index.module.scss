@@ -13,7 +13,8 @@ strong {
 
 h2 {
   color: map-get($theme-colors, darkest-blue);
-  font-size: rem(28);
+  font-size: rem(24) !important;
+  line-height: rem(34) !important;
   margin-top: 25px;
   text-transform: uppercase;
 
@@ -33,7 +34,7 @@ p {
 
 .genericSection {
   color: map-get($theme-colors, darkest-gray);
-  padding: 5em 0;
+  padding: 2.5em 0;
 
   .verticalCenter {
     display: flex;
@@ -223,9 +224,10 @@ p {
 ***REMOVED***
 
 .section2 {
+  padding: 0;
   h2 {
     color: map-get($theme-colors, darkest-blue);
-    font-size: rem(20);
+    font-size: rem(20) !important;
     text-transform: uppercase;
 
     strong {

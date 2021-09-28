@@ -49,7 +49,7 @@
   h4,
   h5,
   h6 {
-    color: black;
+    color: map-get($theme-colors, darkest-blue);
     clear: both;
     margin-bottom: 1rem;
   ***REMOVED***

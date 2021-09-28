@@ -17,11 +17,11 @@ const Footer = () => (
           ></iframe>
         </Col>
         <Col lg={6***REMOVED*** className={footerStyles.textRight***REMOVED***>
-          <h3>
+          <h2>
             <strong>Book Your Welcome Appointment</strong>
             <br />
             <a href="tel:+1-919-230-2100">919-230-2100</a>
-          </h3>
+          </h2>
           <p className={footerStyles.lightBlue***REMOVED***>
             7535 Carpenter Fire Station Road, Suite 105
             <br />
@@ -55,8 +55,8 @@ const Footer = () => (
             <span>
               &copy; {new Date().getFullYear()***REMOVED*** Reply OB/GYN &amp; Fertility.
               All rights reserved. |{" "***REMOVED***
-              <a href="/privacy-policy/">Privacy Policy</a> |{" "***REMOVED***
-              <a href="!#">Notice of Non-Discrimination</a> | Website by{" "***REMOVED***
+              <a href="/internet-privacy-policy/">Privacy Policy</a> |{" "***REMOVED***
+              <a href="#!">Notice of Non-Discrimination</a> | Website by{" "***REMOVED***
               <a
                 href="https://healthcaresuccess.com/"
                 target="_blank"

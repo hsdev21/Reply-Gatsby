@@ -420,9 +420,9 @@ const IndexPage = ({ data ***REMOVED***) => {
         <Container className={homePageStyles.genericSection***REMOVED***>
           <Row>
             <Col lg={12***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
-              <h3 className={`text-center`***REMOVED***>
+              <h2 className={`text-center`***REMOVED***>
                 <strong>We make payments</strong> as affordable as possible
-              </h3>
+              </h2>
               <p
                 className="text-center"
                 style={{ maxWidth: "850px", margin: "auto" ***REMOVED******REMOVED***
@@ -520,9 +520,9 @@ const IndexPage = ({ data ***REMOVED***) => {
         <Container>
           <Row className={homePageStyles.contactBottom***REMOVED***>
             <Col lg={12***REMOVED***>
-              <h3>
+              <h2>
                 <strong>Reimagine Fertility</strong> with Reply
-              </h3>
+              </h2>
             </Col>
           </Row>
         </Container>
@@ -590,13 +590,6 @@ export const query = graphql`
       ***REMOVED***
     ***REMOVED***
     contactSection: file(relativePath: { eq: "contact-us-bg.jpg" ***REMOVED***) {
-      childImageSharp {
-        fluid(quality: 90, maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
-        ***REMOVED***
-      ***REMOVED***
-    ***REMOVED***
-    sliderImage: file(relativePath: { eq: "slider.jpg" ***REMOVED***) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 1920) {
           ...GatsbyImageSharpFluid
