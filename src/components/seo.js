@@ -28,7 +28,7 @@ function SEO({ lang, meta, seoInfo, siteUrl, siteName, date ***REMOVED***) {
         lang,
       ***REMOVED******REMOVED***
       title={seoInfo.title***REMOVED***
-      titleTemplate={`${seoInfo.title***REMOVED***`***REMOVED***
+      titleTemplate={`${seoInfo.title.replace(/&amp;/g, "&")***REMOVED***`***REMOVED***
       meta={[
     ***REMOVED***
           name: `description`,
