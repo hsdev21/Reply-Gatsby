@@ -28,10 +28,7 @@ function SEO({ lang, meta, seoInfo, siteUrl, siteName, date ***REMOVED***) {
         lang,
       ***REMOVED******REMOVED***
       title={seoInfo.title***REMOVED***
-      titleTemplate={`${
-        new DOMParser().parseFromString(seoInfo.title, "text/html")
-          .documentElement.textContent
-      ***REMOVED***`***REMOVED***
+      titleTemplate={`${seoInfo.title***REMOVED***`***REMOVED***
       meta={[
     ***REMOVED***
           name: `description`,
