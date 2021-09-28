@@ -1,7 +1,9 @@
-@import "./src/shared/mixins/buttons";
-@import "./src/shared/mixins/background-image";
+@import "../shared/mixins/buttons";
+@import "../shared/mixins/background-image";
+@import "../shared/variables.scss";
+
 .genericSection {
-  color: #707070;
+  color: map-get($theme-colors, darkest-gray);
   padding: 5em 0;
 
   .verticalCenter {
@@ -11,11 +13,13 @@
   ***REMOVED***
 
   img {
-    border: 1px solid #c1d72f;
+    border: 1px solid map-get($theme-colors, turquoise);
+    border-radius: rem(3);
   ***REMOVED***
 
   .blueBorder img {
-    border: 1px solid #00aeef !important;
+    border: 1px solid map-get($theme-colors, light-blue) !important;
+    border-radius: rem(3);
   ***REMOVED***
 
   h2 {
@@ -29,7 +33,7 @@
 
   p {
     strong {
-      color: $primary-color;
+      color: map-get($theme-colors, dark-blue);
     ***REMOVED***
   ***REMOVED***
 
@@ -73,25 +77,25 @@
 ***REMOVED***
 
 .section1 {
-  padding: 1.4rem 0;
+  padding: 4rem 0 15.4rem 0;
 
-  @media screen and (max-width: 992px) {
-    background: url(../images/hero-mobile.jpg) no-repeat !important;
-    background-size: cover !important;
+  // @media screen and (max-width: 992px) {
+  //   background: url(../images/hero-mobile.jpg) no-repeat !important;
+  //   background-size: cover !important;
 
-    &:before {
-      background: #fff;
-      background-image: unset !important;
-      content: "";
-      opacity: 0.75 !important;
-      height: 100%;
-      width: 100%;
-    ***REMOVED***
+  //   &:before {
+  //     background: #fff;
+  //     background-image: unset !important;
+  //     content: "";
+  //     opacity: 0.75 !important;
+  //     height: 100%;
+  //     width: 100%;
+  //   ***REMOVED***
 
-    &:after {
-      display: none !important;
-    ***REMOVED***
-  ***REMOVED***
+  //   &:after {
+  //     display: none !important;
+  //   ***REMOVED***
+  // ***REMOVED***
 
   .row {
     flex-direction: column;
@@ -125,21 +129,17 @@
     .heroForm {
       align-content: center;
       align-self: center;
-      background: rgb(0, 117, 221);
-      background: linear-gradient(
-        180deg,
-        rgba(0, 117, 221, 0.7) 0%,
-        rgba(0, 84, 158, 0.7) 53%,
-        rgba(0, 60, 113, 0.7) 100%
-      );
+      background: #fff;
       border: 1px solid #fff;
-      border-radius: 10px;
-      color: #fff;
+      border-radius: rem(5);
+      -webkit-box-shadow: 5px 3px 7px -6px rgba(0, 0, 0, 0.91);
+      box-shadow: 5px 3px 7px -6px rgba(0, 0, 0, 0.91);
+      color: map-get($theme-colors, dark-blue);
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin: 0 auto 35px auto;
-      max-width: 350px;
+      max-width: rem(280);
       padding: 25px 0;
       text-align: center;
 
@@ -151,7 +151,7 @@
       ***REMOVED***
 
       .gravityForm {
-        padding: 0 25px;
+        padding: 0 rem(20);
       ***REMOVED***
 
       @media screen and (min-width: 992px) {
@@ -169,20 +169,31 @@
         ***REMOVED***
 
         small {
+          font-size: rem(17);
           text-transform: none;
+
+          .cta {
+            color: map-get($theme-colors, light-blue);
+            font-size: rem(26);
+
+            a {
+              color: map-get($theme-colors, light-blue);
+            ***REMOVED***
+          ***REMOVED***
+
+          .smaller {
+            font-size: rem(14);
+          ***REMOVED***
         ***REMOVED***
       ***REMOVED***
 
       input {
-        border: 1px solid #fff !important;
+        border: 1px solid #878887 !important;
         border-radius: 5px;
-
-        &:hover {
-          border: 1px solid #fff !important;
-        ***REMOVED***
       ***REMOVED***
 
       button {
+        border: 1px solid map-get($theme-colors, darkest-blue);
         font-weight: bold;
         width: 100%;
       ***REMOVED***
@@ -191,20 +202,18 @@
 ***REMOVED***
 
 .section2 {
-  li {
-    display: flex;
-    list-style: none;
-    margin: 20px 0;
+  h2 {
+    color: map-get($theme-colors, darkest-blue);
+    font-size: rem(20);
+    text-transform: uppercase;
 
-    &:before {
-      background-image: url(../images/checkbox.jpg);
-      background-size: cover;
-      content: "";
-      display: inline-block;
-      height: 25px;
-      margin-right: 10px;
-      width: 25px;
+    strong {
+      font-family: "Avenir Bold", sans-serif;
     ***REMOVED***
+  ***REMOVED***
+
+  .darkestBlue {
+    color: map-get($theme-colors, darkest-blue);
   ***REMOVED***
 ***REMOVED***
 
@@ -254,7 +263,7 @@
     padding: 0 1em;
 
     .author {
-      color: $gray;
+      color: map-get($theme-colors, gray);
       display: block;
       font-size: 20px;
       font-weight: bold;
@@ -263,20 +272,12 @@
   ***REMOVED***
 ***REMOVED***
 
-.callOut {
-  background: rgb(0, 174, 239);
-  background: linear-gradient(
-    103deg,
-    rgba(14, 121, 191, 1) 0%,
-    rgba(0, 174, 239, 1) 100%
-  );
-  color: #fff;
-  font-size: 24px;
-  padding: 1em 0;
-***REMOVED***
-
 .lightBack {
   background-color: #fbfbfb;
+***REMOVED***
+
+.yellowBack {
+  background-color: map-get($theme-colors, light-yellow);
 ***REMOVED***
 
 .contactSection {

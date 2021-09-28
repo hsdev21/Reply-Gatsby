@@ -1,10 +1,3 @@
-$primary-color: #0e79bf;
-$brighter-primary: #00aeef;
-$gray: #707070;
-$yellow: #c1d72f;
-
-$light-blue: #55a3d7;
-
 $theme-colors: (
   light-blue: #55a3d7,
   dark-blue: #035baa,
@@ -13,5 +6,18 @@ $theme-colors: (
   gray: #707070,
   dark-gray: #494949,
   darkest-gray: #353735,
+  light-yellow: #fffeed,
   yellow: #fcf7b4,
 );
+
+@function rem($pxval, $base: 16) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  ***REMOVED***
+
+  @if not unitless($base) {
+    $base: strip-units($base);
+  ***REMOVED***
+
+  @return ($pxval / $base) * 1rem;
+***REMOVED***

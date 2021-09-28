@@ -2,3 +2,8 @@
   font-family: "Avenir";
   src: url("../../static/fonts/AvenirLTStd-Medium.otf");
 ***REMOVED***
+
+@font-face {
+  font-family: "Avenir Bold";
+  src: url("../../static/fonts/AvenirLTStd-Bold.otf");
+***REMOVED***

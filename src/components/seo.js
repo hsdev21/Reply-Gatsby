@@ -9,15 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet ***REMOVED*** from "react-helmet"
 
-function SEO({
-               lang,
-               meta,
-               seoInfo,
-               siteUrl,
-               siteName,
-               date
-***REMOVED***) {
-  const openGraphImage = seoInfo.opengraphImage ? `
+function SEO({ lang, meta, seoInfo, siteUrl, siteName, date ***REMOVED***) {
+  const openGraphImage = seoInfo.opengraphImage
+    ? `
             ***REMOVED***
                    "@type":"ImageObject",
                    "@id":"${seoInfo.opengraphUrl***REMOVED***#primaryimage",
@@ -26,30 +20,34 @@ function SEO({
                    "width":${seoInfo.opengraphImage.mediaDetails.width***REMOVED***,
                    "height":${seoInfo.opengraphImage.mediaDetails.height***REMOVED***,
                    "caption":"${seoInfo.opengraphImage.altText***REMOVED***"
-              ***REMOVED***` : ``;
+              ***REMOVED***`
+    : ``
   return (
     <Helmet
       htmlAttributes={{
         lang,
       ***REMOVED******REMOVED***
       title={seoInfo.title***REMOVED***
-      titleTemplate={`${seoInfo.title***REMOVED***`***REMOVED***
+      titleTemplate={`${
+        new DOMParser().parseFromString(seoInfo.title, "text/html")
+          .documentElement.textContent
+      ***REMOVED***`***REMOVED***
       meta={[
     ***REMOVED***
           name: `description`,
-          content: seoInfo.metaDesc
+          content: seoInfo.metaDesc,
       ***REMOVED***
     ***REMOVED***
           property: `og:title`,
-          content: seoInfo.opengraphTitle
+          content: seoInfo.opengraphTitle,
       ***REMOVED***
     ***REMOVED***
           property: `og:description`,
-          content: seoInfo.opengraphDescription
+          content: seoInfo.opengraphDescription,
       ***REMOVED***
     ***REMOVED***
           property: `og:type`,
-          content: seoInfo.opengraphType
+          content: seoInfo.opengraphType,
       ***REMOVED***
     ***REMOVED***
           name: `twitter:card`,
@@ -65,12 +63,12 @@ function SEO({
       ***REMOVED***
     ***REMOVED***
           name: `twitter:description`,
-          content: seoInfo.metaDesc
+          content: seoInfo.metaDesc,
       ***REMOVED***
       ].concat(meta)***REMOVED***
     >
       <link rel="dns-prefetch" href="https://www.googletagmanager.com/" />
-      <script type={'application/json-ld'***REMOVED***>
+      <script type={"application/json-ld"***REMOVED***>
     ***REMOVED***`
       ***REMOVED***
              "@context":"https://schema.org",
@@ -132,7 +130,7 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  seoInfo: PropTypes.object
+  seoInfo: PropTypes.object,
 ***REMOVED***
 
 export default SEO

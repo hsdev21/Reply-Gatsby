@@ -36,8 +36,8 @@ const Header = ({ data ***REMOVED***) => {
                   />
                 </Link>
               </div>
+              <Navigation />
               <div className={headerStyles.headerRight***REMOVED***>
-                <Navigation />
                 <Button
                   variant={"primary"***REMOVED***
                   as={Link***REMOVED***

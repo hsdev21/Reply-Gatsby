@@ -6,10 +6,12 @@
 
 // You can delete this file if you're not using it
 
+***REMOVED***
+
 exports.createPages = async function ({ actions, graphql ***REMOVED***) {
   const pluginOptions = {
-    wordPressUrl: `https://valleyradiolo1.wpengine.com/`,
-    uploadsUrl: `https://valleyradiolo1.wpengine.com/uploads/`,
+    wordPressUrl: `${process.env.BACKEND_URL***REMOVED***/`,
+    uploadsUrl: `${process.env.BACKEND_URL***REMOVED***/uploads/`,
   ***REMOVED***
   const {
     data: {

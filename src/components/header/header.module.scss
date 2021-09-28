@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0;
+  padding: rem(40) 0 rem(25) 0;
 
   @media screen and (max-width: 991px) {
     flex-flow: column;
@@ -16,7 +16,7 @@
   ***REMOVED***
 
   .header-right {
-    color: $primary-color;
+    color: map-get($theme-colors, dark-blue);
     display: flex;
     align-items: center;
     font-size: 18px;
@@ -30,7 +30,7 @@
       ***REMOVED***
 
       a {
-        color: $primary-color;
+        color: map-get($theme-colors, dark-blue);
         letter-spacing: 1px;
       ***REMOVED***
 
@@ -41,15 +41,15 @@
 
     .header-btn {
       background-color: #fff;
-      border-color: #0e79bf;
+      border-color: map-get($theme-colors, turquoise);
       border-style: solid;
       border-width: 1px;
       border-radius: 5px;
-      color: #0e79bf;
+      color: map-get($theme-colors, light-blue);
       padding: 10px 45px;
       font-size: 22px;
       font-weight: normal;
-      padding: 5px 20px;
+      padding: rem(5) rem(20);
       transition: all 0.3s ease;
 
       &:hover,

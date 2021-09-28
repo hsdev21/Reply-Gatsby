@@ -9,7 +9,7 @@
   ***REMOVED***
 
   .slick-dots li button:before {
-    color: $gray !important;
+    color: map-get($theme-colors, gray) !important;
     font-size: 12px !important;
     opacity: 0.6 !important;
   ***REMOVED***

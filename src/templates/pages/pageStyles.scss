@@ -1,7 +1,7 @@
 @import "../../shared/variables.scss";
 
 h2.blue {
-  color: $primary-color;
+  color: map-get($theme-colors, dark-blue);
 ***REMOVED***
 
 .green-btn button {

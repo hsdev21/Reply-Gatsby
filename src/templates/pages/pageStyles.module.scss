@@ -4,7 +4,7 @@
   padding-top: 5px;
 
   p {
-    color: $primary-color;
+    color: map-get($theme-colors, dark-blue);
     text-align: left;
     margin-bottom: 0;
     font-size: 22px;
@@ -16,15 +16,15 @@
   ***REMOVED***
 
   a {
-    color: $primary-color;
+    color: map-get($theme-colors, dark-blue);
 
     &:hover {
-      color: $brighter-primary;
+      color: map-get($theme-colors, light-blue);
     ***REMOVED***
   ***REMOVED***
 
   small {
-    color: $gray;
+    color: map-get($theme-colors, gray);
     display: block;
     margin: 1rem 0;
   ***REMOVED***
@@ -40,7 +40,7 @@
 ***REMOVED***
 
 .pageContent {
-  color: $gray;
+  color: map-get($theme-colors, gray);
   padding-bottom: 3rem;
 
   h1,
@@ -55,10 +55,10 @@
   ***REMOVED***
 
   a {
-    color: $primary-color;
+    color: map-get($theme-colors, dark-blue);
 
     &:hover {
-      color: $brighter-primary;
+      color: map-get($theme-colors, light-blue);
     ***REMOVED***
   ***REMOVED***
 ***REMOVED***

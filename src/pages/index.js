@@ -40,26 +40,19 @@ const IndexPage = ({ data ***REMOVED***) => {
       >
         <Container>
           <Row className={homePageStyles.row***REMOVED***>
-            <Col lg={6***REMOVED*** className={`${homePageStyles.text***REMOVED***`***REMOVED***>
-              <h1>Find out if you have peripheral artery disease</h1>
-              <p>
-                Peripheral artery disease (PAD) is when your arteries become
-                clogged, usually due to plaque or calcium buildup. This is a
-                normal part of aging and primarily affects the arteries in the
-                legs. When blood vessels are blocked, painful wounds or ulcers
-                can develop. The highly trained vascular and interventional
-                specialists at Valley Radiology's limb salvage center use their
-                knowledge and expertise to treat PAD successfully.
-              </p>
-            </Col>
+            <Col lg={6***REMOVED*** className={`${homePageStyles.text***REMOVED***`***REMOVED***></Col>
             <Col lg={6***REMOVED*** className={homePageStyles.heroForm***REMOVED***>
               <p>
                 <small>
-                  Contact Us. We're ready to help.
+                  Schedule Your Consultation
                   <br />
-                  Call <a href="+1-910-486-5700">910-486-5700</a>
+                  <span className={homePageStyles.cta***REMOVED***>
+                    Call <a href="+1-919-230-2100">919-230-2100</a>
+                  </span>
                   <br />
-                  Or Use Our Online Contact Form
+                  <span className={homePageStyles.smaller***REMOVED***>
+                    or fill out the form below
+                  </span>
                 </small>
               </p>
               <div className={`${homePageStyles.gravityForm***REMOVED*** gravityForm`***REMOVED***>
@@ -69,74 +62,87 @@ const IndexPage = ({ data ***REMOVED***) => {
           </Row>
         </Container>
       </BackgroundImage>
-      <Container fluid className={homePageStyles.callOut***REMOVED***>
-        <Container>
-          If PAD is left untreated, it could result in amputation and
-          disability, eventually leading to death!
-        </Container>
-      </Container>
-      <Container fluid className={homePageStyles.section2***REMOVED***>
+      <Container
+        fluid
+        className={`${homePageStyles.section2***REMOVED*** ${homePageStyles.yellowBack***REMOVED***`***REMOVED***
+      >
         <Container className={homePageStyles.genericSection***REMOVED***>
           <Row className={homePageStyles.mobileReverse***REMOVED***>
-            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
-              <h2>Don’t ignore the symptoms</h2>
-              <ul>
-                <li>Leg fatigue with pain while walking</li>
-                <li>Sores</li>
-                <li>Wounds or ulcers that do not heal</li>
-                <li>Discoloration of legs</li>
-                <li>Numbness or Tingling</li>
-              </ul>
-              <p className={homePageStyles.buttonBottom***REMOVED***>
-                <Button
-                  variant={"primary"***REMOVED***
-                  className={homePageStyles.secondaryBtn***REMOVED***
-                  href="/contact/"
-                >
-                  Book Online
-                </Button>
+            <Col
+              lg={12***REMOVED***
+              className={`${homePageStyles.verticalCenter***REMOVED*** text-center mb-4`***REMOVED***
+            >
+              <h2>
+                <strong>Our Approach</strong> Is Different
+              </h2>
+              <p className={homePageStyles.darkestBlue***REMOVED***>
+                ... and so is how we partner with you.
               </p>
             </Col>
-            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
-              <Img
-                className={homePageStyles.homeImg***REMOVED***
-                fluid={data.section2.childImageSharp.fluid***REMOVED***
-                alt="A man holding his leg."
-              />
-            </Col>
-          </Row>
-        </Container>
-      </Container>
-      <Container fluid className={homePageStyles.lightBack***REMOVED***>
-        <Container className={homePageStyles.genericSection***REMOVED***>
-          <Row>
-            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
-              <Img
-                className={`${homePageStyles.homeImg***REMOVED*** ${homePageStyles.blueBorder***REMOVED***`***REMOVED***
-                fluid={data.section3.childImageSharp.fluid***REMOVED***
-                alt="A couple sitting together."
-              />
-            </Col>
-            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
-              <h2>Are you at high-risk for PAD?</h2>
+            <Col
+              lg={2***REMOVED***
+              className={`${homePageStyles.verticalCenter***REMOVED*** text-center`***REMOVED***
+            >
+              <p>Photo here</p>
+              <h3>Title Here</h3>
               <p>
-                Not everyone experiences the same symptoms of PAD. This
-                condition is often misdiagnosed, making it vital to pay
-                attention to risk factors. The most significant risk factors are
-                <strong> hypertension, diabetes, and smoking.</strong> If you’re
-                under 50 and overweight or have high blood pressure, we
-                recommend a checkup and screening. If you’re over 65 and/or have
-                leg pain, numbness, or other symptoms, make an appointment today
-                to prevent future complications.
+                a multi-step treatment plan that maximizes your chances of
+                natural conception and a healthy, happy baby
               </p>
-              <p className={homePageStyles.buttonBottom***REMOVED***>
-                <Button
-                  variant={"primary"***REMOVED***
-                  className={homePageStyles.mainBtn***REMOVED***
-                  href="/contact/"
-                >
-                  Book Online
-                </Button>
+            </Col>
+            <Col
+              lg={2***REMOVED***
+              className={`${homePageStyles.verticalCenter***REMOVED*** text-center`***REMOVED***
+            >
+              <p>Photo here</p>
+              <h3>Title Here</h3>
+              <p>
+                a multi-step treatment plan that maximizes your chances of
+                natural conception and a healthy, happy baby
+              </p>
+            </Col>
+            <Col
+              lg={2***REMOVED***
+              className={`${homePageStyles.verticalCenter***REMOVED*** text-center`***REMOVED***
+            >
+              <p>Photo here</p>
+              <h3>Title Here</h3>
+              <p>
+                a multi-step treatment plan that maximizes your chances of
+                natural conception and a healthy, happy baby
+              </p>
+            </Col>
+            <Col
+              lg={2***REMOVED***
+              className={`${homePageStyles.verticalCenter***REMOVED*** text-center`***REMOVED***
+            >
+              <p>Photo here</p>
+              <h3>Title Here</h3>
+              <p>
+                a multi-step treatment plan that maximizes your chances of
+                natural conception and a healthy, happy baby
+              </p>
+            </Col>
+            <Col
+              lg={2***REMOVED***
+              className={`${homePageStyles.verticalCenter***REMOVED*** text-center`***REMOVED***
+            >
+              <p>Photo here</p>
+              <h3>Title Here</h3>
+              <p>
+                a multi-step treatment plan that maximizes your chances of
+                natural conception and a healthy, happy baby
+              </p>
+            </Col>
+            <Col
+              lg={2***REMOVED***
+              className={`${homePageStyles.verticalCenter***REMOVED*** text-center`***REMOVED***
+            >
+              <p>Photo here</p>
+              <h3>Title Here</h3>
+              <p>
+                a multi-step treatment plan that maximizes your chances of
+                natural conception and a healthy, happy baby
               </p>
             </Col>
           </Row>
@@ -144,34 +150,75 @@ const IndexPage = ({ data ***REMOVED***) => {
       </Container>
       <Container fluid>
         <Container className={homePageStyles.genericSection***REMOVED***>
-          <Row className={homePageStyles.mobileReverse***REMOVED***>
+          <Row>
             <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
-              <h2>Receive a Timely Diagnoses and Tailored Treatment </h2>
+              <h2>
+                <strong>Our secret</strong> IS GETTING YOUR BODY HEALTHY &amp;
+                ready for pregnancy{" "***REMOVED***
+              </h2>
               <p>
-                The experienced specialists at Valley Radiology regularly
-                diagnose and treat men and women with PAD. Our team will
-                carefully diagnose and treat your condition utilizing the latest
-                technology and equipment. We create a tailored treatment plan to
-                deliver the best results for our patients. We also encourage and
-                oversee lifestyle changes to reduce pain and enhance your
-                quality of life.
-              </p>
-              <p className={homePageStyles.buttonBottom***REMOVED***>
-                <Button
-                  variant={"primary"***REMOVED***
-                  className={homePageStyles.secondaryBtn***REMOVED***
-                  href="/innovative-treatments/"
-                >
-                  Learn More
-                </Button>
+                Couples who struggle to get pregnant or suffer from recurrent
+                miscarriages often have unresolved health issues left
+                undiagnosed or simply ignored.
               </p>
             </Col>
             <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
               <Img
-                className={homePageStyles.homeImg***REMOVED***
-                fluid={data.section4.childImageSharp.fluid***REMOVED***
-                alt="A technician putting a patient in an MRI machine."
+                className={`${homePageStyles.homeImg***REMOVED*** ${homePageStyles.blueBorder***REMOVED***`***REMOVED***
+                fluid={data.section3.childImageSharp.fluid***REMOVED***
+                alt="A couple sitting together."
               />
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+      <Container fluid className={homePageStyles.yellowBack***REMOVED***>
+        <Container className={homePageStyles.genericSection***REMOVED***>
+          <Row className={homePageStyles.mobileReverse***REMOVED***>
+            <Col
+              lg={12***REMOVED***
+              className={`${homePageStyles.verticalCenter***REMOVED*** text-center mb-5`***REMOVED***
+            >
+              <h2>Fertility Challenges</h2>
+              <p>
+                Some of the fertility challenges our team helps patients
+                overcome include:
+              </p>
+            </Col>
+          </Row>
+          <Row className={homePageStyles.mobileReverse***REMOVED***>
+            <Col lg={4***REMOVED*** className={`${homePageStyles.verticalCenter***REMOVED***`***REMOVED***>
+              <p>Image here</p>
+              <h3>Title Here</h3>
+              <p>
+                Most people vastly underestimate the many ways their lifestyle
+                can impair their fertility. Common fertility inhibitors include
+                stress, nutritional deficiencies, medications, obesity, smoking,
+                alcohol, over-exercise, and more. We’ll help you uncover and
+                resolve hidden lifestyle barriers to fertility.
+              </p>
+            </Col>
+            <Col lg={4***REMOVED*** className={`${homePageStyles.verticalCenter***REMOVED***`***REMOVED***>
+              <p>Image here</p>
+              <h3>Title Here</h3>
+              <p>
+                Most people vastly underestimate the many ways their lifestyle
+                can impair their fertility. Common fertility inhibitors include
+                stress, nutritional deficiencies, medications, obesity, smoking,
+                alcohol, over-exercise, and more. We’ll help you uncover and
+                resolve hidden lifestyle barriers to fertility.
+              </p>
+            </Col>
+            <Col lg={4***REMOVED*** className={`${homePageStyles.verticalCenter***REMOVED***`***REMOVED***>
+              <p>Image here</p>
+              <h3>Title Here</h3>
+              <p>
+                Most people vastly underestimate the many ways their lifestyle
+                can impair their fertility. Common fertility inhibitors include
+                stress, nutritional deficiencies, medications, obesity, smoking,
+                alcohol, over-exercise, and more. We’ll help you uncover and
+                resolve hidden lifestyle barriers to fertility.
+              </p>
             </Col>
           </Row>
         </Container>
@@ -232,9 +279,28 @@ const IndexPage = ({ data ***REMOVED***) => {
           </div>
         </Container>
       </Container>
-      <Container fluid className={homePageStyles.lightBack***REMOVED***>
+      <Container fluid>
         <Container className={homePageStyles.genericSection***REMOVED***>
           <Row>
+            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
+              <h2>
+                <strong>We Partner</strong> With You Every Step of The Way
+              </h2>
+              <p className="lightBlue">
+                You won’t feel alone or in the dark about your options or
+                timeline.
+              </p>
+              <p>
+                From your complimentary Welcome Appointment to your fertility
+                evaluation and all the way through pregnancy and the postpartum
+                period, we will be right there with you. Your journey starts
+                with a clear roadmap along with a dedicated fertility navigator
+                to guide the way. Your team also includes nurse practitioners,
+                nurse midwives, physicians, and physician assistants, as well as
+                our fertility educators, health coaches, registered dieticians,
+                and other complementary therapists.
+              </p>
+            </Col>
             <Col
               lg={6***REMOVED***
               className={homePageStyles.verticalCenter***REMOVED***
@@ -246,33 +312,55 @@ const IndexPage = ({ data ***REMOVED***) => {
                 alt="Doctors Murali Meka and Bryan Swilley."
                 style={{ marginBottom: "5px" ***REMOVED******REMOVED***
               />
-              <Row>
-                <Col xs={6***REMOVED***>Dr. Murali Meka</Col>
-                <Col xs={6***REMOVED***>Dr. Bryan Swilley</Col>
-              </Row>
-            </Col>
-            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
-              <h2>Meet Murali Meka, MD, and Bryan Swilley, MD</h2>
               <p>
-                Our board-certified vascular and interventional specialists,
-                Murali Meka, MD, and Bryan Swilley, MD, specialize in diagnosing
-                and treating PAD. They each bring a strong focus and extensive
-                training in effective therapy through interventional radiology.
-                Having this expertise in a single location, focused on you,
-                means that you’re receiving the most innovative treatment
-                methods possible. Regardless of your diagnosis, we can help
-                determine the next steps and provide a treatment option that
-                works for you.
-              </p>
-              <p className={homePageStyles.buttonBottom***REMOVED***>
                 <Button
                   variant={"primary"***REMOVED***
                   className={homePageStyles.secondaryBtn***REMOVED***
                   href="/our-specialists/"
                 >
-                  Meet Our Expert Team
+                  Schedule Your Welcome Appointment Today
                 </Button>
               </p>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+      <Container fluid className={homePageStyles.yellowBack***REMOVED***>
+        <Container className={homePageStyles.genericSection***REMOVED***>
+          <Row>
+            <Col
+              lg={6***REMOVED***
+              className={homePageStyles.verticalCenter***REMOVED***
+              style={{ marginBottom: "20px" ***REMOVED******REMOVED***
+            >
+              <Img
+                className={homePageStyles.homeImg***REMOVED***
+                fluid={data.section6.childImageSharp.fluid***REMOVED***
+                alt="A woman receiving a sonogram."
+                style={{ marginBottom: "5px" ***REMOVED******REMOVED***
+              />
+            </Col>
+            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
+              <h2>
+                <strong>What If You Could Have a Baby</strong>, Without
+                Resorting To IVF?
+              </h2>
+              <p>
+                While assisted reproductive technologies like in vitro
+                fertilization (IVF) are the conventional go-to services, most
+                patients can have their babies naturally without IVF.
+              </p>
+              <p className="lightBlue">
+                At Reply, we have helped couples who have:
+              </p>
+              <ul>
+                <li>Been trying for more than a year</li>
+                <li>Suffered multiple miscarriages</li>
+                <li>Been told they waited until they were “too old”</li>
+                <li>Previously failed with IVF</li>
+                <li>Been diagnosed as high-risk or “infertile”</li>
+                <li>Nearly given up hope</li>
+              </ul>
             </Col>
           </Row>
         </Container>
@@ -280,10 +368,57 @@ const IndexPage = ({ data ***REMOVED***) => {
       <Container fluid>
         <Container className={homePageStyles.genericSection***REMOVED***>
           <Row>
+            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
+              <h2>
+                <strong>A leader</strong>
+                <br />
+                In Restorative Reproductive Medicine
+              </h2>
+              <p className="lightBlue">
+                Reply Ob/Gyn &amp; Fertility is a leader in the global movement
+                toward restorative reproductive medicine (“RRM”) for women
+                suffering from gynecologic problems and couples suffering from
+                fertility challenges.
+              </p>
+              <p>
+                We collaborate with others committed to improving reproductive
+                medical knowledge and treatment, including the International
+                Institute for Restorative Reproductive Medicine. Our
+                interdisciplinary team brings a wealth of knowledge and passion
+                for RRM care as well as true compassion for patients and their
+                loved ones.
+              </p>
+            </Col>
+            <Col
+              lg={6***REMOVED***
+              className={homePageStyles.verticalCenter***REMOVED***
+              style={{ marginBottom: "20px" ***REMOVED******REMOVED***
+            >
+              <Img
+                className={homePageStyles.homeImg***REMOVED***
+                fluid={data.section7.childImageSharp.fluid***REMOVED***
+                alt="A team of people."
+                style={{ marginBottom: "5px" ***REMOVED******REMOVED***
+              />
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+      <Container fluid className={homePageStyles.yellowBack***REMOVED***>
+        <Container className={homePageStyles.genericSection***REMOVED***>
+          <Row>
             <Col lg={12***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
               <h3 className={`text-center`***REMOVED***>
-                We Accept Many Plans from All Major Insurance Carriers
+                <strong>We make payments</strong> as affordable as possible
               </h3>
+              <p className="text-center">
+                We offer a complimentary Welcome Appointment with one of our
+                fertility educators who can provide more information about our
+                program and our care. Our fertility packages typically combine
+                insurance- reimbursed care for underlying gynecologic conditions
+                along with a program fee for uncovered services. We accept most
+                major insurance and offer payment options through CareCredit.
+              </p>
             </Col>
           </Row>
           <div className={`${homePageStyles.insurances***REMOVED***`***REMOVED***>
@@ -321,38 +456,6 @@ const IndexPage = ({ data ***REMOVED***) => {
           </Row>
         </Container>
       </Container>
-      <Container fluid className={homePageStyles.lightBack***REMOVED***>
-        <Container className={homePageStyles.genericSection***REMOVED***>
-          <Row>
-            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
-              <Img
-                className={homePageStyles.homeImg***REMOVED***
-                fluid={data.section7.childImageSharp.fluid***REMOVED***
-                alt="Valley Radiology's building location."
-              />
-            </Col>
-            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
-              <h2>Quality Care Close to Home</h2>
-              <p>
-                Receive the specialized care you deserve at Valley Radiology.
-                Our Fayetteville based Valley Radiology clinic offers diagnosis
-                and treatment for men and women with peripheral artery disease
-                and is now accepting new patients. Schedule your appointment to
-                discuss your individualized treatment plan now.
-              </p>
-              <p className={homePageStyles.buttonBottom***REMOVED***>
-                <Button
-                  variant={"primary"***REMOVED***
-                  className={homePageStyles.mainBtn***REMOVED***
-                  href="/contact/"
-                >
-                  Book Online
-                </Button>
-              </p>
-            </Col>
-          </Row>
-        </Container>
-      </Container>
       <BackgroundImage
         fluid={data.contactSection.childImageSharp.fluid***REMOVED***
         className={`${homePageStyles.contactSection***REMOVED***`***REMOVED***
@@ -371,7 +474,7 @@ const IndexPage = ({ data ***REMOVED***) => {
               </h2>
               <p className="text-center">
             ***REMOVED***" "***REMOVED***
-                Call <a href="tel:+1-910-486-5700">910-486-5700</a>
+                Call <a href="tel:+1-919-230-2100">919-230-2100</a>
                 <br />
                 <small>Or Use Our Easy Online Form.</small>
               </p>
@@ -395,13 +498,6 @@ export const query = graphql`
         ***REMOVED***
       ***REMOVED***
     ***REMOVED***
-    section2: file(relativePath: { eq: "section-2.jpg" ***REMOVED***) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        ***REMOVED***
-      ***REMOVED***
-    ***REMOVED***
     section3: file(relativePath: { eq: "section-3.jpg" ***REMOVED***) {
       childImageSharp {
         fluid {
@@ -409,14 +505,14 @@ export const query = graphql`
         ***REMOVED***
       ***REMOVED***
     ***REMOVED***
-    section4: file(relativePath: { eq: "section-4.jpg" ***REMOVED***) {
+    section5: file(relativePath: { eq: "section-5.jpg" ***REMOVED***) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
         ***REMOVED***
       ***REMOVED***
     ***REMOVED***
-    section5: file(relativePath: { eq: "section-5.jpg" ***REMOVED***) {
+    section6: file(relativePath: { eq: "section-6.jpg" ***REMOVED***) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

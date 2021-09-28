@@ -2,7 +2,7 @@
 
 .page-header {
   height: 150px;
-  background-color: $brighter-primary;
+  background-color: map-get($theme-colors, light-blue);
   display: flex;
   align-items: center;
 

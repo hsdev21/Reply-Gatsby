@@ -7,7 +7,7 @@ import { Container, Row, Col ***REMOVED*** from "react-bootstrap"
 import contactStyles from "./contactStyles.module.scss"
 import GravityForm from "../../components/gravity-form/gravity-form"
 
-import locationPhoto from "../../images/section-7.jpg"
+// import locationPhoto from "../../images/section-7.jpg"
 
 const PageContact = ({
   data: {
@@ -25,23 +25,21 @@ const PageContact = ({
     <Container style={{ paddingTop: "50px" ***REMOVED******REMOVED***>
       <Row>
         <Col lg={12***REMOVED*** className={contactStyles.pageContent***REMOVED***>
-          <h2>
-            Contact Valley Radiology for leading-edge radiology care near you.
-          </h2>
+          <h2>Contact Reply OB/GYN &amp; Fertility.</h2>
           <p>
             Do you have questions? Give us a call, we’d love to hear from you.
           </p>
           <p>
             To find out more or to schedule an appointment in our main office,
             or a new patient consultation in one of our offices, call us at{" "***REMOVED***
-            <a href="tel:+1-910-486-5700">910-486-5700</a>. You can also request
+            <a href="tel:+1-919-230-2100">919-230-2100</a>. You can also request
             an appointment using the easy online form on this page.
           </p>
         </Col>
       </Row>
       <Row style={{ marginBottom: "2rem" ***REMOVED******REMOVED***>
         <Col lg={6***REMOVED*** className={contactStyles.pageContent***REMOVED***>
-          <img src={locationPhoto***REMOVED*** alt="Valley Radiology location" />
+      ***REMOVED***/* <img src={locationPhoto***REMOVED*** alt="Valley Radiology location" /> */***REMOVED***
         </Col>
         <Col lg={6***REMOVED*** className={contactStyles.pageContent***REMOVED***>
           <h2 className="text-center" style={{ marginBottom: "25px" ***REMOVED******REMOVED***>
