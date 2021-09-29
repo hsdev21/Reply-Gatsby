@@ -328,7 +328,7 @@ const IndexPage = ({ data ***REMOVED***) => {
                 <Button
                   variant={"primary"***REMOVED***
                   className={homePageStyles.secondaryBtn***REMOVED***
-                  href="/our-specialists/"
+                  href="/contact/"
                 >
                   Schedule Your Welcome Appointment Today
                 </Button>
