@@ -242,46 +242,50 @@ const IndexPage = ({ data ***REMOVED***) => {
             <Slider>
               <p>
                 <em>
-                  "Dr. Meka was Exceptionally kind. He calmly explained the
-                  procedure to be performed on my next visit. Answered all of my
-                  questions and reassured me that all should go well. I felt
-                  well cared for. And I must add that the receptionist at the
-                  entrance was very kind and polite as well. She took my
-                  temperature, summoned the elevator for me, and wished me a
-                  safe and enjoyable weekend!"
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Proin luctus scelerisque est, sagittis facilisis elit pulvinar
+                  ac. Vivamus vehicula enim non felis feugiat porta. Aenean
+                  venenatis blandit nibh, nec sollicitudin enim congue in.
+                  Aliquam posuere dolor felis, eget laoreet metus rutrum
+                  gravida. Maecenas in bibendum justo. Donec sit amet fermentum
+                  erat."
                 </em>
                 <br />
                 <span className={homePageStyles.author***REMOVED***>M. Williams</span>
               </p>
               <p>
                 <em>
-                  "My foot was turning purple from poor circulation. They looked
-                  at it and set an appointment for the next day for an
-                  ultrasound. As I was walking out the door, they called out to
-                  see if I wanted to do the ultrasound now. That was huge in my
-                  mind. Then they set an appointment for an angiogram the next
-                  morning. I have only great thoughts on how I was treated. I
-                  would absolutely recommend them."
+                  "Pellentesque tristique eros mauris, semper ullamcorper nulla
+                  faucibus eget. Nam dapibus rutrum est vitae interdum. In
+                  sagittis sapien nec orci porttitor dignissim. Ut eu rhoncus
+                  libero, suscipit molestie turpis."
                 </em>
                 <br />
                 <span className={homePageStyles.author***REMOVED***>D. Romstadt</span>
               </p>
               <p>
                 <em>
-                  "To Dr. Meka and all members of this dynamic team of Medical
-                  staff and all Kind, Patient, Caring, Compassionate Healthcare
-                  providers. Thank you for being super Sheroes and Heroes! Bless
-                  you!"
+                  "Donec enim quam, mollis imperdiet consequat quis, vulputate a
+                  velit. Sed ultricies nisl sed auctor scelerisque. Mauris
+                  rutrum lorem quis fermentum luctus. Duis vehicula rutrum
+                  mollis. Aenean molestie dapibus lorem, posuere gravida massa
+                  sodales ac. Aliquam vitae quam ante. Fusce molestie id dolor
+                  vitae sollicitudin. Nam varius venenatis volutpat. In maximus
+                  posuere tortor dictum rhoncus. Donec nunc arcu, interdum et
+                  turpis ac, maximus scelerisque urna."
                 </em>
                 <br />
                 <span className={homePageStyles.author***REMOVED***>Ms. M. Williams</span>
               </p>
               <p>
                 <em>
-                  "The best &amp; most caring medical professionals & staff
-                  EVER!! It always made me feel like I was the only patient they
-                  had! I only wish I had met Dr. Meka a lot sooner than I did!
-                  But so glad I finally did."
+                  "Fusce varius pharetra nunc a eleifend. Pellentesque tristique
+                  eros mauris, semper ullamcorper nulla faucibus eget. Nam
+                  dapibus rutrum est vitae interdum. In sagittis sapien nec orci
+                  porttitor dignissim. Ut eu rhoncus libero, suscipit molestie
+                  turpis. Nulla sit amet turpis aliquet, scelerisque elit non,
+                  ullamcorper magna. Quisque nulla tortor, tincidunt nec massa
+                  eu, facilisis fringilla erat."
                 </em>
                 <br />
                 <span className={homePageStyles.author***REMOVED***>D. Denham</span>
