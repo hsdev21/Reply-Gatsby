@@ -56,7 +56,9 @@ const IndexPage = ({ data ***REMOVED***) => {
       >
         <Container>
           <Row className={homePageStyles.row***REMOVED***>
-            <Col lg={6***REMOVED*** className={`${homePageStyles.text***REMOVED***`***REMOVED***></Col>
+            <Col lg={6***REMOVED*** className={`${homePageStyles.text***REMOVED***`***REMOVED***>
+              <h1>Rethink Your Fertility</h1>
+            </Col>
             <Col lg={6***REMOVED*** className={homePageStyles.homeForm***REMOVED***>
               <p>
                 <small>
@@ -78,6 +80,40 @@ const IndexPage = ({ data ***REMOVED***) => {
           </Row>
         </Container>
       </BackgroundImage>
+      <Container fluid className={homePageStyles.callOutContainer***REMOVED***>
+        <Container
+          className={`text-center text-white ${homePageStyles.callOut***REMOVED***`***REMOVED***
+        >
+          If You’re Struggling to Have a Baby,
+          <br /> Find Hope and a New Way Forward with REPLY
+        </Container>
+      </Container>
+      <Container fluid>
+        <Container className={homePageStyles.genericSection***REMOVED***>
+          <Row>
+            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
+              <Img
+                className={`${homePageStyles.homeImg***REMOVED*** ${homePageStyles.blueBorder***REMOVED***`***REMOVED***
+                fluid={data.section2.childImageSharp.fluid***REMOVED***
+                alt="A couple with a baby."
+                style={{ marginBottom: "0" ***REMOVED******REMOVED***
+              />
+            </Col>
+            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
+              <h2>
+                <strong>Our Restorative Approach</strong>{" "***REMOVED***
+                <span style={{ color: "#46A5E3" ***REMOVED******REMOVED***>to Fertility</span>
+              </h2>
+              <p>
+                At Reply, we’ll help find the root causes that impair your
+                fertility – both the female and male factors – and then use
+                restorative reproductive medicine to treat the underlying causes
+                and improve your health to help you conceive naturally.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
       <Container
         fluid
         className={`${homePageStyles.section2***REMOVED*** ${homePageStyles.yellowBack***REMOVED***`***REMOVED***
@@ -91,7 +127,7 @@ const IndexPage = ({ data ***REMOVED***) => {
               <h2>
                 <strong>Our Approach</strong> Is Different
               </h2>
-              <p className={homePageStyles.darkestBlue***REMOVED***>
+              <p className={homePageStyles.lightBlue***REMOVED***>
                 ... and so is how we partner with you.
               </p>
             </Col>
@@ -234,7 +270,7 @@ const IndexPage = ({ data ***REMOVED***) => {
           </Row>
         </Container>
       </Container>
-      <Container fluid>
+  ***REMOVED***/* <Container fluid>
         <Container
           className={`${homePageStyles.genericSection***REMOVED*** ${homePageStyles.testimonialSlider***REMOVED***`***REMOVED***
         >
@@ -293,7 +329,7 @@ const IndexPage = ({ data ***REMOVED***) => {
             </Slider>
           </div>
         </Container>
-      </Container>
+      </Container> */***REMOVED***
       <Container fluid className={homePageStyles.section6***REMOVED***>
         <Container className={homePageStyles.genericSection***REMOVED***>
           <Row>
@@ -540,6 +576,13 @@ export const query = graphql`
     section1: file(relativePath: { eq: "hero.jpg" ***REMOVED***) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+    section2: file(relativePath: { eq: "section-2.jpg" ***REMOVED***) {
+      childImageSharp {
+        fluid {
           ...GatsbyImageSharpFluid
         ***REMOVED***
       ***REMOVED***

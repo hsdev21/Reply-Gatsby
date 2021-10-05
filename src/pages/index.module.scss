@@ -172,7 +172,7 @@ p {
 ***REMOVED***
 
 .section1 {
-  padding: 4rem 0 15.4rem 0;
+  padding: 4rem 0;
 
   // @media screen and (max-width: 992px) {
   //   background: url(../images/hero-mobile.jpg) no-repeat !important;
@@ -207,9 +207,11 @@ p {
       ***REMOVED***
 
       h1 {
+        color: map-get($theme-colors, darkest-blue);
         font-family: "Helvetica Neue Medium", sans-serif;
-        font-size: 32px;
+        font-size: rem(44);
         line-height: 2.7rem;
+        padding-top: rem(40);
       ***REMOVED***
 
       p {
@@ -220,6 +222,33 @@ p {
         ***REMOVED***
       ***REMOVED***
     ***REMOVED***
+  ***REMOVED***
+***REMOVED***
+
+.callOutContainer {
+  background: rgb(3, 51, 121);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(3, 51, 121, 1) 0%,
+    rgba(69, 162, 225, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(3, 51, 121, 1) 0%,
+    rgba(69, 162, 225, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(3, 51, 121, 1) 0%,
+    rgba(69, 162, 225, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#033379",endColorstr="#45a2e1",GradientType=1);
+  padding: 2rem 0;
+
+  .callOut {
+    font-size: rem(32);
+    line-height: rem(60);
+    text-transform: uppercase;
   ***REMOVED***
 ***REMOVED***
 
