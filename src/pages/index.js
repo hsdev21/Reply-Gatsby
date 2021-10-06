@@ -88,7 +88,11 @@ const IndexPage = ({ data ***REMOVED***) => {
           <br /> Find Hope and a New Way Forward with REPLY
         </Container>
       </Container>
-      <Container fluid id="our-approach">
+      <Container
+        fluid
+        id={`our-approach`***REMOVED***
+        className={homePageStyles.ourApproach***REMOVED***
+      >
         <Container className={homePageStyles.genericSection***REMOVED***>
           <Row>
             <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
@@ -96,7 +100,6 @@ const IndexPage = ({ data ***REMOVED***) => {
                 className={`${homePageStyles.homeImg***REMOVED*** ${homePageStyles.blueBorder***REMOVED***`***REMOVED***
                 fluid={data.section2.childImageSharp.fluid***REMOVED***
                 alt="A couple with a baby."
-                style={{ marginBottom: "0" ***REMOVED******REMOVED***
               />
             </Col>
             <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
@@ -231,7 +234,9 @@ const IndexPage = ({ data ***REMOVED***) => {
                 fluid={data.lifestyle.childImageSharp.fluid***REMOVED***
                 alt="A person eating from a bowl."
               />
-              <h3>Lifestyle Issues</h3>
+              <h3>
+                <strong>Lifestyle Issues</strong>
+              </h3>
               <p>
                 Most people vastly underestimate the many ways their lifestyle
                 can impair their fertility. Common fertility inhibitors include
@@ -245,7 +250,9 @@ const IndexPage = ({ data ***REMOVED***) => {
                 fluid={data.hormone.childImageSharp.fluid***REMOVED***
                 alt="A woman looking pensive."
               />
-              <h3>Hormone Imablances</h3>
+              <h3>
+                <strong>Hormone Imbalances</strong>
+              </h3>
               <p>
                 A leading cause of fertility challenges, hormone imbalances can
                 disrupt ovulation, impede conception, and threaten pregnancy.
@@ -258,7 +265,9 @@ const IndexPage = ({ data ***REMOVED***) => {
                 fluid={data.medicalConditions.childImageSharp.fluid***REMOVED***
                 alt="Two woman sitting at a desk."
               />
-              <h3>Medical Conditions</h3>
+              <h3>
+                <strong>Medical Conditions</strong>
+              </h3>
               <p>
                 Most people vastly underestimate the many ways their lifestyle
                 can impair their fertility. Common fertility inhibitors include
