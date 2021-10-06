@@ -3,7 +3,7 @@ import { Nav, NavDropdown ***REMOVED*** from "react-bootstrap"
 import navigationStyles from "./navigation.module.scss"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
-const NavItems = ({ navItems ***REMOVED***) => {
+const NavItems = ({ navItems, setExpanded ***REMOVED***) => {
   const navList = navItems.map((navItem, i) => {
     if (navItem.children.length) {
       return (
@@ -30,7 +30,10 @@ const NavItems = ({ navItems ***REMOVED***) => {
         key={i***REMOVED***
         to={navItem.path***REMOVED***
         className={navigationStyles.navLink***REMOVED***
-        onClick={() => scrollTo(navItem.path)***REMOVED***
+        onClick={() => {
+          scrollTo(navItem.path)
+          setTimeout(() => setExpanded(false), 100)
+        ***REMOVED******REMOVED***
       >
     ***REMOVED***navItem.label***REMOVED***
       </Nav.Link>
