@@ -1,10 +1,10 @@
 import React from "react"
 import { Link ***REMOVED*** from "gatsby"
-import { Button ***REMOVED*** from "react-bootstrap"
 import Navigation from "../navigation/navigation"
 import headerStyles from "./header.module.scss"
 import { StaticQuery, graphql ***REMOVED*** from "gatsby"
 import Img from "gatsby-image"
+import scrollTo from "gatsby-plugin-smoothscroll"
 import "./header.scss"
 
 const Header = ({ data ***REMOVED***) => {
@@ -39,14 +39,15 @@ const Header = ({ data ***REMOVED***) => {
               </div>
               <Navigation className="desktopNav" />
               <div className={headerStyles.headerRight***REMOVED***>
-                <Button
+                <button
                   variant={"primary"***REMOVED***
                   as={Link***REMOVED***
                   className={headerStyles.headerBtn***REMOVED***
-                  to={"/contact/"***REMOVED***
+                  to={"#schedule"***REMOVED***
+                  onClick={() => scrollTo("#schedule")***REMOVED***
                 >
                   Contact Me
-                </Button>
+                </button>
               </div>
             </div>
           </div>

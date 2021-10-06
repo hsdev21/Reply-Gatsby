@@ -534,7 +534,7 @@ const IndexPage = ({ data ***REMOVED***) => {
         fluid={data.contactSection.childImageSharp.fluid***REMOVED***
         className={`${homePageStyles.contactSection***REMOVED***`***REMOVED***
         alt="The Reply Fertility building."
-        id="our-location"
+        id="schedule"
       >
         <Container>
           <Row>

@@ -5,7 +5,7 @@ import footerLogo from "../../images/footer-logo.png"
 
 const Footer = () => (
   <footer>
-    <Container className={footerStyles.footerTextContainer***REMOVED***>
+    <Container className={footerStyles.footerTextContainer***REMOVED*** id="our-location">
       <Row>
         <Col lg={6***REMOVED*** className={`${footerStyles.map***REMOVED*** text-center`***REMOVED***>
           <iframe

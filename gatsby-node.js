@@ -54,20 +54,6 @@ exports.createPages = async function ({ actions, graphql ***REMOVED***) {
           context: { ...node, pluginOptions ***REMOVED***,
         ***REMOVED***)
         break
-      case "WPGraphQL_NoSidebarTemplate":
-        actions.createPage({
-          path: uri,
-          component: require.resolve(`./src/templates/pagesNoSideBar`),
-          context: { ...node, pluginOptions ***REMOVED***,
-        ***REMOVED***)
-        break
-      case "WPGraphQL_ContactTemplate":
-        actions.createPage({
-          path: uri,
-          component: require.resolve(`./src/templates/pageContact`),
-          context: { ...node, pluginOptions ***REMOVED***,
-        ***REMOVED***)
-        break
       default:
         actions.createPage({
           path: uri,
