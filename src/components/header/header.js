@@ -1,50 +1,50 @@
 import React from "react"
-import { Link ***REMOVED*** from "gatsby"
+import { Link } from "gatsby"
 import Navigation from "../navigation/navigation"
 import headerStyles from "./header.module.scss"
-import { StaticQuery, graphql ***REMOVED*** from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import "./header.scss"
 
-const Header = ({ data ***REMOVED***) => {
+const Header = ({ data }) => {
   return (
     <StaticQuery
       query={graphql`
         query {
-          logo: file(relativePath: { eq: "logo.png" ***REMOVED***) {
+          logo: file(relativePath: { eq: "logo.png" }) {
             childImageSharp {
               fluid(quality: 90, maxWidth: 1920) {
                 ...GatsbyImageSharpFluid_noBase64
-              ***REMOVED***
-            ***REMOVED***
-          ***REMOVED***
-        ***REMOVED***
-      `***REMOVED***
+              }
+            }
+          }
+        }
+      `}
       render={data => (
         <>
-          <div className="container" style={{ padding: 0 ***REMOVED******REMOVED***>
-            <div className={headerStyles.headerWrap***REMOVED***>
+          <div className="container" style={{ padding: 0 }}>
+            <div className={headerStyles.headerWrap}>
               <div className="logo-wrap">
                 <Link className="brand" to="/">
                   <Img
-                    fluid={data.logo.childImageSharp.fluid***REMOVED***
+                    fluid={data.logo.childImageSharp.fluid}
                     style={{
                       marginBottom: 0,
                       width: "154px",
-                    ***REMOVED******REMOVED***
+                    }}
                     alt="Reply OB/GYN &amp; Fertility logo"
                   />
                 </Link>
               </div>
               <Navigation className="desktopNav" />
-              <div className={headerStyles.headerRight***REMOVED***>
+              <div className={headerStyles.headerRight}>
                 <button
-                  variant={"primary"***REMOVED***
-                  as={Link***REMOVED***
-                  className={headerStyles.headerBtn***REMOVED***
-                  to={"#schedule"***REMOVED***
-                  onClick={() => scrollTo("#schedule")***REMOVED***
+                  variant={"primary"}
+                  as={Link}
+                  className={headerStyles.headerBtn}
+                  to={"#schedule"}
+                  onClick={() => scrollTo("#schedule")}
                 >
                   Contact Me
                 </button>
@@ -53,9 +53,9 @@ const Header = ({ data ***REMOVED***) => {
           </div>
           <Navigation className="mobileNav" />
         </>
-      )***REMOVED***
+      )}
     />
   )
-***REMOVED***
+}
 
 export default Header

@@ -44,32 +44,32 @@
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
     "yarn": "^1.22.5"
-***REMOVED***
+  },
   "devDependencies": {
     "dotenv": "^8.2.0",
     "prettier": "2.0.5"
-***REMOVED***
+  },
   "keywords": [
     "gatsby"
-***REMOVED***
+  ],
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
     "build:lambda": "netlify-lambda build lambda",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md***REMOVED***\"",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "start:lambda": "netlify-lambda serve src/lambda",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "cleanDev": "gatsby clean && gatsby develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-***REMOVED***
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-***REMOVED***
+  },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  ***REMOVED***
-***REMOVED***
+  }
+}

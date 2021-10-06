@@ -12,9 +12,9 @@
 
     > * {
       padding: 10px 0;
-    ***REMOVED***
+    }
     padding-bottom: 0;
-  ***REMOVED***
+  }
 
   .header-right {
     color: map-get($theme-colors, dark-blue);
@@ -28,17 +28,17 @@
 
       @media screen and (min-width: 451px) {
         margin-right: 20px;
-      ***REMOVED***
+      }
 
       a {
         color: map-get($theme-colors, dark-blue);
         letter-spacing: 1px;
-      ***REMOVED***
+      }
 
       small {
         color: #707070;
-      ***REMOVED***
-    ***REMOVED***
+      }
+    }
 
     .header-btn {
       background-color: #fff;
@@ -58,8 +58,8 @@
       &:focus {
         background-color: #0e79bf;
         color: #fff;
-      ***REMOVED***
-    ***REMOVED***
+      }
+    }
 
     @media screen and (max-width: 530px) {
       flex-flow: column-reverse;
@@ -67,17 +67,17 @@
 
       .header-btn {
         margin-bottom: 10px;
-      ***REMOVED***
+      }
 
       > * {
         padding: 5px 0;
-      ***REMOVED***
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+      }
+    }
+  }
+}
 
 @media screen and (min-width: 992px) {
   .mobileNav {
     display: none;
-  ***REMOVED***
-***REMOVED***
+  }
+}

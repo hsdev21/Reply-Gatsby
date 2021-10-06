@@ -12,22 +12,22 @@
 
     span {
       font-size: 18px;
-    ***REMOVED***
-  ***REMOVED***
+    }
+  }
 
   a {
     color: map-get($theme-colors, dark-blue);
 
     &:hover {
       color: map-get($theme-colors, light-blue);
-    ***REMOVED***
-  ***REMOVED***
+    }
+  }
 
   small {
     color: map-get($theme-colors, gray);
     display: block;
     margin: 1rem 0;
-  ***REMOVED***
+  }
 
   .gform_wrapper form {
     margin-top: 1rem;
@@ -35,9 +35,9 @@
     input[type="text"] {
       border: 2px solid #fff;
       background: #fff !important;
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+    }
+  }
+}
 
 .pageContent {
   color: map-get($theme-colors, gray);
@@ -52,13 +52,13 @@
     color: map-get($theme-colors, darkest-blue);
     clear: both;
     margin-bottom: 1rem;
-  ***REMOVED***
+  }
 
   a {
     color: map-get($theme-colors, dark-blue);
 
     &:hover {
       color: map-get($theme-colors, light-blue);
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+    }
+  }
+}

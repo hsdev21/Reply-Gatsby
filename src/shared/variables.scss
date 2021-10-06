@@ -13,11 +13,11 @@ $theme-colors: (
 @function rem($pxval, $base: 16) {
   @if not unitless($pxval) {
     $pxval: strip-units($pxval);
-  ***REMOVED***
+  }
 
   @if not unitless($base) {
     $base: strip-units($base);
-  ***REMOVED***
+  }
 
   @return ($pxval / $base) * 1rem;
-***REMOVED***
+}

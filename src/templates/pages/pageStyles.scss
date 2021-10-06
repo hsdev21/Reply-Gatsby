@@ -2,7 +2,7 @@
 
 h2.blue {
   color: map-get($theme-colors, dark-blue);
-***REMOVED***
+}
 
 .green-btn button {
   background: #c1d72f;
@@ -20,20 +20,20 @@ h2.blue {
   &:hover {
     background: #dbf533;
     border: 1px solid #9eb025;
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 .blue-bottom {
   border-bottom: 1px solid #00aeef;
   margin-bottom: 50px;
   padding: 20px;
-***REMOVED***
+}
 
 .green-bottom {
   border-bottom: 1px solid #aed500;
   margin-bottom: 50px;
   padding: 20px;
-***REMOVED***
+}
 
 .insurance-logos {
   margin-bottom: 1rem;
@@ -46,10 +46,10 @@ h2.blue {
     @media screen and (min-width: 768px) {
       margin: 10px;
       width: 30%;
-    ***REMOVED***
+    }
 
     img {
       max-width: 100%;
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+    }
+  }
+}

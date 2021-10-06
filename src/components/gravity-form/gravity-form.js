@@ -1,27 +1,27 @@
 import React from "react"
 import GravityFormForm from "gatsby-gravityforms-component"
-import { AllGravityData ***REMOVED*** from "../../hooks/gravityforms"
-import { navigate ***REMOVED*** from "gatsby"
+import { AllGravityData } from "../../hooks/gravityforms"
+import { navigate } from "gatsby"
 import "./gravityFormStyles.scss"
 
-function handleError({ values, error, reset ***REMOVED***) {
+function handleError({ values, error, reset }) {
   console.log(error)
   console.log(values)
-***REMOVED***
+}
 
-function handleSuccess({ values, reset, confirmations ***REMOVED***) {
+function handleSuccess({ values, reset, confirmations }) {
   reset()
   navigate("/thank-you")
-***REMOVED***
+}
 
 const GravityForm = props => (
   <GravityFormForm
-    id={1***REMOVED***
-    formData={AllGravityData()***REMOVED***
-    lambda={`/.netlify/functions/newGfEntry`***REMOVED***
-    successCallback={handleSuccess***REMOVED***
-    errorCallback={handleError***REMOVED***
-    className={props.className***REMOVED***
+    id={1}
+    formData={AllGravityData()}
+    lambda={`/.netlify/functions/newGfEntry`}
+    successCallback={handleSuccess}
+    errorCallback={handleError}
+    className={props.className}
   />
 )
 
