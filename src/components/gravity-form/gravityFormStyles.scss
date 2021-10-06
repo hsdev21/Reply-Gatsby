@@ -6,25 +6,25 @@
 .gform_wrapper form {
   max-width: 450px;
   margin: 0 auto;
-***REMOVED***
+}
 
 .gform_wrapper ul {
   @extend .list-unstyled;
   margin-left: 0;
-***REMOVED***
+}
 
 .gform_wrapper li {
   @extend .form-group;
 
   label {
     display: none;
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 .gform_wrapper .gfield_required {
   padding-left: 1px;
   color: $danger;
-***REMOVED***
+}
 
 .gform_wrapper input[type="email"],
 .gform_wrapper input[type="date"],
@@ -45,7 +45,7 @@
   background: #fffef5;
   border: 1px solid #707070;
   border-radius: 4px;
-***REMOVED***
+}
 
 .sidebar {
   .gform_wrapper input[type="email"],
@@ -65,20 +65,20 @@
   .gform_wrapper textarea {
     background: #fff;
     border-radius: 0;
-  ***REMOVED***
+  }
 
   .gform_button {
     border: 1px solid map-get($theme-colors, darkest-blue) !important;
     padding: 10px 0 !important;
     width: 100%;
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 .gform_wrapper .button {
   @extend .btn;
   @extend .btn-primary;
   @include buttonSecondary();
-***REMOVED***
+}
 
 .gform_wrapper .gfield_error,
 .gform_wrapper .gravityform__field--error {
@@ -87,25 +87,25 @@
     display: block;
     padding: 5px;
     border-radius: 5px;
-  ***REMOVED***
+  }
 
   input,
   select,
   textarea {
     @extend .alert-danger;
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 .validation_error {
   @extend .alert;
   @extend .alert-danger;
-***REMOVED***
+}
 
 .validation_message {
   display: none;
-***REMOVED***
+}
 
 .gform_footer {
   display: flex;
   justify-content: center;
-***REMOVED***
+}

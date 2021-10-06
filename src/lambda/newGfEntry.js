@@ -1,21 +1,21 @@
 const axios = require("axios")
-const { nanoid ***REMOVED*** = require("nanoid")
+const { nanoid } = require("nanoid")
 const oauthSignature = require("oauth-signature")
 
-***REMOVED***
+require("dotenv").config()
 
 // Set up essential values
 const secretData = {
   gfKey: process.env.CONSUMER_KEY,
   gfSecret: process.env.CONSUMER_SECRET,
-***REMOVED***
+}
 
 // For those requests
 // Update with correct origin when on production!
 const headers = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "Content-Type",
-***REMOVED***
+}
 
 exports.handler = async event => {
   // Make sure we are dealing with a POST request
@@ -26,9 +26,9 @@ exports.handler = async event => {
       body: JSON.stringify({
         status: "notPost",
         message: "This was not a POST request!",
-      ***REMOVED***),
-    ***REMOVED***
-  ***REMOVED***
+      }),
+    }
+  }
 
   // Parse that post data body
   const data = JSON.parse(event.body)
@@ -43,9 +43,9 @@ exports.handler = async event => {
       body: JSON.stringify({
         status: "missingApiData",
         message: "Required API data is missing",
-      ***REMOVED***),
-    ***REMOVED***
-  ***REMOVED***
+      }),
+    }
+  }
 
   // Now we can do the real work - Gravity Forms API stuff
   const authParams = new0AuthParameters(secretData.gfKey)
@@ -66,10 +66,10 @@ exports.handler = async event => {
       params: {
         ...authParams,
         oauth_signature: signature,
-    ***REMOVED***
+      },
       data: data.payload,
-    ***REMOVED***)
-  ***REMOVED*** catch (error) {
+    })
+  } catch (error) {
     // Check the function log for this!
     console.log("newGFEntry.js Error Data")
     console.log(error)
@@ -85,9 +85,9 @@ exports.handler = async event => {
           status: "gravityFormErrors",
           message: "Gravity Forms has flagged issues",
           validation_messages: errorResponse.validation_messages,
-        ***REMOVED***),
-      ***REMOVED***
-    ***REMOVED*** else {
+        }),
+      }
+    } else {
       // Unknown error
       return {
         statusCode: 400,
@@ -95,10 +95,10 @@ exports.handler = async event => {
         body: JSON.stringify({
           status: "unknown",
           message: "Something went wrong",
-        ***REMOVED***),
-      ***REMOVED***
-    ***REMOVED***
-  ***REMOVED***
+        }),
+      }
+    }
+  }
 
   return {
     statusCode: 201,
@@ -107,13 +107,13 @@ exports.handler = async event => {
       status: "success",
       message: "Entry added to Gravity Forms",
       confirmation_message: result.data.confirmation_message,
-    ***REMOVED***),
-  ***REMOVED***
-***REMOVED***
+    }),
+  }
+}
 
 function getCurrentTimestamp() {
   return Math.round(new Date().getTime() / 1000)
-***REMOVED***
+}
 
 function new0AuthParameters(consumerKey) {
   return {
@@ -122,5 +122,5 @@ function new0AuthParameters(consumerKey) {
     oauth_signature_method: "HMAC-SHA1",
     oauth_version: "1.0",
     oauth_nonce: nanoid(11),
-  ***REMOVED***
-***REMOVED***
+  }
+}

@@ -5,11 +5,11 @@
 h3 {
   color: map-get($theme-colors, darkest-blue);
   text-transform: uppercase;
-***REMOVED***
+}
 
 strong {
   font-family: "Avenir Bold", sans-serif;
-***REMOVED***
+}
 
 h2 {
   color: map-get($theme-colors, darkest-blue);
@@ -20,8 +20,8 @@ h2 {
 
   @media screen and (min-width: 992px) {
     margin-top: 0;
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 p {
   font-size: rem(14);
@@ -29,8 +29,8 @@ p {
 
   strong {
     color: map-get($theme-colors, dark-blue);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 .genericSection {
   color: map-get($theme-colors, darkest-gray);
@@ -40,63 +40,63 @@ p {
     display: flex;
     flex-flow: column;
     justify-content: center;
-  ***REMOVED***
+  }
 
   img {
     border: 1px solid map-get($theme-colors, turquoise);
     border-radius: rem(3);
-  ***REMOVED***
+  }
 
   .blueBorder img {
     border: 1px solid map-get($theme-colors, light-blue) !important;
     border-radius: rem(3);
-  ***REMOVED***
+  }
 
   .lightBlue {
     color: map-get($theme-colors, light-blue);
     font-family: "Avenir Bold", sans-serif;
-  ***REMOVED***
+  }
 
   ul {
     li {
       font-size: rem(14);
-    ***REMOVED***
+    }
 
     li::marker {
       color: map-get($theme-colors, darkest-blue);
-    ***REMOVED***
-  ***REMOVED***
+    }
+  }
 
   .buttonBottom {
     @media screen and (min-width: 1200px) {
       bottom: 0;
       margin-bottom: 0;
       position: absolute;
-    ***REMOVED***
-  ***REMOVED***
+    }
+  }
 
   .homeImg {
     @media screen and (min-width: 1200px) {
       margin-bottom: 47px;
-    ***REMOVED***
-  ***REMOVED***
+    }
+  }
 
   .mainBtn {
     @include buttonMain();
-  ***REMOVED***
+  }
 
   .secondaryBtn {
     @include buttonSecondary();
-  ***REMOVED***
+  }
 
   .mobileReverse {
     flex-direction: column-reverse;
 
     @media screen and (min-width: 992px) {
       flex-direction: row;
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+    }
+  }
+}
 
 .homeForm {
   align-content: center;
@@ -120,15 +120,15 @@ p {
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-  ***REMOVED***
+  }
 
   .gravityForm {
     padding: 0 rem(20);
-  ***REMOVED***
+  }
 
   @media screen and (min-width: 992px) {
     margin: 0 0 0 auto;
-  ***REMOVED***
+  }
 
   p {
     font-size: 20px;
@@ -138,7 +138,7 @@ p {
     a {
       color: #fff;
       font-weight: bold;
-    ***REMOVED***
+    }
 
     small {
       font-size: rem(17);
@@ -150,26 +150,26 @@ p {
 
         a {
           color: map-get($theme-colors, light-blue);
-        ***REMOVED***
-      ***REMOVED***
+        }
+      }
 
       .smaller {
         font-size: rem(14);
-      ***REMOVED***
-    ***REMOVED***
-  ***REMOVED***
+      }
+    }
+  }
 
   input {
     border: 1px solid #878887 !important;
     border-radius: 5px;
-  ***REMOVED***
+  }
 
   button {
     border: 1px solid map-get($theme-colors, darkest-blue);
     font-weight: bold;
     width: 100%;
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 .section1 {
   padding: 4rem 0;
@@ -184,26 +184,26 @@ p {
       content: "";
       height: 100%;
       width: 100%;
-    ***REMOVED***
+    }
 
     &:after {
       display: none !important;
-    ***REMOVED***
-  ***REMOVED***
+    }
+  }
 
   .row {
     flex-direction: column;
 
     @media screen and (min-width: 992px) {
       flex-direction: row;
-    ***REMOVED***
+    }
     .text {
       color: #004987;
 
       @media screen and (min-width: 992px) {
         color: #0e79bf;
         max-width: 350px;
-      ***REMOVED***
+      }
 
       h1 {
         color: map-get($theme-colors, darkest-blue);
@@ -215,19 +215,19 @@ p {
 
         @media screen and (min-width: 992px) {
           text-align: left;
-        ***REMOVED***
-      ***REMOVED***
+        }
+      }
 
       p {
         color: #54565a;
 
         @media screen and (min-width: 992px) {
           color: #707070;
-        ***REMOVED***
-      ***REMOVED***
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+        }
+      }
+    }
+  }
+}
 
 .ourApproach {
   .homeImg {
@@ -235,9 +235,9 @@ p {
 
     @media screen and (min-width: 992px) {
       margin-bottom: 0;
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+    }
+  }
+}
 
 .callOutContainer {
   background: rgb(3, 51, 121);
@@ -264,8 +264,8 @@ p {
     font-size: rem(32);
     line-height: rem(60);
     text-transform: uppercase;
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 .section2 {
   padding: 0;
@@ -276,55 +276,55 @@ p {
 
     strong {
       font-family: "Avenir Bold", sans-serif;
-    ***REMOVED***
-  ***REMOVED***
+    }
+  }
 
   img {
     border: none;
     margin: 0 auto 1.5rem auto;
     max-width: rem(100);
-  ***REMOVED***
+  }
 
   h3 {
     color: map-get($theme-colors, darkest-blue);
     font-size: rem(16);
     text-transform: uppercase;
-  ***REMOVED***
+  }
 
   p {
     font-size: rem(14);
     line-height: rem(24);
-  ***REMOVED***
+  }
 
   .darkestBlue {
     color: map-get($theme-colors, darkest-blue);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 .section4 {
   .subHeading {
     font-size: rem(18);
-  ***REMOVED***
+  }
 
   h3 {
     color: map-get($theme-colors, darkest-blue);
     font-size: rem(16);
     margin-top: 2rem;
     text-transform: uppercase;
-  ***REMOVED***
+  }
 
   p {
     font-size: rem(14);
     line-height: rem(27);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 .section6 {
   p {
     font-size: rem(14);
     line-height: rem(27);
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 .insurances {
   display: grid;
@@ -339,16 +339,16 @@ p {
     padding-bottom: 100%;
     grid-row: 1 / 1;
     grid-column: 1 / 1;
-  ***REMOVED***
+  }
 
   & > *:first-child {
     grid-row: 1 / 1;
     grid-column: 1 / 1;
-  ***REMOVED***
+  }
 
   @media screen and (min-width: 767px) {
     grid-template-columns: repeat(5, 1fr);
-  ***REMOVED***
+  }
 
   .insuranceItem {
     border: 1px solid map-get($theme-colors, light-blue);
@@ -356,14 +356,14 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-  ***REMOVED***
+  }
 
   img {
     border: none;
     margin: 0;
     width: 100%;
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 .testimonialSlider {
   color: #00aeef;
@@ -378,17 +378,17 @@ p {
       font-size: 20px;
       font-weight: bold;
       margin-top: 25px;
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+    }
+  }
+}
 
 .lightBack {
   background-color: #fbfbfb;
-***REMOVED***
+}
 
 .yellowBack {
   background-color: map-get($theme-colors, light-yellow);
-***REMOVED***
+}
 
 .contactSection {
   padding: rem(150) 0 rem(50) 0;
@@ -396,13 +396,13 @@ p {
   .homeForm {
     @media screen and (min-width: 992px) {
       margin-bottom: rem(-130) !important;
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+    }
+  }
+}
 
 .contactBottom {
   padding: rem(20) 0 rem(70) 0;
-***REMOVED***
+}
 
 .noBorder {
   margin: auto;
@@ -411,5 +411,5 @@ p {
   img {
     border: none !important;
     margin: auto;
-  ***REMOVED***
-***REMOVED***
+  }
+}

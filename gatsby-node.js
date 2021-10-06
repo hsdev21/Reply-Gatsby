@@ -6,21 +6,21 @@
 
 // You can delete this file if you're not using it
 
-***REMOVED***
+require("dotenv").config()
 
-exports.createPages = async function ({ actions, graphql ***REMOVED***) {
+exports.createPages = async function ({ actions, graphql }) {
   const pluginOptions = {
-    wordPressUrl: `${process.env.BACKEND_URL***REMOVED***/`,
-    uploadsUrl: `${process.env.BACKEND_URL***REMOVED***/uploads/`,
-  ***REMOVED***
+    wordPressUrl: `${process.env.BACKEND_URL}/`,
+    uploadsUrl: `${process.env.BACKEND_URL}/uploads/`,
+  }
   const {
     data: {
       wpcontent: {
-        pages: { pageNodes ***REMOVED***,
-        posts: { postNodes ***REMOVED***,
-    ***REMOVED***
-  ***REMOVED***
-  ***REMOVED*** = await graphql(
+        pages: { pageNodes },
+        posts: { postNodes },
+      },
+    },
+  } = await graphql(
     `
       query {
         wpcontent {
@@ -30,17 +30,17 @@ exports.createPages = async function ({ actions, graphql ***REMOVED***) {
               uri
               template {
                 __typename
-              ***REMOVED***
-            ***REMOVED***
-          ***REMOVED***
+              }
+            }
+          }
           posts {
             postNodes: nodes {
               id
               uri
-            ***REMOVED***
-          ***REMOVED***
-        ***REMOVED***
-      ***REMOVED***
+            }
+          }
+        }
+      }
     `
   )
   pageNodes.forEach(node => {
@@ -51,30 +51,30 @@ exports.createPages = async function ({ actions, graphql ***REMOVED***) {
         actions.createPage({
           path: uri,
           component: require.resolve(`./src/templates/pages`),
-          context: { ...node, pluginOptions ***REMOVED***,
-        ***REMOVED***)
+          context: { ...node, pluginOptions },
+        })
         break
       case "WPGraphQL_NoSidebarTemplate":
         actions.createPage({
           path: uri,
           component: require.resolve(`./src/templates/pagesNoSideBar`),
-          context: { ...node, pluginOptions ***REMOVED***,
-        ***REMOVED***)
+          context: { ...node, pluginOptions },
+        })
         break
       default:
         actions.createPage({
           path: uri,
           component: require.resolve(`./src/templates/pages`),
-          context: { ...node, pluginOptions ***REMOVED***,
-        ***REMOVED***)
-    ***REMOVED***
-  ***REMOVED***)
+          context: { ...node, pluginOptions },
+        })
+    }
+  })
   postNodes.forEach(node => {
     const uri = node.uri
     actions.createPage({
       path: uri,
       component: require.resolve(`./src/templates/posts`),
-      context: { ...node, pluginOptions ***REMOVED***,
-    ***REMOVED***)
-  ***REMOVED***)
-***REMOVED***
+      context: { ...node, pluginOptions },
+    })
+  })
+}

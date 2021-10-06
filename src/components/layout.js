@@ -13,17 +13,17 @@ import "./layout.css"
 import Footer from "./footer/footer"
 import BackToTop from "./backToTop"
 
-const Layout = ({ children ***REMOVED***) => (
+const Layout = ({ children }) => (
   <>
     <Header />
-    <main>{children***REMOVED***</main>
+    <main>{children}</main>
     <Footer />
-    <BackToTop showBelow={250***REMOVED*** />
+    <BackToTop showBelow={250} />
   </>
 )
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-***REMOVED***
+}
 
 export default Layout

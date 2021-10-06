@@ -1,14 +1,14 @@
-import { useStaticQuery, graphql ***REMOVED*** from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 
 const flatListToHierarchical = (
     data = [],
-***REMOVED***idKey='id',parentKey='parentId',childrenKey='children'***REMOVED*** = {***REMOVED***
+    {idKey='id',parentKey='parentId',childrenKey='children'} = {}
 ) => {
     const tree = [];
-    const childrenOf = {***REMOVED***;
+    const childrenOf = {};
     data.forEach((item) => {
-        const newItem = {...item***REMOVED***;
-        const { [idKey]: id, [parentKey]: parentId = 0 ***REMOVED*** = newItem;
+        const newItem = {...item};
+        const { [idKey]: id, [parentKey]: parentId = 0 } = newItem;
         childrenOf[id] = childrenOf[id] || [];
         newItem[childrenKey] = childrenOf[id];
         parentId
@@ -16,35 +16,35 @@ const flatListToHierarchical = (
                 childrenOf[parentId] = childrenOf[parentId] || []
             ).push(newItem)
             : tree.push(newItem);
-    ***REMOVED***);
+    });
     return tree;
-***REMOVED***;
+};
 
 export const GetMenuItems = () => {
-    const { primaryNav, footerNav ***REMOVED*** = useStaticQuery(graphql`
+    const { primaryNav, footerNav } = useStaticQuery(graphql`
         query footerMenuItemsAndPrimaryMenuItems {
           primaryNav: wpcontent {
-            menuItems(where: {location: PRIMARY_NAVIGATION***REMOVED***) {
+            menuItems(where: {location: PRIMARY_NAVIGATION}) {
               nodes {
                 id
                 parentId
                 label
                 path
-              ***REMOVED***
-            ***REMOVED***
-          ***REMOVED***
+              }
+            }
+          }
           footerNav: wpcontent {
-            menuItems(where: {location: FOOTER_NAVIGATION***REMOVED***) {
+            menuItems(where: {location: FOOTER_NAVIGATION}) {
               nodes {
                 path
                 label
-              ***REMOVED***
-            ***REMOVED***
-          ***REMOVED***
-        ***REMOVED***
+              }
+            }
+          }
+        }
     `)
     return {
         primaryNav: flatListToHierarchical(primaryNav.menuItems.nodes),
         footerNav: footerNav.menuItems.nodes
-    ***REMOVED***
-***REMOVED***
+    }
+}

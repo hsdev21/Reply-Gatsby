@@ -1,46 +1,46 @@
 import React from "react"
-import { Nav, NavDropdown ***REMOVED*** from "react-bootstrap"
+import { Nav, NavDropdown } from "react-bootstrap"
 import navigationStyles from "./navigation.module.scss"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
-const NavItems = ({ navItems, setExpanded ***REMOVED***) => {
+const NavItems = ({ navItems, setExpanded }) => {
   const navList = navItems.map((navItem, i) => {
     if (navItem.children.length) {
       return (
         <NavDropdown
-          key={i***REMOVED***
-          title={navItem.label***REMOVED***
+          key={i}
+          title={navItem.label}
           id="basic-nav-dropdown"
-          className={navigationStyles.navLink***REMOVED***
+          className={navigationStyles.navLink}
         >
-      ***REMOVED***navItem.children.map((navItemChild, j) => (
+          {navItem.children.map((navItemChild, j) => (
             <Nav.Link
-              key={`${i***REMOVED***-${j***REMOVED***`***REMOVED***
-              to={navItemChild.path***REMOVED***
-              className={navigationStyles.navLink***REMOVED***
+              key={`${i}-${j}`}
+              to={navItemChild.path}
+              className={navigationStyles.navLink}
             >
-          ***REMOVED***navItemChild.label***REMOVED***
+              {navItemChild.label}
             </Nav.Link>
-          ))***REMOVED***
+          ))}
         </NavDropdown>
       )
-    ***REMOVED***
+    }
     return (
       <Nav.Link
-        key={i***REMOVED***
-        to={navItem.path***REMOVED***
-        className={navigationStyles.navLink***REMOVED***
+        key={i}
+        to={navItem.path}
+        className={navigationStyles.navLink}
         onClick={() => {
           scrollTo(navItem.path)
           setTimeout(() => setExpanded(false), 100)
-        ***REMOVED******REMOVED***
+        }}
       >
-    ***REMOVED***navItem.label***REMOVED***
+        {navItem.label}
       </Nav.Link>
     )
-  ***REMOVED***)
+  })
 
-  return <Nav className={"m-auto"***REMOVED***>{navList***REMOVED***</Nav>
-***REMOVED***
+  return <Nav className={"m-auto"}>{navList}</Nav>
+}
 
 export default NavItems
