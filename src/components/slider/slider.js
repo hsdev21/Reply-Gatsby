@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "./slider.scss"
 
-const Slider = ({ children }) => {
+const Slider = ({ children ***REMOVED***) => {
   let settings = {
     autoplay: true,
     autoplaySpeed: 10000,
@@ -16,17 +16,17 @@ const Slider = ({ children }) => {
     cssEase: "linear",
     dots: true,
     arrows: true,
-  }
+  ***REMOVED***
 
   return (
-    <div className={`sliderWrap`}>
-      <SlickSlider {...settings}>{children}</SlickSlider>
+    <div className={`sliderWrap`***REMOVED***>
+      <SlickSlider {...settings***REMOVED***>{children***REMOVED***</SlickSlider>
     </div>
   )
-}
+***REMOVED***
 
 Slider.propTypes = {
   children: PropTypes.node.isRequired,
-}
+***REMOVED***
 
 export default Slider

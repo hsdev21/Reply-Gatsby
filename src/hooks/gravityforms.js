@@ -1,17 +1,17 @@
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql ***REMOVED*** from 'gatsby'
 export const AllGravityData = () => {
-    const { allGfForm } = useStaticQuery(
+    const { allGfForm ***REMOVED*** = useStaticQuery(
         graphql`
             query {
                 allGfForm {
                     edges {
                         node {
                             ...GravityFormComponent
-                        }
-                    }
-                }
-            }
+                        ***REMOVED***
+                    ***REMOVED***
+                ***REMOVED***
+            ***REMOVED***
         `
     )
     return allGfForm
-}
+***REMOVED***

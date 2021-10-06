@@ -1,11 +1,11 @@
 import React from 'react';
-import { Container } from "react-bootstrap";
+import { Container ***REMOVED*** from "react-bootstrap";
 import pageHeaderStyles from './page-header.module.scss'
 
-const PageHeader = ({pageTitle}) => (
-    <Container className={pageHeaderStyles.pageHeader} fluid>
+const PageHeader = ({pageTitle***REMOVED***) => (
+    <Container className={pageHeaderStyles.pageHeader***REMOVED*** fluid>
         <Container>
-            <h1>{pageTitle}</h1>
+            <h1>{pageTitle***REMOVED***</h1>
         </Container>
     </Container>
 )

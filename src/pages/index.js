@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Container, Row, Col, Button } from "react-bootstrap"
+import { Container, Row, Col, Button ***REMOVED*** from "react-bootstrap"
 import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
 import homePageStyles from "./index.module.scss"
 import GravityForm from "../components/gravity-form/gravity-form"
 import SEO from "../components/seo"
-import { GetHomePageMeta } from "../hooks/getHomePageMeta"
-import { graphql } from "gatsby"
+import { GetHomePageMeta ***REMOVED*** from "../hooks/getHomePageMeta"
+import { graphql ***REMOVED*** from "gatsby"
 // import Slider from "../components/slider/slider"
 
 // Insurance logos
@@ -35,54 +35,54 @@ import partner from "../images/partner.png"
 
 import "./index.scss"
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data ***REMOVED***) => {
   const {
     seo: {
-      schema: { siteUrl, siteName },
-    },
-    pages: { nodes },
-  } = GetHomePageMeta()
-  const { seo, date } = nodes[0]
+      schema: { siteUrl, siteName ***REMOVED***,
+  ***REMOVED***
+    pages: { nodes ***REMOVED***,
+  ***REMOVED*** = GetHomePageMeta()
+  const { seo, date ***REMOVED*** = nodes[0]
 
   return (
     <Layout>
-      <SEO seoInfo={seo} siteUrl={siteUrl} siteName={siteName} date={date} />
+      <SEO seoInfo={seo***REMOVED*** siteUrl={siteUrl***REMOVED*** siteName={siteName***REMOVED*** date={date***REMOVED*** />
       <BackgroundImage
-        fluid={data.section1.childImageSharp.fluid}
-        className={`${homePageStyles.section1} ${homePageStyles.genericSection}`}
+        fluid={data.section1.childImageSharp.fluid***REMOVED***
+        className={`${homePageStyles.section1***REMOVED*** ${homePageStyles.genericSection***REMOVED***`***REMOVED***
         style={{
           backgroundPosition: "top",
-        }}
+        ***REMOVED******REMOVED***
       >
         <Container>
-          <Row className={homePageStyles.row}>
-            <Col lg={6} className={`${homePageStyles.text}`}>
+          <Row className={homePageStyles.row***REMOVED***>
+            <Col lg={6***REMOVED*** className={`${homePageStyles.text***REMOVED***`***REMOVED***>
               <h1>Rethink Your Fertility</h1>
             </Col>
-            <Col lg={6} className={homePageStyles.homeForm}>
+            <Col lg={6***REMOVED*** className={homePageStyles.homeForm***REMOVED***>
               <p>
                 <small>
                   Schedule Your Consultation
                   <br />
-                  <span className={homePageStyles.cta}>
+                  <span className={homePageStyles.cta***REMOVED***>
                     Call <a href="+1-919-230-2100">919-230-2100</a>
                   </span>
                   <br />
-                  <span className={homePageStyles.smaller}>
+                  <span className={homePageStyles.smaller***REMOVED***>
                     or fill out the form below
                   </span>
                 </small>
               </p>
-              <div className={`${homePageStyles.gravityForm} gravityForm`}>
-                <GravityForm className={homePageStyles.gravityForm} />
+              <div className={`${homePageStyles.gravityForm***REMOVED*** gravityForm`***REMOVED***>
+                <GravityForm className={homePageStyles.gravityForm***REMOVED*** />
               </div>
             </Col>
           </Row>
         </Container>
       </BackgroundImage>
-      <Container fluid className={homePageStyles.callOutContainer}>
+      <Container fluid className={homePageStyles.callOutContainer***REMOVED***>
         <Container
-          className={`text-center text-white ${homePageStyles.callOut}`}
+          className={`text-center text-white ${homePageStyles.callOut***REMOVED***`***REMOVED***
         >
           If You’re Struggling to Have a Baby,
           <br /> Find Hope and a New Way Forward with REPLY
@@ -90,22 +90,22 @@ const IndexPage = ({ data }) => {
       </Container>
       <Container
         fluid
-        id={`our-approach`}
-        className={homePageStyles.ourApproach}
+        id={`our-approach`***REMOVED***
+        className={homePageStyles.ourApproach***REMOVED***
       >
-        <Container className={homePageStyles.genericSection}>
+        <Container className={homePageStyles.genericSection***REMOVED***>
           <Row>
-            <Col lg={6} className={homePageStyles.verticalCenter}>
+            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
               <Img
-                className={`${homePageStyles.homeImg} ${homePageStyles.blueBorder}`}
-                fluid={data.section2.childImageSharp.fluid}
+                className={`${homePageStyles.homeImg***REMOVED*** ${homePageStyles.blueBorder***REMOVED***`***REMOVED***
+                fluid={data.section2.childImageSharp.fluid***REMOVED***
                 alt="A couple with a baby."
               />
             </Col>
-            <Col lg={6} className={homePageStyles.verticalCenter}>
+            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
               <h2>
-                <strong>Our Restorative Approach</strong>{" "}
-                <span style={{ color: "#46A5E3" }}>to Fertility</span>
+                <strong>Our Restorative Approach</strong>{" "***REMOVED***
+                <span style={{ color: "#46A5E3" ***REMOVED******REMOVED***>to Fertility</span>
               </h2>
               <p>
                 At Reply, we’ll help find the root causes that impair your
@@ -119,41 +119,41 @@ const IndexPage = ({ data }) => {
       </Container>
       <Container
         fluid
-        className={`${homePageStyles.section2} ${homePageStyles.yellowBack}`}
+        className={`${homePageStyles.section2***REMOVED*** ${homePageStyles.yellowBack***REMOVED***`***REMOVED***
       >
-        <Container className={homePageStyles.genericSection}>
+        <Container className={homePageStyles.genericSection***REMOVED***>
           <Row>
             <Col
-              lg={12}
-              className={`${homePageStyles.verticalCenter} text-center mb-4`}
+              lg={12***REMOVED***
+              className={`${homePageStyles.verticalCenter***REMOVED*** text-center mb-4`***REMOVED***
             >
               <h2>
                 <strong>Our Approach</strong> Is Different
               </h2>
-              <p style={{ color: "#3459A5" }}>
+              <p style={{ color: "#3459A5" ***REMOVED******REMOVED***>
                 ... and so is how we partner with you.
               </p>
             </Col>
-            <Col lg={2} className={`text-center`}>
-              <img alt="listen icon" src={listen} />
+            <Col lg={2***REMOVED*** className={`text-center`***REMOVED***>
+              <img alt="listen icon" src={listen***REMOVED*** />
               <h3>Listen</h3>
               <p>
                 to you and gain a complete understanding of your unique health
               </p>
             </Col>
             <Col
-              lg={2}
-              className={`${homePageStyles.approachIcons} text-center`}
+              lg={2***REMOVED***
+              className={`${homePageStyles.approachIcons***REMOVED*** text-center`***REMOVED***
             >
-              <img alt="diagnose icon" src={diagnose} />
+              <img alt="diagnose icon" src={diagnose***REMOVED*** />
               <h3>Diagnose</h3>
               <p>
                 underlying causes and hidden contributing factors of your
                 condition
               </p>
             </Col>
-            <Col lg={2} className={`text-center`}>
-              <img alt="empower icon" src={empower} />
+            <Col lg={2***REMOVED*** className={`text-center`***REMOVED***>
+              <img alt="empower icon" src={empower***REMOVED*** />
               <h3>Empower</h3>
               <p>
                 you with knowledge of your body and how to participate in your
@@ -161,24 +161,24 @@ const IndexPage = ({ data }) => {
                 tracking
               </p>
             </Col>
-            <Col lg={2} className={` text-center`}>
-              <img alt="help icon" src={help} />
+            <Col lg={2***REMOVED*** className={` text-center`***REMOVED***>
+              <img alt="help icon" src={help***REMOVED*** />
               <h3>Help</h3>
               <p>
                 you optimize your overall health, including essential lifestyle
                 factors
               </p>
             </Col>
-            <Col lg={2} className={`text-center`}>
-              <img alt="create icon" src={create} />
+            <Col lg={2***REMOVED*** className={`text-center`***REMOVED***>
+              <img alt="create icon" src={create***REMOVED*** />
               <h3>Create</h3>
               <p>
                 a multi-step treatment plan that maximizes your chances of
                 natural conception and a healthy, happy baby
               </p>
             </Col>
-            <Col lg={2} className={`text-center`}>
-              <img alt="partner icon" src={partner} />
+            <Col lg={2***REMOVED*** className={`text-center`***REMOVED***>
+              <img alt="partner icon" src={partner***REMOVED*** />
               <h3>Partner</h3>
               <p>with you every step of the way!</p>
             </Col>
@@ -186,12 +186,12 @@ const IndexPage = ({ data }) => {
         </Container>
       </Container>
       <Container fluid>
-        <Container className={homePageStyles.genericSection}>
+        <Container className={homePageStyles.genericSection***REMOVED***>
           <Row>
-            <Col lg={6} className={homePageStyles.verticalCenter}>
+            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
               <h2>
                 <strong>Our secret</strong> IS GETTING YOUR BODY HEALTHY &amp;
-                ready for pregnancy{" "}
+                ready for pregnancy{" "***REMOVED***
               </h2>
               <p>
                 Couples who struggle to get pregnant or suffer from recurrent
@@ -199,10 +199,10 @@ const IndexPage = ({ data }) => {
                 undiagnosed or simply ignored.
               </p>
             </Col>
-            <Col lg={6} className={homePageStyles.verticalCenter}>
+            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
               <Img
-                className={`${homePageStyles.homeImg} ${homePageStyles.blueBorder}`}
-                fluid={data.section4.childImageSharp.fluid}
+                className={`${homePageStyles.homeImg***REMOVED*** ${homePageStyles.blueBorder***REMOVED***`***REMOVED***
+                fluid={data.section4.childImageSharp.fluid***REMOVED***
                 alt="A pregnant woman."
               />
             </Col>
@@ -211,27 +211,27 @@ const IndexPage = ({ data }) => {
       </Container>
       <Container
         fluid
-        className={`${homePageStyles.yellowBack} ${homePageStyles.section4}`}
+        className={`${homePageStyles.yellowBack***REMOVED*** ${homePageStyles.section4***REMOVED***`***REMOVED***
       >
-        <Container className={homePageStyles.genericSection}>
-          <Row className={homePageStyles.mobileReverse}>
+        <Container className={homePageStyles.genericSection***REMOVED***>
+          <Row className={homePageStyles.mobileReverse***REMOVED***>
             <Col
-              lg={12}
-              className={`${homePageStyles.verticalCenter} text-center mb-4`}
+              lg={12***REMOVED***
+              className={`${homePageStyles.verticalCenter***REMOVED*** text-center mb-4`***REMOVED***
             >
               <h2>
                 <strong>Fertility</strong> Challenges:
               </h2>
-              <p className={homePageStyles.subHeading}>
+              <p className={homePageStyles.subHeading***REMOVED***>
                 Some of the fertility challenges our team helps patients
                 overcome include:
               </p>
             </Col>
           </Row>
-          <Row className={homePageStyles.mobileReverse}>
-            <Col lg={4}>
+          <Row className={homePageStyles.mobileReverse***REMOVED***>
+            <Col lg={4***REMOVED***>
               <Img
-                fluid={data.lifestyle.childImageSharp.fluid}
+                fluid={data.lifestyle.childImageSharp.fluid***REMOVED***
                 alt="A person eating from a bowl."
               />
               <h3>
@@ -245,9 +245,9 @@ const IndexPage = ({ data }) => {
                 resolve hidden lifestyle barriers to fertility.
               </p>
             </Col>
-            <Col lg={4}>
+            <Col lg={4***REMOVED***>
               <Img
-                fluid={data.hormone.childImageSharp.fluid}
+                fluid={data.hormone.childImageSharp.fluid***REMOVED***
                 alt="A woman looking pensive."
               />
               <h3>
@@ -260,9 +260,9 @@ const IndexPage = ({ data }) => {
                 normalize hormone levels, and promote healthy ovulation.
               </p>
             </Col>
-            <Col lg={4}>
+            <Col lg={4***REMOVED***>
               <Img
-                fluid={data.medicalConditions.childImageSharp.fluid}
+                fluid={data.medicalConditions.childImageSharp.fluid***REMOVED***
                 alt="Two woman sitting at a desk."
               />
               <h3>
@@ -279,11 +279,11 @@ const IndexPage = ({ data }) => {
           </Row>
         </Container>
       </Container>
-      {/* <Container fluid>
+  ***REMOVED***/* <Container fluid>
         <Container
-          className={`${homePageStyles.genericSection} ${homePageStyles.testimonialSlider}`}
+          className={`${homePageStyles.genericSection***REMOVED*** ${homePageStyles.testimonialSlider***REMOVED***`***REMOVED***
         >
-          <div className={"text-center"}>
+          <div className={"text-center"***REMOVED***>
             <Slider>
               <p>
                 <em>
@@ -296,7 +296,7 @@ const IndexPage = ({ data }) => {
                   erat."
                 </em>
                 <br />
-                <span className={homePageStyles.author}>M. Williams</span>
+                <span className={homePageStyles.author***REMOVED***>M. Williams</span>
               </p>
               <p>
                 <em>
@@ -306,7 +306,7 @@ const IndexPage = ({ data }) => {
                   libero, suscipit molestie turpis."
                 </em>
                 <br />
-                <span className={homePageStyles.author}>D. Romstadt</span>
+                <span className={homePageStyles.author***REMOVED***>D. Romstadt</span>
               </p>
               <p>
                 <em>
@@ -320,7 +320,7 @@ const IndexPage = ({ data }) => {
                   turpis ac, maximus scelerisque urna."
                 </em>
                 <br />
-                <span className={homePageStyles.author}>Ms. M. Williams</span>
+                <span className={homePageStyles.author***REMOVED***>Ms. M. Williams</span>
               </p>
               <p>
                 <em>
@@ -333,21 +333,21 @@ const IndexPage = ({ data }) => {
                   eu, facilisis fringilla erat."
                 </em>
                 <br />
-                <span className={homePageStyles.author}>D. Denham</span>
+                <span className={homePageStyles.author***REMOVED***>D. Denham</span>
               </p>
             </Slider>
           </div>
         </Container>
-      </Container> */}
-      <Container fluid className={homePageStyles.section6}>
-        <Container className={homePageStyles.genericSection}>
+      </Container> */***REMOVED***
+      <Container fluid className={homePageStyles.section6***REMOVED***>
+        <Container className={homePageStyles.genericSection***REMOVED***>
           <Row>
-            <Col lg={6} className={homePageStyles.verticalCenter}>
+            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
               <h2>
                 <strong>We Partner</strong>
                 <br /> With You Every Step of The Way
               </h2>
-              <p className={homePageStyles.lightBlue}>
+              <p className={homePageStyles.lightBlue***REMOVED***>
                 You won’t feel alone or in the dark about your options or
                 timeline.
               </p>
@@ -363,20 +363,20 @@ const IndexPage = ({ data }) => {
               </p>
             </Col>
             <Col
-              lg={6}
-              className={homePageStyles.verticalCenter}
-              style={{ marginBottom: "20px" }}
+              lg={6***REMOVED***
+              className={homePageStyles.verticalCenter***REMOVED***
+              style={{ marginBottom: "20px" ***REMOVED******REMOVED***
             >
               <Img
-                className={homePageStyles.homeImg}
-                fluid={data.section5.childImageSharp.fluid}
+                className={homePageStyles.homeImg***REMOVED***
+                fluid={data.section5.childImageSharp.fluid***REMOVED***
                 alt="A woman receiving a sonogram."
-                style={{ marginBottom: "35px" }}
+                style={{ marginBottom: "35px" ***REMOVED******REMOVED***
               />
               <p>
                 <Button
-                  variant={"primary"}
-                  className={homePageStyles.secondaryBtn}
+                  variant={"primary"***REMOVED***
+                  className={homePageStyles.secondaryBtn***REMOVED***
                   href="/contact/"
                 >
                   Schedule Your Welcome Appointment Today
@@ -386,22 +386,22 @@ const IndexPage = ({ data }) => {
           </Row>
         </Container>
       </Container>
-      <Container fluid className={homePageStyles.yellowBack}>
-        <Container className={homePageStyles.genericSection}>
+      <Container fluid className={homePageStyles.yellowBack***REMOVED***>
+        <Container className={homePageStyles.genericSection***REMOVED***>
           <Row>
             <Col
-              lg={6}
-              className={homePageStyles.verticalCenter}
-              style={{ marginBottom: "20px" }}
+              lg={6***REMOVED***
+              className={homePageStyles.verticalCenter***REMOVED***
+              style={{ marginBottom: "20px" ***REMOVED******REMOVED***
             >
               <Img
-                className={homePageStyles.homeImg}
-                fluid={data.section6.childImageSharp.fluid}
+                className={homePageStyles.homeImg***REMOVED***
+                fluid={data.section6.childImageSharp.fluid***REMOVED***
                 alt="A woman holding a baby."
-                style={{ marginBottom: "5px" }}
+                style={{ marginBottom: "5px" ***REMOVED******REMOVED***
               />
             </Col>
-            <Col lg={6} className={homePageStyles.verticalCenter}>
+            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
               <h2>
                 <strong>What If You Could Have a Baby</strong>, Without
                 Resorting To IVF?
@@ -415,7 +415,7 @@ const IndexPage = ({ data }) => {
                 style={{
                   color: "#003176",
                   fontFamily: "Avenir Bold, sans-serif",
-                }}
+                ***REMOVED******REMOVED***
               >
                 At Reply, we have helped couples who have:
               </p>
@@ -432,15 +432,15 @@ const IndexPage = ({ data }) => {
         </Container>
       </Container>
       <Container fluid id="our-team">
-        <Container className={homePageStyles.genericSection}>
+        <Container className={homePageStyles.genericSection***REMOVED***>
           <Row>
-            <Col lg={6} className={homePageStyles.verticalCenter}>
+            <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
               <h2>
                 <strong>A leader</strong>
                 <br />
                 In Restorative Reproductive Medicine
               </h2>
-              <p className={homePageStyles.lightBlue}>
+              <p className={homePageStyles.lightBlue***REMOVED***>
                 Reply Ob/Gyn &amp; Fertility is a leader in the global movement
                 toward restorative reproductive medicine (“RRM”) for women
                 suffering from gynecologic problems and couples suffering from
@@ -456,30 +456,30 @@ const IndexPage = ({ data }) => {
               </p>
             </Col>
             <Col
-              lg={6}
-              className={homePageStyles.verticalCenter}
-              style={{ marginBottom: "20px" }}
+              lg={6***REMOVED***
+              className={homePageStyles.verticalCenter***REMOVED***
+              style={{ marginBottom: "20px" ***REMOVED******REMOVED***
             >
               <Img
-                className={homePageStyles.homeImg}
-                fluid={data.section7.childImageSharp.fluid}
+                className={homePageStyles.homeImg***REMOVED***
+                fluid={data.section7.childImageSharp.fluid***REMOVED***
                 alt="A team of people."
-                style={{ marginBottom: "5px" }}
+                style={{ marginBottom: "5px" ***REMOVED******REMOVED***
               />
             </Col>
           </Row>
         </Container>
       </Container>
-      <Container fluid className={homePageStyles.yellowBack} id="affordability">
-        <Container className={homePageStyles.genericSection}>
+      <Container fluid className={homePageStyles.yellowBack***REMOVED*** id="affordability">
+        <Container className={homePageStyles.genericSection***REMOVED***>
           <Row>
-            <Col lg={12} className={homePageStyles.verticalCenter}>
-              <h2 className={`text-center`}>
+            <Col lg={12***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
+              <h2 className={`text-center`***REMOVED***>
                 <strong>We make our care</strong> as affordable as possible
               </h2>
               <p
                 className="text-center"
-                style={{ maxWidth: "850px", margin: "auto" }}
+                style={{ maxWidth: "850px", margin: "auto" ***REMOVED******REMOVED***
               >
                 We offer a complimentary Welcome Appointment with one of our
                 fertility educators who can provide more information about our
@@ -490,82 +490,82 @@ const IndexPage = ({ data }) => {
               </p>
             </Col>
           </Row>
-          <div className={`${homePageStyles.insurances}`}>
-            <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={aetna} alt="Aetna insurance logo" />
+          <div className={`${homePageStyles.insurances***REMOVED***`***REMOVED***>
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={aetna***REMOVED*** alt="Aetna insurance logo" />
             </div>
-            <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={blueShield} alt="Blue Shield insurance logo" />
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={blueShield***REMOVED*** alt="Blue Shield insurance logo" />
             </div>
-            <div className={homePageStyles.insuranceItem}>
-              <img src={cigna} alt="Cigna insurance logo" />
+            <div className={homePageStyles.insuranceItem***REMOVED***>
+              <img src={cigna***REMOVED*** alt="Cigna insurance logo" />
             </div>
-            <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={humana} alt="Humana insurance logo" />
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={humana***REMOVED*** alt="Humana insurance logo" />
             </div>
-            <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={healthyBlue} alt="Healthy Blue insurance logo" />
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={healthyBlue***REMOVED*** alt="Healthy Blue insurance logo" />
             </div>
-            <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={medicaid} alt="Medicaid insurance logo" />
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={medicaid***REMOVED*** alt="Medicaid insurance logo" />
             </div>
-            <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={medicare} alt="Medicare insurance logo" />
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={medicare***REMOVED*** alt="Medicare insurance logo" />
             </div>
-            <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={tricare} alt="Tricare insurance logo" />
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={tricare***REMOVED*** alt="Tricare insurance logo" />
             </div>
-            <div className={homePageStyles.insuranceItem}>
-              <img src={united} alt="United Healthcare insurance logo" />
+            <div className={homePageStyles.insuranceItem***REMOVED***>
+              <img src={united***REMOVED*** alt="United Healthcare insurance logo" />
             </div>
-            <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={optum} alt="Optum insurance logo" />
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={optum***REMOVED*** alt="Optum insurance logo" />
             </div>
-            <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={wellcare} alt="Wellcare insurance logo" />
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={wellcare***REMOVED*** alt="Wellcare insurance logo" />
             </div>
-            <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={wellpath} alt="Wellpath insurance logo" />
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={wellpath***REMOVED*** alt="Wellpath insurance logo" />
             </div>
-            <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={healthyBlue} alt="Healthy Blue insurance logo" />
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={healthyBlue***REMOVED*** alt="Healthy Blue insurance logo" />
             </div>
-            <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={medicaid} alt="Medicaid insurance logo" />
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={medicaid***REMOVED*** alt="Medicaid insurance logo" />
             </div>
-            <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={careCredit} alt="Care Credit insurance logo" />
+            <div className={`${homePageStyles.insuranceItem***REMOVED***`***REMOVED***>
+              <img src={careCredit***REMOVED*** alt="Care Credit insurance logo" />
             </div>
           </div>
         </Container>
       </Container>
       <BackgroundImage
-        fluid={data.contactSection.childImageSharp.fluid}
-        className={`${homePageStyles.contactSection}`}
+        fluid={data.contactSection.childImageSharp.fluid***REMOVED***
+        className={`${homePageStyles.contactSection***REMOVED***`***REMOVED***
         alt="The Reply Fertility building."
         id="schedule"
       >
         <Container>
           <Row>
             <Col
-              lg={{ span: 3, offset: 9 }}
-              className={homePageStyles.homeForm}
+              lg={{ span: 3, offset: 9 ***REMOVED******REMOVED***
+              className={homePageStyles.homeForm***REMOVED***
             >
               <p>
                 <small>
                   Schedule Your Consultation
                   <br />
-                  <span className={homePageStyles.cta}>
+                  <span className={homePageStyles.cta***REMOVED***>
                     Call <a href="+1-919-230-2100">919-230-2100</a>
                   </span>
                   <br />
-                  <span className={homePageStyles.smaller}>
+                  <span className={homePageStyles.smaller***REMOVED***>
                     or fill out the form below
                   </span>
                 </small>
               </p>
-              <div className={`${homePageStyles.gravityForm} gravityForm`}>
-                <GravityForm className={homePageStyles.gravityForm} />
+              <div className={`${homePageStyles.gravityForm***REMOVED*** gravityForm`***REMOVED***>
+                <GravityForm className={homePageStyles.gravityForm***REMOVED*** />
               </div>
             </Col>
           </Row>
@@ -573,11 +573,11 @@ const IndexPage = ({ data }) => {
       </BackgroundImage>
       <Container fluid>
         <Container>
-          <Row className={homePageStyles.contactBottom}>
-            <Col lg={12}>
+          <Row className={homePageStyles.contactBottom***REMOVED***>
+            <Col lg={12***REMOVED***>
               <h2>
-                <strong>Reimagine Fertility</strong>{" "}
-                <span style={{ color: "#46A5E3" }}>with Reply</span>
+                <strong>Reimagine Fertility</strong>{" "***REMOVED***
+                <span style={{ color: "#46A5E3" ***REMOVED******REMOVED***>with Reply</span>
               </h2>
             </Col>
           </Row>
@@ -585,88 +585,88 @@ const IndexPage = ({ data }) => {
       </Container>
     </Layout>
   )
-}
+***REMOVED***
 
 export const query = graphql`
   query {
-    section1: file(relativePath: { eq: "hero.jpg" }) {
+    section1: file(relativePath: { eq: "hero.jpg" ***REMOVED***) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 1920) {
           ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    section2: file(relativePath: { eq: "section-2.jpg" }) {
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+    section2: file(relativePath: { eq: "section-2.jpg" ***REMOVED***) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    section3: file(relativePath: { eq: "section-3.jpg" }) {
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+    section3: file(relativePath: { eq: "section-3.jpg" ***REMOVED***) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    section4: file(relativePath: { eq: "section-4.jpg" }) {
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+    section4: file(relativePath: { eq: "section-4.jpg" ***REMOVED***) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    lifestyle: file(relativePath: { eq: "lifestyle.jpg" }) {
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+    lifestyle: file(relativePath: { eq: "lifestyle.jpg" ***REMOVED***) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    hormone: file(relativePath: { eq: "hormone.jpg" }) {
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+    hormone: file(relativePath: { eq: "hormone.jpg" ***REMOVED***) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    medicalConditions: file(relativePath: { eq: "medical-conditions.jpg" }) {
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+    medicalConditions: file(relativePath: { eq: "medical-conditions.jpg" ***REMOVED***) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    section5: file(relativePath: { eq: "section-5.jpg" }) {
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+    section5: file(relativePath: { eq: "section-5.jpg" ***REMOVED***) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    section6: file(relativePath: { eq: "section-6.jpg" }) {
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+    section6: file(relativePath: { eq: "section-6.jpg" ***REMOVED***) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    section7: file(relativePath: { eq: "section-7.jpg" }) {
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+    section7: file(relativePath: { eq: "section-7.jpg" ***REMOVED***) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    contactSection: file(relativePath: { eq: "contact-us-bg.jpg" }) {
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+    contactSection: file(relativePath: { eq: "contact-us-bg.jpg" ***REMOVED***) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 1920) {
           ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+  ***REMOVED***
 `
 
 export default IndexPage

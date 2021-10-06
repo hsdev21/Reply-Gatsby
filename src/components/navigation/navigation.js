@@ -1,7 +1,7 @@
-import React, { useState } from "react"
-import { Navbar } from "react-bootstrap"
+import React, { useState ***REMOVED*** from "react"
+import { Navbar ***REMOVED*** from "react-bootstrap"
 import NavItems from "./nav-items"
-import { GetMenuItems } from "../../hooks/getMenuItems"
+import { GetMenuItems ***REMOVED*** from "../../hooks/getMenuItems"
 import navigationStyles from "./navigation.module.scss"
 import "./navigationStyles.scss"
 
@@ -10,26 +10,26 @@ const Navigation = props => {
 
   return (
     <Navbar
-      className={navigationStyles.navBar}
-      expand={"lg"}
-      sticky={"top"}
-      {...props}
-      expanded={expanded}
-      onSelect={() => setExpanded(expanded ? false : "expanded")}
+      className={navigationStyles.navBar***REMOVED***
+      expand={"lg"***REMOVED***
+      sticky={"top"***REMOVED***
+  ***REMOVED***...props***REMOVED***
+      expanded={expanded***REMOVED***
+      onSelect={() => setExpanded(expanded ? false : "expanded")***REMOVED***
     >
       <Navbar.Toggle
-        className={navigationStyles.toggle}
+        className={navigationStyles.toggle***REMOVED***
         aria-controls="basic-navbar-nav"
-        onClick={() => setExpanded(expanded ? false : "expanded")}
+        onClick={() => setExpanded(expanded ? false : "expanded")***REMOVED***
       />
       <Navbar.Collapse id="basic-navbar-nav">
         <NavItems
-          navItems={GetMenuItems().primaryNav}
-          setExpanded={setExpanded}
+          navItems={GetMenuItems().primaryNav***REMOVED***
+          setExpanded={setExpanded***REMOVED***
         />
       </Navbar.Collapse>
     </Navbar>
   )
-}
+***REMOVED***
 
 export default Navigation

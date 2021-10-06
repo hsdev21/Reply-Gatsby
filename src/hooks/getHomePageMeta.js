@@ -1,16 +1,16 @@
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql ***REMOVED*** from "gatsby";
 
 export const GetHomePageMeta = () => {
-    const { wpcontent } = useStaticQuery(graphql`
+    const { wpcontent ***REMOVED*** = useStaticQuery(graphql`
           query GetHomePageQuery {
           wpcontent {
             seo {
               schema {
                 siteUrl
                 siteName
-              }
-            }
-            pages(where: {title: "Home"}) {
+              ***REMOVED***
+            ***REMOVED***
+            pages(where: {title: "Home"***REMOVED***) {
               nodes {
                   date
                   seo {
@@ -24,8 +24,8 @@ export const GetHomePageMeta = () => {
                         mediaDetails {
                             height
                             width
-                        }
-                      }
+                        ***REMOVED***
+                      ***REMOVED***
                       opengraphModifiedTime
                       opengraphPublishedTime
                       opengraphPublisher
@@ -34,11 +34,11 @@ export const GetHomePageMeta = () => {
                       opengraphType
                       opengraphUrl
                       title
-                    }
-                }
-            }
-          }
-        }
+                    ***REMOVED***
+                ***REMOVED***
+            ***REMOVED***
+          ***REMOVED***
+        ***REMOVED***
     `)
     return wpcontent
-}
+***REMOVED***

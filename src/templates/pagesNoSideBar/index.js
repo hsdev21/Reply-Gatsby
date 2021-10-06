@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql ***REMOVED*** from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import PageHeader from "../../components/page-header/page-header";
@@ -7,35 +7,35 @@ import {
     Container,
     Row,
     Col
-} from "react-bootstrap";
+***REMOVED*** from "react-bootstrap";
 import pageStyles from '../pages/pageStyles.module.scss';
 import contentParser from 'gatsby-wpgraphql-inline-images';
 
 const PageNoSidebar = (
-    {
+***REMOVED***
       data: {
           wpcontent: {
               page: {
                   seo,
                   title,
                   content
-              }
-          }
-      },
+              ***REMOVED***
+          ***REMOVED***
+    ***REMOVED***
       pageContext: {
           pluginOptions: {
               wordPressUrl,
               uploadsUrl
-          }
-      }
-    }) => (
-        <Layout title={ title }>
-            <SEO title={ seo.title } seoInfo={ seo } />
-            <PageHeader pageTitle={ title }/>
-            <Container style={{paddingTop: "50px"}}>
+          ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***) => (
+        <Layout title={ title ***REMOVED***>
+            <SEO title={ seo.title ***REMOVED*** seoInfo={ seo ***REMOVED*** />
+            <PageHeader pageTitle={ title ***REMOVED***/>
+            <Container style={{paddingTop: "50px"***REMOVED******REMOVED***>
                 <Row>
-                    <Col className={pageStyles.pageContent}>
-                        <div>{contentParser({ content }, {wordPressUrl, uploadsUrl})}</div>
+                    <Col className={pageStyles.pageContent***REMOVED***>
+                        <div>{contentParser({ content ***REMOVED***, {wordPressUrl, uploadsUrl***REMOVED***)***REMOVED***</div>
                     </Col>
                 </Row>
             </Container>
@@ -57,7 +57,7 @@ export const query = graphql`
           opengraphImage {
             altText
             sourceUrl
-          }
+          ***REMOVED***
           opengraphModifiedTime
           opengraphPublishedTime
           opengraphPublisher
@@ -66,10 +66,10 @@ export const query = graphql`
           opengraphType
           opengraphUrl
           title
-        }
-    }
-  }
-}
+        ***REMOVED***
+    ***REMOVED***
+  ***REMOVED***
+***REMOVED***
 `
 
 export default PageNoSidebar;
