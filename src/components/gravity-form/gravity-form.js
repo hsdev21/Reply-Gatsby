@@ -11,7 +11,7 @@ function handleError({ values, error, reset ***REMOVED***) {
 
 function handleSuccess({ values, reset, confirmations ***REMOVED***) {
   reset()
-  navigate("/contact/thank-you")
+  navigate("/thank-you")
 ***REMOVED***
 
 const GravityForm = props => (
