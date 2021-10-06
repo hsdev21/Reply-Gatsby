@@ -63,7 +63,7 @@ p {
     ***REMOVED***
 
     li::marker {
-      color: map-get($theme-colors, light-blue);
+      color: map-get($theme-colors, darkest-blue);
     ***REMOVED***
   ***REMOVED***
 
@@ -174,23 +174,22 @@ p {
 .section1 {
   padding: 4rem 0;
 
-  // @media screen and (max-width: 992px) {
-  //   background: url(../images/hero-mobile.jpg) no-repeat !important;
-  //   background-size: cover !important;
+  @media screen and (max-width: 992px) {
+    background: url(../images/hero-mobile.jpg) center top no-repeat !important;
+    background-size: cover !important;
+    padding-top: rem(500);
 
-  //   &:before {
-  //     background: #fff;
-  //     background-image: unset !important;
-  //     content: "";
-  //     opacity: 0.75 !important;
-  //     height: 100%;
-  //     width: 100%;
-  //   ***REMOVED***
+    &:before {
+      background-image: unset !important;
+      content: "";
+      height: 100%;
+      width: 100%;
+    ***REMOVED***
 
-  //   &:after {
-  //     display: none !important;
-  //   ***REMOVED***
-  // ***REMOVED***
+    &:after {
+      display: none !important;
+    ***REMOVED***
+  ***REMOVED***
 
   .row {
     flex-direction: column;
@@ -210,8 +209,13 @@ p {
         color: map-get($theme-colors, darkest-blue);
         font-family: "Helvetica Neue Medium", sans-serif;
         font-size: rem(44);
-        line-height: 2.7rem;
+        line-height: rem(55);
         padding-top: rem(40);
+        text-align: center;
+
+        @media screen and (min-width: 992px) {
+          text-align: left;
+        ***REMOVED***
       ***REMOVED***
 
       p {
@@ -246,6 +250,7 @@ p {
   padding: 2rem 0;
 
   .callOut {
+    font-family: "Avenir Bold", sans-serif;
     font-size: rem(32);
     line-height: rem(60);
     text-transform: uppercase;

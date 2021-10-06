@@ -8,7 +8,7 @@ import GravityForm from "../components/gravity-form/gravity-form"
 import SEO from "../components/seo"
 import { GetHomePageMeta ***REMOVED*** from "../hooks/getHomePageMeta"
 import { graphql ***REMOVED*** from "gatsby"
-import Slider from "../components/slider/slider"
+// import Slider from "../components/slider/slider"
 
 // Insurance logos
 import aetna from "../images/aetna.jpg"
@@ -88,7 +88,7 @@ const IndexPage = ({ data ***REMOVED***) => {
           <br /> Find Hope and a New Way Forward with REPLY
         </Container>
       </Container>
-      <Container fluid>
+      <Container fluid id="our-approach">
         <Container className={homePageStyles.genericSection***REMOVED***>
           <Row>
             <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
@@ -127,7 +127,7 @@ const IndexPage = ({ data ***REMOVED***) => {
               <h2>
                 <strong>Our Approach</strong> Is Different
               </h2>
-              <p className={homePageStyles.lightBlue***REMOVED***>
+              <p style={{ color: "#3459A5" ***REMOVED******REMOVED***>
                 ... and so is how we partner with you.
               </p>
             </Col>
@@ -199,8 +199,8 @@ const IndexPage = ({ data ***REMOVED***) => {
             <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
               <Img
                 className={`${homePageStyles.homeImg***REMOVED*** ${homePageStyles.blueBorder***REMOVED***`***REMOVED***
-                fluid={data.section3.childImageSharp.fluid***REMOVED***
-                alt="A couple sitting together."
+                fluid={data.section4.childImageSharp.fluid***REMOVED***
+                alt="A pregnant woman."
               />
             </Col>
           </Row>
@@ -361,7 +361,7 @@ const IndexPage = ({ data ***REMOVED***) => {
               <Img
                 className={homePageStyles.homeImg***REMOVED***
                 fluid={data.section5.childImageSharp.fluid***REMOVED***
-                alt="Doctors Murali Meka and Bryan Swilley."
+                alt="A woman receiving a sonogram."
                 style={{ marginBottom: "35px" ***REMOVED******REMOVED***
               />
               <p>
@@ -388,7 +388,7 @@ const IndexPage = ({ data ***REMOVED***) => {
               <Img
                 className={homePageStyles.homeImg***REMOVED***
                 fluid={data.section6.childImageSharp.fluid***REMOVED***
-                alt="A woman receiving a sonogram."
+                alt="A woman holding a baby."
                 style={{ marginBottom: "5px" ***REMOVED******REMOVED***
               />
             </Col>
@@ -402,7 +402,12 @@ const IndexPage = ({ data ***REMOVED***) => {
                 fertilization (IVF) are the conventional go-to services, most
                 patients can have their babies naturally without IVF.
               </p>
-              <p className={homePageStyles.lightBlue***REMOVED***>
+              <p
+                style={{
+                  color: "#003176",
+                  fontFamily: "Avenir Bold, sans-serif",
+                ***REMOVED******REMOVED***
+              >
                 At Reply, we have helped couples who have:
               </p>
               <ul>
@@ -417,7 +422,7 @@ const IndexPage = ({ data ***REMOVED***) => {
           </Row>
         </Container>
       </Container>
-      <Container fluid>
+      <Container fluid id="our-team">
         <Container className={homePageStyles.genericSection***REMOVED***>
           <Row>
             <Col lg={6***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
@@ -456,12 +461,12 @@ const IndexPage = ({ data ***REMOVED***) => {
           </Row>
         </Container>
       </Container>
-      <Container fluid className={homePageStyles.yellowBack***REMOVED***>
+      <Container fluid className={homePageStyles.yellowBack***REMOVED*** id="affordability">
         <Container className={homePageStyles.genericSection***REMOVED***>
           <Row>
             <Col lg={12***REMOVED*** className={homePageStyles.verticalCenter***REMOVED***>
               <h2 className={`text-center`***REMOVED***>
-                <strong>We make payments</strong> as affordable as possible
+                <strong>We make our care</strong> as affordable as possible
               </h2>
               <p
                 className="text-center"
@@ -528,7 +533,8 @@ const IndexPage = ({ data ***REMOVED***) => {
       <BackgroundImage
         fluid={data.contactSection.childImageSharp.fluid***REMOVED***
         className={`${homePageStyles.contactSection***REMOVED***`***REMOVED***
-        alt="A technician with a patient under a machine."
+        alt="The Reply Fertility building."
+        id="our-location"
       >
         <Container>
           <Row>
@@ -561,7 +567,8 @@ const IndexPage = ({ data ***REMOVED***) => {
           <Row className={homePageStyles.contactBottom***REMOVED***>
             <Col lg={12***REMOVED***>
               <h2>
-                <strong>Reimagine Fertility</strong> with Reply
+                <strong>Reimagine Fertility</strong>{" "***REMOVED***
+                <span style={{ color: "#46A5E3" ***REMOVED******REMOVED***>with Reply</span>
               </h2>
             </Col>
           </Row>
@@ -588,6 +595,13 @@ export const query = graphql`
       ***REMOVED***
     ***REMOVED***
     section3: file(relativePath: { eq: "section-3.jpg" ***REMOVED***) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+    section4: file(relativePath: { eq: "section-4.jpg" ***REMOVED***) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

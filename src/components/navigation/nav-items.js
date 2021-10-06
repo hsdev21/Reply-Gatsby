@@ -1,41 +1,44 @@
-import React from 'react';
-import { Nav, NavDropdown ***REMOVED*** from "react-bootstrap";
-import { Link ***REMOVED*** from "gatsby";
-import navigationStyles from './navigation.module.scss';
+import React from "react"
+import { Nav, NavDropdown ***REMOVED*** from "react-bootstrap"
 
-const NavItems = ({navItems***REMOVED***)  => {
-    const navList = navItems.map((navItem, i) => {
-        if (navItem.children.length) {
-           return (
-               <NavDropdown key={i***REMOVED*** title={navItem.label***REMOVED*** id="basic-nav-dropdown" className={navigationStyles.navLink***REMOVED***>
-               ***REMOVED***navItem.children.map((navItemChild, j) => (
-                       <NavDropdown.Item
-                           key={`${i***REMOVED***-${j***REMOVED***`***REMOVED***
-                           as={Link***REMOVED***
-                           to={navItemChild.path***REMOVED***
-                           className={navigationStyles.navLink***REMOVED***>
-                       ***REMOVED***navItemChild.label***REMOVED***
-                       </NavDropdown.Item>
-                   ))***REMOVED***
-               </NavDropdown>
-           )
-        ***REMOVED***
-        return (
+import navigationStyles from "./navigation.module.scss"
+import scrollTo from "gatsby-plugin-smoothscroll"
+
+const NavItems = ({ navItems ***REMOVED***) => {
+  const navList = navItems.map((navItem, i) => {
+    if (navItem.children.length) {
+      return (
+        <NavDropdown
+          key={i***REMOVED***
+          title={navItem.label***REMOVED***
+          id="basic-nav-dropdown"
+          className={navigationStyles.navLink***REMOVED***
+        >
+      ***REMOVED***navItem.children.map((navItemChild, j) => (
             <Nav.Link
-                key={i***REMOVED***
-                as={Link***REMOVED***
-                to={navItem.path***REMOVED***
-                className={navigationStyles.navLink***REMOVED***>
-            ***REMOVED***navItem.label***REMOVED***
+              key={`${i***REMOVED***-${j***REMOVED***`***REMOVED***
+              to={navItemChild.path***REMOVED***
+              className={navigationStyles.navLink***REMOVED***
+            >
+          ***REMOVED***navItemChild.label***REMOVED***
             </Nav.Link>
-        )
-    ***REMOVED***)
-
+          ))***REMOVED***
+        </NavDropdown>
+      )
+    ***REMOVED***
     return (
-        <Nav className={'m-auto'***REMOVED***>
-        ***REMOVED***navList***REMOVED***
-        </Nav>
+      <Nav.Link
+        key={i***REMOVED***
+        to={navItem.path***REMOVED***
+        className={navigationStyles.navLink***REMOVED***
+        onClick={() => scrollTo(navItem.path)***REMOVED***
+      >
+    ***REMOVED***navItem.label***REMOVED***
+      </Nav.Link>
     )
+  ***REMOVED***)
+
+  return <Nav className={"m-auto"***REMOVED***>{navList***REMOVED***</Nav>
 ***REMOVED***
 
-export default NavItems;
+export default NavItems
