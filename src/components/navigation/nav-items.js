@@ -1,6 +1,5 @@
 import React from "react"
 import { Nav, NavDropdown ***REMOVED*** from "react-bootstrap"
-
 import navigationStyles from "./navigation.module.scss"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
