@@ -355,7 +355,7 @@ const IndexPage = ({ data }) => {
                 timeline.
               </p>
               <p>
-                From your complimentary Welcome Appointment to your fertility
+                From your complimentary Learn More Appointment to your fertility
                 evaluation and all the way through pregnancy and the postpartum
                 period, we will be right there with you. Your journey starts
                 with a clear roadmap along with a dedicated fertility navigator
@@ -384,7 +384,7 @@ const IndexPage = ({ data }) => {
                     scrollTo("#schedule")
                   }}
                 >
-                  Schedule Your Welcome Appointment Today
+                  Schedule Your Learn More Appointment Today
                 </Button>
               </p>
             </Col>
@@ -486,7 +486,7 @@ const IndexPage = ({ data }) => {
                 className="text-center"
                 style={{ maxWidth: "850px", margin: "auto" }}
               >
-                We offer a complimentary Welcome Appointment with one of our
+                We offer a complimentary Learn More Appointment with one of our
                 fertility educators, who can provide more information about our
                 program and our care. Our fertility packages typically combine
                 insurance-reimbursed care for underlying gynecologic conditions
