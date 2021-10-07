@@ -107,7 +107,8 @@ const IndexPage = ({ data }) => {
             </Col>
             <Col lg={6} className={homePageStyles.verticalCenter}>
               <h2>
-                <strong>Our Restorative Approach</strong>{" "}
+                <strong>Our Restorative Approach</strong>
+                <br />
                 <span style={{ color: "#46A5E3" }}>to Fertility</span>
               </h2>
               <p>
@@ -272,11 +273,12 @@ const IndexPage = ({ data }) => {
                 <strong>Medical Conditions</strong>
               </h3>
               <p>
-                Most people vastly underestimate the many ways their lifestyle
-                can impair their fertility. Common fertility inhibitors include
-                stress, nutritional deficiencies, medications, obesity, smoking,
-                alcohol, over-exercise, and more. We’ll help you uncover and
-                resolve hidden lifestyle barriers to fertility.
+                Other medical disorders that can threaten fertility include
+                endometriosis, uterine or cervical abnormalities, ovarian
+                dysfunction, polycystic ovary syndrome (PCOS), damaged fallopian
+                tubes, fibroids, scarring, cancer treatment, or low sperm count.
+                Our expert team uses a finding and fixing approach to create a
+                customized treatment plan for each couple.
               </p>
             </Col>
           </Row>
@@ -358,10 +360,10 @@ const IndexPage = ({ data }) => {
                 From your complimentary Learn More Appointment to your fertility
                 evaluation and all the way through pregnancy and the postpartum
                 period, we will be right there with you. Your journey starts
-                with a clear roadmap along with a dedicated fertility navigator
-                to guide the way. Your team also includes nurse practitioners,
-                nurse midwives, physicians, and physician assistants, as well as
-                our fertility educators, health coaches, registered dieticians,
+                with a clear roadmap along with a dedicated fertility case
+                manager to guide the way. Your team also includes nurse
+                practitioners, nurse midwives, ob/gyn and family medicine
+                physicians, as well as our fertility educators, health coaches,
                 and other complementary therapists.
               </p>
             </Col>
@@ -413,7 +415,7 @@ const IndexPage = ({ data }) => {
               </h2>
               <p>
                 While assisted reproductive technologies like in vitro
-                fertilization (IVF) are the conventional go-to services, most
+                fertilization (IVF) are the conventional go-to services, many
                 patients can have their babies naturally without IVF.
               </p>
               <p
