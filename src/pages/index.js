@@ -13,15 +13,17 @@ import { graphql } from "gatsby"
 // Insurance logos
 import aetna from "../images/aetna.jpg"
 import blueShield from "../images/blue.jpg"
+import bright from "../images/bright.jpg"
 import cigna from "../images/cigna.jpg"
+import coventry from "../images/coventry.jpg"
+import gateway from "../images/gateway.jpg"
 import humana from "../images/humana.jpg"
 import healthyBlue from "../images/healthy-blue.jpg"
 import medicaid from "../images/medicaid.jpg"
 import medicare from "../images/medicare.jpg"
+import securehorizons from "../images/securehorizons.jpg"
 import tricare from "../images/tricare.jpg"
 import united from "../images/united.jpg"
-import optum from "../images/optum.jpg"
-import wellcare from "../images/wellcare.jpg"
 import wellpath from "../images/wellpath.jpg"
 import careCredit from "../images/care-credit.jpg"
 
@@ -65,7 +67,7 @@ const IndexPage = ({ data }) => {
                   Schedule Your Consultation
                   <br />
                   <span className={homePageStyles.cta}>
-                    Call <a href="+1-919-230-2100">919-230-2100</a>
+                    Call <a href="+1-919-443-6000">919-443-6000</a>
                   </span>
                   <br />
                   <span className={homePageStyles.smaller}>
@@ -403,8 +405,8 @@ const IndexPage = ({ data }) => {
             </Col>
             <Col lg={6} className={homePageStyles.verticalCenter}>
               <h2>
-                <strong>What If You Could Have a Baby</strong>, Without
-                Resorting To IVF?
+                <strong>What If You Could Have a Baby</strong> Without Resorting
+                To IVF?
               </h2>
               <p>
                 While assisted reproductive technologies like in vitro
@@ -482,9 +484,9 @@ const IndexPage = ({ data }) => {
                 style={{ maxWidth: "850px", margin: "auto" }}
               >
                 We offer a complimentary Welcome Appointment with one of our
-                fertility educators who can provide more information about our
+                fertility educators, who can provide more information about our
                 program and our care. Our fertility packages typically combine
-                insurance- reimbursed care for underlying gynecologic conditions
+                insurance-reimbursed care for underlying gynecologic conditions
                 along with a program fee for uncovered services. We accept most
                 major insurance and offer payment options through CareCredit.
               </p>
@@ -515,23 +517,23 @@ const IndexPage = ({ data }) => {
             <div className={`${homePageStyles.insuranceItem}`}>
               <img src={tricare} alt="Tricare insurance logo" />
             </div>
+            <div className={`${homePageStyles.insuranceItem}`}>
+              <img src={gateway} alt="Gateway insurance logo" />
+            </div>
+            <div className={`${homePageStyles.insuranceItem}`}>
+              <img src={coventry} alt="Coventry insurance logo" />
+            </div>
+            <div className={`${homePageStyles.insuranceItem}`}>
+              <img src={bright} alt="Bright Health Group insurance logo" />
+            </div>
             <div className={homePageStyles.insuranceItem}>
               <img src={united} alt="United Healthcare insurance logo" />
             </div>
             <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={optum} alt="Optum insurance logo" />
-            </div>
-            <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={wellcare} alt="Wellcare insurance logo" />
+              <img src={securehorizons} alt="Secure Horizons insurance logo" />
             </div>
             <div className={`${homePageStyles.insuranceItem}`}>
               <img src={wellpath} alt="Wellpath insurance logo" />
-            </div>
-            <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={healthyBlue} alt="Healthy Blue insurance logo" />
-            </div>
-            <div className={`${homePageStyles.insuranceItem}`}>
-              <img src={medicaid} alt="Medicaid insurance logo" />
             </div>
             <div className={`${homePageStyles.insuranceItem}`}>
               <img src={careCredit} alt="Care Credit insurance logo" />
@@ -556,7 +558,7 @@ const IndexPage = ({ data }) => {
                   Schedule Your Consultation
                   <br />
                   <span className={homePageStyles.cta}>
-                    Call <a href="+1-919-230-2100">919-230-2100</a>
+                    Call <a href="+1-919-443-6000">919-443-6000</a>
                   </span>
                   <br />
                   <span className={homePageStyles.smaller}>

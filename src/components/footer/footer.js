@@ -18,9 +18,9 @@ const Footer = () => (
         </Col>
         <Col lg={6} className={footerStyles.textRight}>
           <h2>
-            <strong>Book Your Welcome Appointment</strong>
+            <strong>Book Your Learn More Appointment</strong>
             <br />
-            <a href="tel:+1-919-230-2100">919-230-2100</a>
+            <a href="tel:+1-919-443-6000">919-443-6000</a>
           </h2>
           <p className={footerStyles.lightBlue}>
             7535 Carpenter Fire Station Road, Suite 105
@@ -29,12 +29,12 @@ const Footer = () => (
           </p>
           <h4>Clinic Hours</h4>
           <p>
-            Monday – Thursday 8:00 AM – 5:00 PM
-            <br /> Friday 8:00 AM – 12:00 PM
+            Monday – Thursday 8 a.m – 5 p.m
+            <br /> Friday 8 a.m. – 12 p.m.
           </p>
           <h4>Book Your Appointment</h4>
-          <a className={footerStyles.black} href="tel:+1-919-230-2100">
-            919-230-2100
+          <a className={footerStyles.black} href="tel:+1-919-443-6000">
+            919-443-6000
           </a>
         </Col>
       </Row>
