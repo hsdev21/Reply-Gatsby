@@ -43,7 +43,7 @@ const Header = ({ data }) => {
                   variant={"primary"}
                   as={Link}
                   className={headerStyles.headerBtn}
-                  to={"#schedule"}
+                  to="#schedule"
                   onClick={() => scrollTo("#schedule")}
                 >
                   Contact Me

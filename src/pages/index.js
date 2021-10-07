@@ -8,6 +8,7 @@ import GravityForm from "../components/gravity-form/gravity-form"
 import SEO from "../components/seo"
 import { GetHomePageMeta } from "../hooks/getHomePageMeta"
 import { graphql } from "gatsby"
+import scrollTo from "gatsby-plugin-smoothscroll"
 // import Slider from "../components/slider/slider"
 
 // Insurance logos
@@ -379,7 +380,9 @@ const IndexPage = ({ data }) => {
                 <Button
                   variant={"primary"}
                   className={homePageStyles.secondaryBtn}
-                  href="/contact/"
+                  onClick={() => {
+                    scrollTo("#schedule")
+                  }}
                 >
                   Schedule Your Welcome Appointment Today
                 </Button>

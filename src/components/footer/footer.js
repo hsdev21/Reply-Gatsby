@@ -57,6 +57,7 @@ const Footer = () => (
               All rights reserved. |{" "}
               <a
                 target="_blank"
+                rel="noreferrer"
                 href="https://healthcaresuccess.com/privacy-policy"
               >
                 Privacy Policy
