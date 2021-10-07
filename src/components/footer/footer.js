@@ -55,15 +55,13 @@ const Footer = () => (
             <span>
               &copy; {new Date().getFullYear()} Reply OB/GYN &amp; Fertility.
               All rights reserved. |{" "}
-              <a href="/internet-privacy-policy/">Privacy Policy</a> | Website
-              by{" "}
               <a
-                href="https://healthcaresuccess.com/"
                 target="_blank"
-                rel={"noreferrer"}
+                href="https://healthcaresuccess.com/privacy-policy"
               >
-                Healthcare Success
-              </a>
+                Privacy Policy
+              </a>{" "}
+              | Website by Healthcare Success
             </span>
           </Col>
         </Row>
