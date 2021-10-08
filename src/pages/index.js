@@ -232,7 +232,7 @@ const IndexPage = ({ data }) => {
               </p>
             </Col>
           </Row>
-          <Row className={homePageStyles.mobileReverse}>
+          <Row>
             <Col lg={4}>
               <Img
                 fluid={data.lifestyle.childImageSharp.fluid}
