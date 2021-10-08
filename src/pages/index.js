@@ -430,7 +430,7 @@ const IndexPage = ({ data }) => {
                 <li>Been trying for more than a year</li>
                 <li>Suffered multiple miscarriages</li>
                 <li>Been told they waited until they were “too old”</li>
-                <li>Previously failed with IVF</li>
+                <li>Previously failed with IVF/IUI</li>
                 <li>Been diagnosed as high-risk or “infertile”</li>
                 <li>Nearly given up hope</li>
               </ul>
