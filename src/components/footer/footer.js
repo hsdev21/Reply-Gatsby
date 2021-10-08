@@ -20,7 +20,7 @@ const Footer = () => (
           <h2>
             <strong>Book Your Learn More Appointment</strong>
             <br />
-            <a href="tel:+1-919-443-6000">919-443-6000</a>
+            <a href="tel:+1-919-443-6000">919.443.6000</a>
           </h2>
           <p className={footerStyles.lightBlue}>
             7535 Carpenter Fire Station Road, Suite 105
@@ -34,7 +34,7 @@ const Footer = () => (
           </p>
           <h4>Book Your Appointment</h4>
           <a className={footerStyles.black} href="tel:+1-919-443-6000">
-            919-443-6000
+            919.443.6000
           </a>
         </Col>
       </Row>

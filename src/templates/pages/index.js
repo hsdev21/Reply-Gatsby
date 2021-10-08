@@ -38,7 +38,7 @@ const Page = ({
             <p>To Request an Appointment</p>
             <p>
               <span>
-                call <a href={"tel:+1-919-230-2100"}>919-230-2100</a>
+                call <a href="tel:+1-919-230-2100">919.230.2100</a>
               </span>
             </p>
             <p style={{ marginBottom: "20px" }}>

@@ -68,7 +68,7 @@ const IndexPage = ({ data }) => {
                   Schedule Your Consultation
                   <br />
                   <span className={homePageStyles.cta}>
-                    Call <a href="+1-919-443-6000">919-443-6000</a>
+                    Call <a href="tel:+1-919-443-6000">919.443.6000</a>
                   </span>
                   <br />
                   <span className={homePageStyles.smaller}>
@@ -563,7 +563,7 @@ const IndexPage = ({ data }) => {
                   Schedule Your Consultation
                   <br />
                   <span className={homePageStyles.cta}>
-                    Call <a href="+1-919-443-6000">919-443-6000</a>
+                    Call <a href="tel:+1-919-443-6000">919.443.6000</a>
                   </span>
                   <br />
                   <span className={homePageStyles.smaller}>

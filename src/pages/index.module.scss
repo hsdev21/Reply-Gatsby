@@ -303,6 +303,7 @@ p {
 
 .section4 {
   .subHeading {
+    color: map-get($theme-colors, dark-blue);
     font-size: rem(18);
   }
 
@@ -316,6 +317,10 @@ p {
   p {
     font-size: rem(14);
     line-height: rem(27);
+  }
+
+  img {
+    border: 1px solid map-get($theme-colors, light-blue);
   }
 }
 
