@@ -47,11 +47,22 @@ const IndexPage = ({ data }) => {
   } = GetHomePageMeta()
   const { seo, date } = nodes[0]
 
+  const heroSources = [
+    {
+      ...data.mobileHero.childImageSharp.fluid,
+      media: `(max-width: 992px)`,
+    },
+    {
+      ...data.section1.childImageSharp.fluid,
+      media: `(min-width: 992px)`,
+    },
+  ]
+
   return (
     <Layout>
       <SEO seoInfo={seo} siteUrl={siteUrl} siteName={siteName} date={date} />
       <BackgroundImage
-        fluid={data.section1.childImageSharp.fluid}
+        fluid={heroSources}
         className={`${homePageStyles.section1} ${homePageStyles.genericSection}`}
         style={{
           backgroundPosition: "top",
@@ -598,7 +609,14 @@ export const query = graphql`
   query {
     section1: file(relativePath: { eq: "hero.jpg" }) {
       childImageSharp {
-        fluid(quality: 90, maxWidth: 1920) {
+        fluid(quality: 100, maxWidth: 1920) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    mobileHero: file(relativePath: { eq: "hero-mobile.jpg" }) {
+      childImageSharp {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }

@@ -175,20 +175,7 @@ p {
   padding: 4rem 0;
 
   @media screen and (max-width: 992px) {
-    background: url(../images/hero-mobile.jpg) center top no-repeat !important;
-    background-size: cover !important;
     padding-top: rem(500);
-
-    &:before {
-      background-image: unset !important;
-      content: "";
-      height: 100%;
-      width: 100%;
-    }
-
-    &:after {
-      display: none !important;
-    }
   }
 
   .row {
