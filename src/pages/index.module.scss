@@ -99,13 +99,8 @@ p {
 }
 
 .homeForm {
-  align-content: center;
+  align-content: flex-start;
   align-self: center;
-  background: #fff;
-  border: 1px solid #fff;
-  border-radius: rem(5);
-  -webkit-box-shadow: 5px 3px 7px -6px rgba(0, 0, 0, 0.91);
-  box-shadow: 5px 3px 7px -6px rgba(0, 0, 0, 0.91);
   color: map-get($theme-colors, dark-blue);
   display: flex;
   flex-direction: column;
@@ -127,7 +122,7 @@ p {
   }
 
   @media screen and (min-width: 992px) {
-    margin: 0 0 0 auto;
+    margin: 0;
   }
 
   p {
@@ -141,19 +136,23 @@ p {
     }
 
     small {
-      font-size: rem(17);
+      color: map-get($theme-colors, darkest-blue);
+      font-size: rem(19);
+      font-weight: bold !important;
       text-transform: none;
 
       .cta {
-        color: map-get($theme-colors, light-blue);
-        font-size: rem(26);
+        color: map-get($theme-colors, darkest-blue);
+        font-size: rem(30);
+        padding-top: rem(5);
 
         a {
-          color: map-get($theme-colors, light-blue);
+          color: map-get($theme-colors, darkest-blue);
         }
       }
 
       .smaller {
+        color: map-get($theme-colors, gray);
         font-size: rem(14);
       }
     }
@@ -195,8 +194,11 @@ p {
       h1 {
         color: map-get($theme-colors, darkest-blue);
         font-family: "Helvetica Neue Medium", sans-serif;
-        font-size: rem(44);
+        font-size: rem(52);
+        font-weight: 600;
+        letter-spacing: 1px;
         line-height: rem(55);
+        padding-left: rem(20);
         padding-top: rem(40);
         text-align: center;
 

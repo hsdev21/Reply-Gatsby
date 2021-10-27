@@ -72,23 +72,24 @@ const IndexPage = ({ data }) => {
           <Row className={homePageStyles.row}>
             <Col lg={6} className={`${homePageStyles.text}`}>
               <h1>Rethink Your Fertility</h1>
-            </Col>
-            <Col lg={6} className={homePageStyles.homeForm}>
-              <p>
-                <small>
-                  Schedule Your Consultation
-                  <br />
-                  <span className={homePageStyles.cta}>
-                    Call <a href="tel:+1-919-443-6000">919.443.6000</a>
-                  </span>
-                  <br />
-                  <span className={homePageStyles.smaller}>
-                    or fill out the form below
-                  </span>
-                </small>
-              </p>
-              <div className={`${homePageStyles.gravityForm} gravityForm`}>
-                <GravityForm className={homePageStyles.gravityForm} />
+
+              <div className={homePageStyles.homeForm}>
+                <p>
+                  <small>
+                    Schedule Your Consultation
+                    <br />
+                    <span className={homePageStyles.cta}>
+                      Call <a href="tel:+1-919-443-6000">919.443.6000</a>
+                    </span>
+                    <br />
+                    <span className={homePageStyles.smaller}>
+                      or fill out the form below
+                    </span>
+                  </small>
+                </p>
+                <div className={`${homePageStyles.gravityForm} gravityForm`}>
+                  <GravityForm className={homePageStyles.gravityForm} />
+                </div>
               </div>
             </Col>
           </Row>
@@ -607,7 +608,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    section1: file(relativePath: { eq: "hero.jpg" }) {
+    section1: file(relativePath: { eq: "new-hero.jpg" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 1920) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
