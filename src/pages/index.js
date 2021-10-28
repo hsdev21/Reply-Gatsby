@@ -505,6 +505,43 @@ const IndexPage = ({ data }) => {
           </Row>
         </Container>
       </Container>
+      <Container fluid style={{ background: "#D4D8E6" }}>
+        <Container className={homePageStyles.genericSection}>
+          <Row>
+            <Col lg={6} className={homePageStyles.verticalCenter}>
+              <div className="embed-responsive embed-responsive-16by9">
+                <iframe
+                  className={`embed-responsive-item`}
+                  src="https://www.youtube.com/embed/tjkPvuXCIl4"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </Col>
+            <Col
+              lg={6}
+              className={homePageStyles.verticalCenter}
+              style={{ paddingLeft: "30px" }}
+            >
+              <h2 className={homePageStyles.paddingTop}>
+                <strong>Pamela's Story</strong>
+              </h2>
+              <p style={{ color: "#003176", fontSize: "20px" }}>
+                <em>
+                  "Not until I found Reply... did I feel confident that I would
+                  ever have a child of my own."
+                </em>
+              </p>
+              <p>
+                <strong style={{ color: "#000" }}>
+                  Watch to learn hgow the Reply "Finding and Fixing" Program
+                  helped Pamela to address her PCOS, to conceive, and to have a
+                  happy and healthy pregnancy.
+                </strong>
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
       <Container
         fluid
         className={`${homePageStyles.yellowBack} ${homePageStyles.mobilePaddingTop}`}

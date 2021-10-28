@@ -415,6 +415,12 @@ p {
   }
 }
 
+.paddingTop {
+  @media screen and (max-width: 992px) {
+    padding-top: rem(20);
+  }
+}
+
 .mobilePaddingTop {
   @media screen and (max-width: 992px) {
     padding-top: rem(185);
