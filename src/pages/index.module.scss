@@ -96,6 +96,20 @@ p {
       flex-direction: row;
     }
   }
+
+  .desktopHide {
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  .mobileHide {
+    display: none;
+
+    @media screen and (min-width: 992px) {
+      display: block;
+    }
+  }
 }
 
 .homeForm {
@@ -171,10 +185,10 @@ p {
 }
 
 .section1 {
-  padding: 4rem 0;
+  padding: 4rem 0 12rem 0;
 
   @media screen and (max-width: 992px) {
-    padding-top: rem(500);
+    padding-top: 98%;
   }
 
   .row {
@@ -216,6 +230,20 @@ p {
       }
     }
   }
+
+  .callOutContainer {
+    background: rgba(3, 51, 121, 0.8);
+    bottom: 0;
+    padding: 1rem 0;
+    position: absolute;
+
+    .callOut {
+      font-family: "Helvetica Neue Medium", sans-serif;
+      font-size: rem(32);
+      font-weight: 600;
+      line-height: rem(40);
+    }
+  }
 }
 
 .ourApproach {
@@ -228,31 +256,11 @@ p {
   }
 }
 
-.callOutContainer {
-  background: rgb(3, 51, 121);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(3, 51, 121, 1) 0%,
-    rgba(69, 162, 225, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(3, 51, 121, 1) 0%,
-    rgba(69, 162, 225, 1) 100%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(3, 51, 121, 1) 0%,
-    rgba(69, 162, 225, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#033379",endColorstr="#45a2e1",GradientType=1);
-  padding: 2rem 0;
-
-  .callOut {
-    font-family: "Avenir Bold", sans-serif;
-    font-size: rem(32);
-    line-height: rem(60);
-    text-transform: uppercase;
+.fertilityChallenges {
+  .mobilePaddingTop {
+    @media screen and (max-width: 992px) {
+      padding-top: rem(10);
+    }
   }
 }
 
@@ -260,7 +268,6 @@ p {
   padding: 0;
   h2 {
     color: map-get($theme-colors, darkest-blue);
-    font-size: rem(20) !important;
     text-transform: uppercase;
 
     strong {
@@ -406,4 +413,18 @@ p {
     border: none !important;
     margin: auto;
   }
+}
+
+.mobilePaddingTop {
+  @media screen and (max-width: 992px) {
+    padding-top: rem(185);
+  }
+}
+
+.footerForm {
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: rem(5);
+  -webkit-box-shadow: 5px 3px 7px -6px rgba(0, 0, 0, 0.91);
+  box-shadow: 5px 3px 7px -6px rgba(0, 0, 0, 0.91);
 }

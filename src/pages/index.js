@@ -94,19 +94,20 @@ const IndexPage = ({ data }) => {
             </Col>
           </Row>
         </Container>
-      </BackgroundImage>
-      <Container fluid className={homePageStyles.callOutContainer}>
-        <Container
-          className={`text-center text-white ${homePageStyles.callOut}`}
-        >
-          If You’re Struggling to Have a Baby,
-          <br /> Find Hope and a New Way Forward with REPLY
+        <Container fluid className={homePageStyles.callOutContainer}>
+          <Container
+            className={`text-center text-white ${homePageStyles.callOut}`}
+          >
+            If you’re struggling to have a baby,
+            <br /> find HOPE and a new way forward with REPLY
+          </Container>
         </Container>
-      </Container>
+      </BackgroundImage>
+
       <Container
         fluid
         id={`our-approach`}
-        className={homePageStyles.ourApproach}
+        className={`${homePageStyles.ourApproach} ${homePageStyles.mobilePaddingTop}`}
       >
         <Container className={homePageStyles.genericSection}>
           <Row>
@@ -124,7 +125,7 @@ const IndexPage = ({ data }) => {
                 <span style={{ color: "#46A5E3" }}>to Fertility</span>
               </h2>
               <p>
-                At Reply, we’ll help find the root causes that impair your
+                At Reply, we’ll help find the underlying causes that impair your
                 fertility – both the female and male factors – and then use
                 restorative reproductive medicine to treat the underlying causes
                 and improve your health to help you conceive naturally.
@@ -229,14 +230,16 @@ const IndexPage = ({ data }) => {
         fluid
         className={`${homePageStyles.yellowBack} ${homePageStyles.section4}`}
       >
-        <Container className={homePageStyles.genericSection}>
+        <Container
+          className={`${homePageStyles.genericSection} ${homePageStyles.fertilityChallenges}`}
+        >
           <Row className={homePageStyles.mobileReverse}>
             <Col
               lg={12}
               className={`${homePageStyles.verticalCenter} text-center mb-4`}
             >
               <h2>
-                <strong>Fertility</strong> Challenges:
+                <strong>Fertility</strong> Challenges
               </h2>
               <p className={homePageStyles.subHeading}>
                 Some of the fertility challenges our team helps patients
@@ -246,14 +249,17 @@ const IndexPage = ({ data }) => {
           </Row>
           <Row>
             <Col lg={4}>
+              <h3 className={homePageStyles.desktopHide}>
+                <strong>Lifestyle Issues</strong>
+              </h3>
               <Img
                 fluid={data.lifestyle.childImageSharp.fluid}
                 alt="A person eating from a bowl."
               />
-              <h3>
+              <h3 className={homePageStyles.mobileHide}>
                 <strong>Lifestyle Issues</strong>
               </h3>
-              <p>
+              <p className={homePageStyles.mobilePaddingTop}>
                 Most people vastly underestimate the many ways their lifestyle
                 can impair their fertility. Common fertility inhibitors include
                 stress, nutritional deficiencies, medications, obesity, smoking,
@@ -262,14 +268,17 @@ const IndexPage = ({ data }) => {
               </p>
             </Col>
             <Col lg={4}>
+              <h3 className={homePageStyles.desktopHide}>
+                <strong>Hormone Imbalances</strong>
+              </h3>
               <Img
                 fluid={data.hormone.childImageSharp.fluid}
                 alt="A woman looking pensive."
               />
-              <h3>
+              <h3 className={homePageStyles.mobileHide}>
                 <strong>Hormone Imbalances</strong>
               </h3>
-              <p>
+              <p className={homePageStyles.mobilePaddingTop}>
                 A leading cause of fertility challenges, hormone imbalances can
                 disrupt ovulation, impede conception, and threaten pregnancy.
                 Solutions include treatments that restore thyroid function,
@@ -277,14 +286,17 @@ const IndexPage = ({ data }) => {
               </p>
             </Col>
             <Col lg={4}>
+              <h3 className={homePageStyles.desktopHide}>
+                <strong>Medical Conditions</strong>
+              </h3>
               <Img
                 fluid={data.medicalConditions.childImageSharp.fluid}
                 alt="Two woman sitting at a desk."
               />
-              <h3>
+              <h3 className={homePageStyles.mobileHide}>
                 <strong>Medical Conditions</strong>
               </h3>
-              <p>
+              <p className={homePageStyles.mobilePaddingTop}>
                 Other medical disorders that can threaten fertility include
                 endometriosis, uterine or cervical abnormalities, ovarian
                 dysfunction, polycystic ovary syndrome (PCOS), damaged fallopian
@@ -398,7 +410,7 @@ const IndexPage = ({ data }) => {
                     scrollTo("#schedule")
                   }}
                 >
-                  Schedule Your Learn More Appointment Today
+                  Schedule Your Complimentary Learn More Appointment Today
                 </Button>
               </p>
             </Col>
@@ -450,7 +462,11 @@ const IndexPage = ({ data }) => {
           </Row>
         </Container>
       </Container>
-      <Container fluid id="our-team">
+      <Container
+        fluid
+        id="our-team"
+        className={homePageStyles.mobilePaddingTop}
+      >
         <Container className={homePageStyles.genericSection}>
           <Row>
             <Col lg={6} className={homePageStyles.verticalCenter}>
@@ -489,7 +505,11 @@ const IndexPage = ({ data }) => {
           </Row>
         </Container>
       </Container>
-      <Container fluid className={homePageStyles.yellowBack} id="affordability">
+      <Container
+        fluid
+        className={`${homePageStyles.yellowBack} ${homePageStyles.mobilePaddingTop}`}
+        id="affordability"
+      >
         <Container className={homePageStyles.genericSection}>
           <Row>
             <Col lg={12} className={homePageStyles.verticalCenter}>
@@ -568,7 +588,7 @@ const IndexPage = ({ data }) => {
           <Row>
             <Col
               lg={{ span: 3, offset: 9 }}
-              className={homePageStyles.homeForm}
+              className={`${homePageStyles.homeForm} ${homePageStyles.footerForm}`}
             >
               <p>
                 <small>
@@ -636,7 +656,7 @@ export const query = graphql`
         }
       }
     }
-    section4: file(relativePath: { eq: "section-4.jpg" }) {
+    section4: file(relativePath: { eq: "puzzle.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_withWebp

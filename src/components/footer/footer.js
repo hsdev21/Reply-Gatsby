@@ -4,8 +4,8 @@ import footerStyles from "./footer.module.scss"
 import footerLogo from "../../images/footer-logo.png"
 
 const Footer = () => (
-  <footer>
-    <Container className={footerStyles.footerTextContainer} id="our-location">
+  <footer id="our-location">
+    <Container className={`${footerStyles.footerTextContainer}`}>
       <Row>
         <Col lg={6} className={`${footerStyles.map} text-center`}>
           <iframe
@@ -18,7 +18,7 @@ const Footer = () => (
         </Col>
         <Col lg={6} className={footerStyles.textRight}>
           <h2>
-            <strong>Book Your Learn More Appointment</strong>
+            <strong>Book Your Complimentary Learn More Appointment</strong>
             <br />
             <a href="tel:+1-919-443-6000">919.443.6000</a>
           </h2>

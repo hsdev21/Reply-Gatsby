@@ -4,6 +4,10 @@ footer {
   background: map-get($theme-colors, light-yellow);
   padding: 3em 0 0 0;
 
+  @media screen and (max-width: 992px) {
+    padding-top: rem(200);
+  }
+
   .footerTextContainer {
     padding: rem(15) 1.5rem rem(85) 1.5rem;
 

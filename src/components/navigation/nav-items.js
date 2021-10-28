@@ -31,7 +31,7 @@ const NavItems = ({ navItems, setExpanded }) => {
         to={navItem.path}
         className={navigationStyles.navLink}
         onClick={() => {
-          scrollTo(navItem.path)
+          scrollTo(navItem.path, "start")
           setTimeout(() => setExpanded(false), 100)
         }}
       >
