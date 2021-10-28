@@ -122,7 +122,7 @@ const IndexPage = ({ data }) => {
               <h2>
                 <strong>Our Restorative Approach</strong>
                 <br />
-                <span style={{ color: "#46A5E3" }}>to Fertility</span>
+                <span>to Fertility</span>
               </h2>
               <p>
                 At Reply, we’ll help find the underlying causes that impair your
@@ -652,8 +652,7 @@ const IndexPage = ({ data }) => {
           <Row className={homePageStyles.contactBottom}>
             <Col lg={12}>
               <h2>
-                <strong>Reimagine Fertility</strong>{" "}
-                <span style={{ color: "#46A5E3" }}>with Reply</span>
+                <strong>Reimagine Fertility</strong> with Reply
               </h2>
             </Col>
           </Row>
