@@ -200,6 +200,7 @@ p {
     }
     .text {
       color: #004987;
+      float: right;
 
       @media screen and (min-width: 992px) {
         color: #0e79bf;

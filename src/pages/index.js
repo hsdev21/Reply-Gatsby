@@ -70,25 +70,28 @@ const IndexPage = ({ data }) => {
       >
         <Container>
           <Row className={homePageStyles.row}>
-            <Col lg={6} className={`${homePageStyles.text}`}>
-              <h1>Rethink Your Fertility</h1>
+            <Col lg={6}></Col>
+            <Col lg={6}>
+              <div className={`${homePageStyles.text}`}>
+                <h1>Rethink Your Fertility</h1>
 
-              <div className={homePageStyles.homeForm}>
-                <p>
-                  <small>
-                    Schedule Your Consultation
-                    <br />
-                    <span className={homePageStyles.cta}>
-                      Call <a href="tel:+1-919-443-6000">919.443.6000</a>
-                    </span>
-                    <br />
-                    <span className={homePageStyles.smaller}>
-                      or fill out the form below
-                    </span>
-                  </small>
-                </p>
-                <div className={`${homePageStyles.gravityForm} gravityForm`}>
-                  <GravityForm className={homePageStyles.gravityForm} />
+                <div className={homePageStyles.homeForm}>
+                  <p>
+                    <small>
+                      Schedule Your Consultation
+                      <br />
+                      <span className={homePageStyles.cta}>
+                        Call <a href="tel:+1-919-443-6000">919.443.6000</a>
+                      </span>
+                      <br />
+                      <span className={homePageStyles.smaller}>
+                        or fill out the form below
+                      </span>
+                    </small>
+                  </p>
+                  <div className={`${homePageStyles.gravityForm} gravityForm`}>
+                    <GravityForm className={homePageStyles.gravityForm} />
+                  </div>
                 </div>
               </div>
             </Col>
@@ -198,6 +201,43 @@ const IndexPage = ({ data }) => {
               <img alt="partner icon" src={partner} />
               <h3>Partner</h3>
               <p>with you every step of the way!</p>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+      <Container fluid style={{ background: "#D4D8E6" }}>
+        <Container className={homePageStyles.genericSection}>
+          <Row>
+            <Col lg={6} className={homePageStyles.verticalCenter}>
+              <div className="embed-responsive embed-responsive-16by9">
+                <iframe
+                  className={`embed-responsive-item`}
+                  src="https://www.youtube.com/embed/tjkPvuXCIl4"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </Col>
+            <Col
+              lg={6}
+              className={homePageStyles.verticalCenter}
+              style={{ paddingLeft: "30px" }}
+            >
+              <h2 className={homePageStyles.paddingTop}>
+                <strong>Pamela's Story</strong>
+              </h2>
+              <p style={{ color: "#003176", fontSize: "20px" }}>
+                <em>
+                  "Not until I found Reply... did I feel confident that I would
+                  ever have a child of my own."
+                </em>
+              </p>
+              <p>
+                <strong style={{ color: "#000" }}>
+                  Watch to learn how Reply’s “Finding and Fixing” Program helped
+                  Pamela address her PCOS, conceive, and have a happy and
+                  healthy pregnancy.
+                </strong>
+              </p>
             </Col>
           </Row>
         </Container>
@@ -501,43 +541,6 @@ const IndexPage = ({ data }) => {
                 alt="A team of people."
                 style={{ marginBottom: "5px" }}
               />
-            </Col>
-          </Row>
-        </Container>
-      </Container>
-      <Container fluid style={{ background: "#D4D8E6" }}>
-        <Container className={homePageStyles.genericSection}>
-          <Row>
-            <Col lg={6} className={homePageStyles.verticalCenter}>
-              <div className="embed-responsive embed-responsive-16by9">
-                <iframe
-                  className={`embed-responsive-item`}
-                  src="https://www.youtube.com/embed/tjkPvuXCIl4"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </Col>
-            <Col
-              lg={6}
-              className={homePageStyles.verticalCenter}
-              style={{ paddingLeft: "30px" }}
-            >
-              <h2 className={homePageStyles.paddingTop}>
-                <strong>Pamela's Story</strong>
-              </h2>
-              <p style={{ color: "#003176", fontSize: "20px" }}>
-                <em>
-                  "Not until I found Reply... did I feel confident that I would
-                  ever have a child of my own."
-                </em>
-              </p>
-              <p>
-                <strong style={{ color: "#000" }}>
-                  Watch to learn hgow the Reply "Finding and Fixing" Program
-                  helped Pamela to address her PCOS, to conceive, and to have a
-                  happy and healthy pregnancy.
-                </strong>
-              </p>
             </Col>
           </Row>
         </Container>
