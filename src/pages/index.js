@@ -76,12 +76,17 @@ const IndexPage = ({ data }) => {
                 <h1>Rethink Your Fertility</h1>
 
                 <div className={homePageStyles.homeForm}>
+                  <div className="blue-box">
+                    Learn More – Schedule Your Free Consultation Now
+                  </div>
                   <p>
                     <small>
-                      Schedule Your Consultation
+                      <span className={homePageStyles.smaller}>
+                        or
+                      </span>
                       <br />
                       <span className={homePageStyles.cta}>
-                        Call <a href="tel:+1-919-443-6000">919.443.6000</a>
+                        Call <a href="tel:+1.866.407.3010">866.407.3010</a>
                       </span>
                       <br />
                       <span className={homePageStyles.smaller}>
@@ -212,7 +217,7 @@ const IndexPage = ({ data }) => {
               <div className="embed-responsive embed-responsive-16by9">
                 <iframe
                   className={`embed-responsive-item`}
-                  src="https://www.youtube.com/embed/tjkPvuXCIl4"
+                  src="https://www.youtube.com/embed/0qP3jlKf29E?rel=0"
                   allowfullscreen
                 ></iframe>
               </div>
@@ -232,11 +237,9 @@ const IndexPage = ({ data }) => {
                 </em>
               </p>
               <p>
-                <strong style={{ color: "#000" }}>
                   Watch to learn how Reply’s “Finding and Fixing” Program helped
                   Pamela address her PCOS, conceive, and have a happy and
                   healthy pregnancy.
-                </strong>
               </p>
             </Col>
           </Row>
@@ -630,12 +633,17 @@ const IndexPage = ({ data }) => {
               lg={{ span: 3, offset: 9 }}
               className={`${homePageStyles.homeForm} ${homePageStyles.footerForm}`}
             >
+              <div className="blue-box">
+              Learn More – Schedule Your Free Consultation Now
+              </div>
               <p>
                 <small>
-                  Schedule Your Consultation
+                  <span className={homePageStyles.smaller}>
+                    or 
+                  </span>
                   <br />
                   <span className={homePageStyles.cta}>
-                    Call <a href="tel:+1-919-443-6000">919.443.6000</a>
+                    Call <a href="tel:+1.866.407.3010">866.407.3010</a>
                   </span>
                   <br />
                   <span className={homePageStyles.smaller}>

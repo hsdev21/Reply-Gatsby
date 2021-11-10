@@ -18,24 +18,19 @@ const Footer = () => (
         </Col>
         <Col lg={6} className={footerStyles.textRight}>
           <h2>
-            <strong>Book Your Complimentary Learn More Appointment</strong>
+            <strong>schedule your free consultation<br/>to learn more</strong>
             <br />
-            <a href="tel:+1-919-443-6000">919.443.6000</a>
+            <a href="tel:+1-866.407.3010">866.407.3010</a>
           </h2>
-          <p className={footerStyles.lightBlue}>
-            7535 Carpenter Fire Station Road, Suite 105
-            <br />
-            Cary, North Carolina 27519
-          </p>
-          <h4>Clinic Hours</h4>
           <p>
-            Monday – Thursday 8 a.m – 5 p.m
-            <br /> Friday 8 a.m. – 12 p.m.
+            <span className={footerStyles.lightBlue}>Rethink Your Fertility is a program of Reply Ob/Gyn & Fertility</span><br/>
+            Serving all of North Carolina
           </p>
-          <h4>Book Your Appointment</h4>
-          <a className={footerStyles.black} href="tel:+1-919-443-6000">
-            919.443.6000
-          </a>
+          <h4>Reply Ob/Gyn & Fertility</h4>
+          <p>
+          7535 Carpenter Fire Station Road, Suite 105<br/>
+          Cary, NC  27519
+          </p>
         </Col>
       </Row>
     </Container>
@@ -53,7 +48,14 @@ const Footer = () => (
           </Col>
           <Col lg={10}>
             <span>
-              &copy; {new Date().getFullYear()} Reply OB/GYN &amp; Fertility.
+              &copy; {new Date().getFullYear()} 
+              <a
+                rel="referrer"
+                target="_blank" 
+                href="https://replyobgyn.com/"
+              >
+                 Reply OB/GYN &amp; Fertility.
+              </a>
               All rights reserved. |{" "}
               <a
                 target="_blank"
