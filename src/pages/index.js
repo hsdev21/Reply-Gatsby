@@ -27,6 +27,8 @@ import tricare from "../images/tricare.jpg"
 import united from "../images/united.jpg"
 import wellpath from "../images/wellpath.jpg"
 import careCredit from "../images/care-credit.jpg"
+import posterImg from "../images/video_mask.jpg"
+import replyVid from "../videos/reply_video.mp4"
 
 // Section 2 icons
 import listen from "../images/listen.png"
@@ -106,8 +108,10 @@ const IndexPage = ({ data }) => {
           <Container
             className={`text-center text-white ${homePageStyles.callOut}`}
           >
-            If you’re struggling to have a baby,
-            <br /> find HOPE and a new way forward with REPLY
+            <strong>
+              If you’re struggling to have a baby,
+              <br /> find HOPE and a new way forward with REPLY
+            </strong>
           </Container>
         </Container>
       </BackgroundImage>
@@ -214,12 +218,16 @@ const IndexPage = ({ data }) => {
         <Container className={homePageStyles.genericSection}>
           <Row>
             <Col lg={6} className={homePageStyles.verticalCenter}>
-              <div className="embed-responsive embed-responsive-16by9">
-                <iframe
+              <div className="video-wrap embed-responsive embed-responsive-16by9">
+                <video poster={posterImg} className={`embed-responsive-item`} controls>
+                  <source src={replyVid} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                {/* <iframe
                   className={`embed-responsive-item`}
                   src="https://www.youtube.com/embed/0qP3jlKf29E?rel=0"
                   allowfullscreen
-                ></iframe>
+                ></iframe> */}
               </div>
             </Col>
             <Col
@@ -631,7 +639,7 @@ const IndexPage = ({ data }) => {
           <Row>
             <Col
               lg={{ span: 3, offset: 9 }}
-              className={`${homePageStyles.homeForm} ${homePageStyles.footerForm}`}
+              className={`${homePageStyles.homeForm} ${homePageStyles.footerForm} footer-form`}
             >
               <div className="blue-box">
               Learn More – Schedule Your Free Consultation Now

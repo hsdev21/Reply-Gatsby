@@ -27,4 +27,21 @@
   color: #00aeef;
   font-family: "Avenir Bold", sans-serif;
   font-weight: 500;
+  // margin: 0 1rem;
+}
+
+.index-module--homeForm--2nRoH, .index-module--gravityForm--3475j{
+  padding: 0 !important;
+}
+
+.footer-form{
+  padding: .8rem !important;
+}
+
+.video-wrap{
+  video{
+    &[poster]{
+      object-fit: cover;
+    }
+  }
 }

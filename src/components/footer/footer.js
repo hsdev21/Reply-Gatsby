@@ -2,6 +2,7 @@ import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import footerStyles from "./footer.module.scss"
 import footerLogo from "../../images/footer-logo.png"
+// import { faUnderline } from "@fortawesome/free-solid-svg-icons"
 
 const Footer = () => (
   <footer id="our-location">
@@ -22,10 +23,10 @@ const Footer = () => (
             <br />
             <a href="tel:+1-866.407.3010">866.407.3010</a>
           </h2>
-          <p>
-            <span className={footerStyles.lightBlue}>Rethink Your Fertility is a program of Reply Ob/Gyn & Fertility</span><br/>
-            Serving all of North Carolina
+          <p style={{marginBottom: '0'}}>
+            <span className={footerStyles.lightBlue}>Rethink Your Fertility is a program of <a className={footerStyles.lightBlue} style={{textDecoration: 'underline'}} rel="noreferrer" target="_blank" href="https://replyobgyn.com/">Reply OB/GYN &amp; Fertility.</a></span><br/>
           </p>
+          <h4>Serving all of North Carolina</h4><br/>
           <h4>Reply Ob/Gyn & Fertility</h4>
           <p>
           7535 Carpenter Fire Station Road, Suite 105<br/>
@@ -50,7 +51,7 @@ const Footer = () => (
             <span>
               &copy; {new Date().getFullYear()} 
               <a
-                rel="referrer"
+                rel="noreferrer"
                 target="_blank" 
                 href="https://replyobgyn.com/"
               >

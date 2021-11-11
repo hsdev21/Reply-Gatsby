@@ -23,7 +23,7 @@ const Header = ({ data }) => {
       `}
       render={data => (
         <>
-          <div className="container" style={{ padding: 0 }}>
+          <div className="container nav-wrapper" style={{ padding: 0 }}>
             <div className={headerStyles.headerWrap}>
               <div className="logo-wrap">
                 <Link className="brand" to="/">
@@ -46,7 +46,7 @@ const Header = ({ data }) => {
                   to="#schedule"
                   onClick={() => scrollTo("#schedule")}
                 >
-                  Contact Me
+                  GET STARTED NOW
                 </button>
               </div>
             </div>
