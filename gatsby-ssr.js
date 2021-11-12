@@ -1,9 +1,8 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+import * as React from "react"
 
-// You can delete this file if you're not using it
-
-
+export const onRenderBody = ({ setPostBodyComponents }) => {
+  setPostBodyComponents([
+   <link key="calendy-css" src="https://assets.calendly.com/assets/external/widget.css" />,
+   <script key="calendy-js" src="https://assets.calendly.com/assets/external/widget.js" />
+  ])
+}

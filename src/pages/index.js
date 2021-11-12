@@ -79,7 +79,7 @@ const IndexPage = ({ data }) => {
 
                 <div className={homePageStyles.homeForm}>
                   <div className="blue-box">
-                    Learn More – Schedule Your Free Consultation Now
+                    <a target="_blank" href="https://calendly.com/rethinkyourfertility/learn-more">Learn More – Schedule Your Free Consultation Now</a>
                   </div>
                   <p>
                     <small>
@@ -642,7 +642,7 @@ const IndexPage = ({ data }) => {
               className={`${homePageStyles.homeForm} ${homePageStyles.footerForm} footer-form`}
             >
               <div className="blue-box">
-              Learn More – Schedule Your Free Consultation Now
+                <a target="_blank" href="https://calendly.com/rethinkyourfertility/learn-more">Learn More – Schedule Your Free Consultation Now</a>
               </div>
               <p>
                 <small>
