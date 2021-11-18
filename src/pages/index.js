@@ -10,6 +10,7 @@ import { GetHomePageMeta } from "../hooks/getHomePageMeta"
 import { graphql } from "gatsby"
 import scrollTo from "gatsby-plugin-smoothscroll"
 // import Slider from "../components/slider/slider"
+import { PopupButton } from "react-calendly"
 
 // Insurance logos
 import aetna from "../images/aetna.jpg"
@@ -79,7 +80,10 @@ const IndexPage = ({ data }) => {
 
                 <div className={homePageStyles.homeForm}>
                   <div className="blue-box">
-                    <a target="_blank" href="https://calendly.com/rethinkyourfertility/learn-more">Learn More – Schedule Your Free Consultation Now</a>
+                    <PopupButton
+                      text="Learn More – Schedule Your Free Consultation Now"
+                      url="https://calendly.com/rethinkyourfertility/learn-more"
+                    />
                   </div>
                   <p>
                     <small>
@@ -642,7 +646,10 @@ const IndexPage = ({ data }) => {
               className={`${homePageStyles.homeForm} ${homePageStyles.footerForm} footer-form`}
             >
               <div className="blue-box">
-                <a target="_blank" href="https://calendly.com/rethinkyourfertility/learn-more">Learn More – Schedule Your Free Consultation Now</a>
+                <PopupButton
+                  text="Learn More – Schedule Your Free Consultation Now"
+                  url="https://calendly.com/rethinkyourfertility/learn-more"
+                />
               </div>
               <p>
                 <small>
