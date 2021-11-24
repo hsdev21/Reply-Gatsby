@@ -2,10 +2,18 @@
 
 .gravityForm {
   .button {
-    border: 1px solid map-get($theme-colors, darkest-blue);
-    font-size: 1rem;
-    padding: 10px 0;
+    // border: 1px solid map-get($theme-colors, darkest-blue);
+    // font-size: 1rem;
+    // padding: 10px 0;
     width: 100%;
+
+    color: #46A5E3;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #F5F5F5 52%, #ECECEC 100%) 0% 0% no-repeat padding-box;
+    border: 1px solid #CDCDCD;
+    font-size: rem(16);
+    padding: 0.5em;
+    // margin: rem(24) 0;
+    border-radius: 4px;
   }
 }
 
@@ -20,22 +28,17 @@
     letter-spacing: 1px;
   }
 }
+// calendly button container
 .blue-box{
-  border: 2px solid #00aeef !important;
-  border-radius: .325rem;
-  padding: 1rem;
-  color: #00aeef;
-  font-family: "Avenir Bold", sans-serif;
-  font-weight: 500;
-  // margin: 0 1rem;
-  a{
-    color: #00aeef;
-  }
+  // font-family: "Helvetica Neue Medium", sans-serif;
+  font-size: rem(19);
+  margin: 0.75em 0;
   button{
-    color: #00aeef;
-    border: 0;
-    background: none;
-    padding: 0;
+    color: #fff;
+    background: transparent linear-gradient(180deg, #46A5E3 0%, #023076 100%) 0% 0% no-repeat padding-box;
+    border: 1px solid #023076;
+    border-radius: 4px;
+    padding: 0.5em;
   }
 }
 
@@ -45,12 +48,29 @@
 
 .footer-form{
   padding: .8rem !important;
+
+  .blue-box {
+    font-size: rem(14);
+  }
 }
 
-.video-wrap{
-  video{
-    &[poster]{
-      object-fit: cover;
+.video-story {
+  font-size: rem(28);
+  line-height: rem(41);
+  font-style: italic;
+  color: #023076;
+  padding: 2.5em 0;
+  background: #D9E0EA;
+  &.bg-2 {
+    color: #46A5E3;
+    background: #ffffff;
+  }
+
+  .video-wrap{
+    video{
+      &[poster]{
+        object-fit: cover;
+      }
     }
   }
 }

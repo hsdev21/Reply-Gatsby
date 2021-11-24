@@ -6,7 +6,7 @@ import footerLogo from "../../images/footer-logo.png"
 
 const Footer = () => (
   <footer id="our-location">
-    <Container className={`${footerStyles.footerTextContainer}`}>
+    {/* <Container className={`${footerStyles.footerTextContainer}`}>
       <Row>
         <Col lg={6} className={`${footerStyles.map} text-center`}>
           <iframe
@@ -34,7 +34,8 @@ const Footer = () => (
           </p>
         </Col>
       </Row>
-    </Container>
+    </Container> */}
+
     <Container className={`${footerStyles.footerCopyRight}`} fluid>
       <Container>
         <Row className={footerStyles.footerContainer}>
@@ -49,10 +50,10 @@ const Footer = () => (
           </Col>
           <Col lg={10}>
             <span>
-              &copy; {new Date().getFullYear()} 
+              &copy; {new Date().getFullYear()}
               <a
                 rel="noreferrer"
-                target="_blank" 
+                target="_blank"
                 href="https://replyobgyn.com/"
               >
                  Reply OB/GYN &amp; Fertility.

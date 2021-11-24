@@ -5,7 +5,7 @@
 
 .gform_wrapper form {
   max-width: 450px;
-  margin: 0 auto;
+  margin: rem(20) auto 0;
 }
 
 .gform_wrapper ul {
@@ -43,7 +43,7 @@
 .gform_wrapper textarea {
   @extend .form-control;
   background: #f7fafa;
-  border: 1px solid #707070;
+  border: 1px solid #CDCDCD;
   border-radius: 4px;
 }
 
