@@ -168,7 +168,7 @@ p {
     color: #46A5E3;
     background: transparent linear-gradient(180deg, #FFFFFF 0%, #F5F5F5 52%, #ECECEC 100%) 0% 0% no-repeat padding-box;
     border: 1px solid #CDCDCD;
-    font-size: rem(14);
+    font-size: rem(18);
     padding: 0.5em;
     margin: rem(24) 0;
     border-radius: 4px;
@@ -176,6 +176,12 @@ p {
 
     a {
       // color: map-get($theme-colors, darkest-blue);
+      color: inherit;
+    }
+
+    button {
+      border: none;
+      background:none;
       color: inherit;
     }
   }
@@ -496,6 +502,10 @@ p {
     box-shadow: 0px 2px 5px #00000040;
     @media screen and (min-width: 992px) {
       margin-bottom: rem(-130) !important;
+    }
+
+    .cta {
+      font-size: rem(14);
     }
   }
 }

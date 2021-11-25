@@ -97,7 +97,12 @@ const IndexPage = ({ data }) => {
                   </div>
 
                   <div className={homePageStyles.cta}>
-                    Contact Me
+                    <button
+                      to="#schedule"
+                      onClick={() => scrollTo("#schedule")}
+                    >
+                      Contact Me
+                    </button>
                   </div>
                 </div>
               </div>
@@ -496,7 +501,7 @@ const IndexPage = ({ data }) => {
       <Container fluid>
         <Container>
           <Row className={homePageStyles.contactBottom}>
-            <Col lg={12}>
+            <Col lg={9}>
               <h2>
                 Rethink Your Fertility is a program of Reply OB/GYN & Fertility.
               </h2>
