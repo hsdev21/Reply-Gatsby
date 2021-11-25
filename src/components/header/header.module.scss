@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding: rem(40) 0 rem(25) 0;
+  position: relative;
 
   @media screen and (max-width: 991px) {
     flex-flow: column;
@@ -41,23 +42,27 @@
     }
 
     .header-btn {
-      background-color: map-get($theme-colors, light-blue);
-      border-color: map-get($theme-colors, light-blue);
+      background: transparent linear-gradient(180deg, #FFFFFF 0%, #F5F5F5 52%, #ECECEC 100%) 0% 0% no-repeat padding-box;
+      border: 1px solid #46A5E3;
+      border-radius: 4px;
+
+      // background-color: map-get($theme-colors, light-blue);
+      // border-color: map-get($theme-colors, light-blue);
       border-style: solid;
       border-width: 1px;
-      border-radius: 5px;
-      color: #fff;
-      padding: 10px 45px;
+      // border-radius: 5px;
+      color: #46A5E3;
+      // padding: 10px 45px;
       font-family: "Helvetica Neue Medium", sans-serif;
-      font-weight: 700;
-      font-size: 18px;
+      // font-weight: 700;
+      font-size: rem(16);
       padding: rem(5) rem(20);
       transition: all 0.3s ease;
 
       &:hover,
       &:active,
       &:focus {
-        background-color: map-get($theme-colors, dark-blue);
+        background: map-get($theme-colors, dark-blue);
         color: #fff;
       }
     }

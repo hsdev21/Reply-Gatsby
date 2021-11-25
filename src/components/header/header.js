@@ -37,6 +37,7 @@ const Header = ({ data }) => {
                   />
                 </Link>
               </div>
+              <div className={`tagline`}>Serving The Triangle and all of North Carolina</div>
               <Navigation className="desktopNav" />
               <div className={headerStyles.headerRight}>
                 <button

@@ -46,6 +46,15 @@
   padding: 0 !important;
 }
 
+#we-partner {
+  .blue-box button {
+    @media screen and (min-width: 992px) {
+      padding-left: rem(50);
+      padding-right: rem(50);
+    }
+  }
+}
+
 .footer-form{
   padding: .8rem !important;
 
@@ -55,15 +64,39 @@
 }
 
 .video-story {
-  font-size: rem(28);
-  line-height: rem(41);
-  font-style: italic;
-  color: #023076;
   padding: 2.5em 0;
   background: #D9E0EA;
+  @media screen and (max-width: 991px) {
+    padding: 5em 0;
+  }
+
   &.bg-2 {
     color: #46A5E3;
     background: #ffffff;
+  }
+
+  .quote {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media screen and (max-width: 991px) {
+      padding: 2em 0;
+    }
+
+    p {
+      flex-grow: 1;
+      font-size: rem(28);
+      line-height: rem(35);
+      font-style: italic;
+      color: #023076;
+      margin: rem(20) 0;
+    }
+  }
+
+  img:last-child {
+    margin-left: auto;
   }
 
   .video-wrap{

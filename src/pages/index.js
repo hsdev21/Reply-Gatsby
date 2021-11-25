@@ -138,26 +138,22 @@ const IndexPage = ({ data }) => {
         </Container>
       </Container>
 
-      <Container fluid className={`video-story pos-2 bg-1`}>
+      <Container fluid className={`video-story bg-1`}>
         <Container>
           <Row>
-            <Col lg={6} className={homePageStyles.verticalCenter}>
-              <div className="video-wrap embed-responsive embed-responsive-16by9">
-                {/* <video poster={video1Img} className={`embed-responsive-item`} controls>
-                  <source src={replyVid} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video> */}
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0qP3jlKf29E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </Col>
             <Col
               lg={6}
               className={`quote ${homePageStyles.verticalCenter}`}
               style={{ paddingLeft: "30px" }}
             >
             <img src={quoteWhite} alt="" />
-                Not until I found Reply... did I feel confident that I would ever have a child of my own.
+              <p>Not until I found Reply... did I feel confident that I would ever have a child of my own.</p>
             <img src={quoteWhite} alt="" style={{transform: "rotate(180deg)"}} />
+            </Col>
+            <Col lg={6} className={homePageStyles.verticalCenter}>
+              <div className="video-wrap embed-responsive embed-responsive-16by9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0qP3jlKf29E?rel=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
             </Col>
           </Row>
         </Container>
@@ -188,7 +184,7 @@ const IndexPage = ({ data }) => {
         </Container>
       </Container>
 
-      <Container fluid className={homePageStyles.yellowBack}>
+      <Container id="we-partner" fluid className={homePageStyles.yellowBack}>
         <Container className={homePageStyles.genericSection}>
           <Row>
             <Col lg={6} className={homePageStyles.verticalCenter}>
@@ -237,7 +233,7 @@ const IndexPage = ({ data }) => {
           <Row>
             <Col lg={6} className={homePageStyles.verticalCenter}>
               <div className="video-wrap embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/d9rq11xPUpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/d9rq11xPUpc?rel=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </Col>
             <Col
@@ -246,7 +242,7 @@ const IndexPage = ({ data }) => {
               style={{ paddingLeft: "30px" }}
             >
               <img src={quoteGray} alt="" />
-              It was the first time that I felt that we were going to work together to figure it out. And that to me was the start of my path that no other doctor had given me.
+              <p>It was the first time that I felt that we were going to work together to figure it out. And that to me was the start of my path that no other doctor had given me.</p>
               <img src={quoteGray} alt="" style={{ transform: "rotate(180deg)" }} />
             </Col>
           </Row>
@@ -322,11 +318,7 @@ const IndexPage = ({ data }) => {
           <Row>
             <Col lg={6} className={homePageStyles.verticalCenter}>
               <div className="video-wrap embed-responsive embed-responsive-16by9">
-                {/* <video poster={video2Img} className={`embed-responsive-item`} controls>
-                  <source src={replyVid} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video> */}
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/AynUIzw0Ofg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AynUIzw0Ofg?rel=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </Col>
             <Col
@@ -335,7 +327,7 @@ const IndexPage = ({ data }) => {
               style={{ paddingLeft: "30px" }}
             >
               <img src={quoteWhite} alt="" />
-              A huge part of our journey and success story was uncovering an underlying issue; that made Reply different than anywhere else. And that for us was the game-changer.
+              <p>A huge part of our journey and success story was uncovering an underlying issue; that made Reply different than anywhere else. And that for us was the game-changer.</p>
               <img src={quoteWhite} alt="" style={{ transform: "rotate(180deg)" }} />
             </Col>
           </Row>
@@ -428,7 +420,7 @@ const IndexPage = ({ data }) => {
             </Col>
           </Row>
           <Row>
-            <Col lg={6}>
+            <Col lg={6} className={`d-flex align-items-stretch`}>
               <div style={{ background: '#ffffff', padding: '2em', 'box-shadow': '0px 3px 6px #00000029' }}>
               <Img
                 fluid={data.inpersoncare.childImageSharp.fluid}
@@ -445,7 +437,7 @@ const IndexPage = ({ data }) => {
               </p>
               </div>
             </Col>
-            <Col lg={6}>
+            <Col lg={6} className={`align-items-stretch`}>
             <div style={{ background: '#ffffff', padding: '2em', 'box-shadow': '0px 3px 6px #00000029' }}>
               <Img
                 fluid={data.telehealth.childImageSharp.fluid}

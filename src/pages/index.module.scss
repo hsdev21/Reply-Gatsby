@@ -34,12 +34,17 @@ p {
 
 .genericSection {
   color: map-get($theme-colors, darkest-gray);
-  padding: 2.5em 0;
+  padding: 5em 0;
 
   .verticalCenter {
     display: flex;
     flex-flow: column;
     justify-content: center;
+
+    h2 {
+      min-height: 2em;
+      margin-bottom: rem(40);
+    }
   }
 
   img {
@@ -176,7 +181,7 @@ p {
   }
 
   input {
-    border: 1px solid #878887 !important;
+    border: 1px solid #878887;
     border-radius: 5px;
   }
 
@@ -206,11 +211,13 @@ p {
       // float: right;
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-end;
+      justify-content: center;
+
 
       @media screen and (min-width: 992px) {
         color: #0e79bf;
         // max-width: 410px;
+        justify-content: flex-end;
       }
 
       h1 {
@@ -318,6 +325,7 @@ p {
   //   font-size: rem(18);
   // }
 
+
   h2 {
     font-size: rem(24);
     line-height: rem(32);
@@ -326,6 +334,11 @@ p {
     // text-align: center;
     color: #46A5E3;
     margin: rem(36) 0;
+  }
+
+  .verticalCenter h2 {
+    color: #023076;
+    margin-bottom: rem(20);
   }
 
   h3 {
@@ -342,11 +355,17 @@ p {
   p {
     font-size: rem(18);
     line-height: rem(36);
+    // color: #3459A5;
     padding: rem(20);
   }
 
+  .verticalCenter p {
+    padding: 0;
+  }
+
   img {
-    border: 1px solid map-get($theme-colors, light-blue);
+    // border: 1px solid map-get($theme-colors, light-blue);
+    border: none;
   }
 }
 
