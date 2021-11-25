@@ -1,9 +1,9 @@
 @import "../../shared/variables.scss";
 
 footer {
-  border-top: 2px solid #d2d2d2;
-  background: map-get($theme-colors, light-yellow);
-  padding: 3em 0 0 0;
+  // border-top: 2px solid #d2d2d2;
+  // background: map-get($theme-colors, light-yellow);
+  // padding: 3em 0 0 0;
 
   @media screen and (max-width: 992px) {
     padding-top: rem(200);
@@ -63,20 +63,33 @@ footer {
     display: flex;
     font-size: rem(10);
     justify-content: center;
-    padding: rem(25) 0;
+    padding: rem(48) 0;
     text-align: left;
     text-transform: uppercase;
 
     @media screen and (min-width: 992px) {
-      text-align: right;
+      // text-align: right;
     }
 
     .footerContainer {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+
+      h2 {
+        color: #46A5E3;
+        a {
+          color: #ffffff;
+        }
+      }
 
       a {
         color: map-get($theme-colors, light-blue);
+      }
+
+      .locationAddress {
+        margin: rem(60) 0 rem(30);
+        font-size: rem(16);
+        line-height: rem(28);
       }
 
       .footerLogo {

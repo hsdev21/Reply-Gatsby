@@ -427,7 +427,7 @@ const IndexPage = ({ data }) => {
                 alt="A couple talking with a doctor in person"
               />
               <h2>
-                in-person care in cary,<br />plus telehealth
+                  <strong>in-person care in cary,<br />plus telehealth</strong>
               </h2>
               <h3>
                 Meet your Reply team in-person when required and virtually when possible.
@@ -444,7 +444,7 @@ const IndexPage = ({ data }) => {
                 alt="A couple talking with a doctor on a laptop"
               />
               <h2>
-                100% TELEHEALTH<br />(STATEWIDE)
+                <strong>100% TELEHEALTH<br />(STATEWIDE)</strong>
               </h2>
               <h3>
                 Experience Reply's unique offerings from the comfort of your own home.

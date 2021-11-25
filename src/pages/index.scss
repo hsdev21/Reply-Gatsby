@@ -70,11 +70,6 @@
     padding: 5em 0;
   }
 
-  &.bg-2 {
-    color: #46A5E3;
-    background: #ffffff;
-  }
-
   .quote {
     display: flex;
     flex-wrap: wrap;
@@ -92,6 +87,13 @@
       font-style: italic;
       color: #023076;
       margin: rem(20) 0;
+    }
+  }
+
+  &.bg-2 {
+    background: #ffffff;
+    p {
+      color: #46A5E3;
     }
   }
 
