@@ -4,6 +4,7 @@ import Navigation from "../navigation/navigation"
 import headerStyles from "./header.module.scss"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import { PopupButton } from "react-calendly"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import "./header.scss"
 
@@ -40,15 +41,11 @@ const Header = ({ data }) => {
               <div className={`tagline`}>Serving The Triangle and all of North Carolina</div>
               <Navigation className="desktopNav" />
               <div className={headerStyles.headerRight}>
-                <button
-                  variant={"primary"}
-                  as={Link}
+                <PopupButton
                   className={headerStyles.headerBtn}
-                  to="#schedule"
-                  onClick={() => scrollTo("#schedule")}
-                >
-                  GET STARTED NOW
-                </button>
+                  text="GET STARTED NOW"
+                  url="https://calendly.com/rethinkyourfertility/learn-more"
+                />
               </div>
             </div>
           </div>
