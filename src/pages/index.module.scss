@@ -34,7 +34,7 @@ p {
 
 .genericSection {
   color: map-get($theme-colors, darkest-gray);
-  padding: 5em 0;
+  padding: 2em 0;
 
   .verticalCenter {
     display: flex;
@@ -445,11 +445,17 @@ p {
   //   grid-template-columns: repeat(5, 1fr);
   // }
 
+
+
   .insuranceItem {
     display: flex;
     // align-items: center;
     align-items: stretch;
     width: 20%;
+
+    @media screen and (max-width: 992px) {
+      width: 50%;
+    }
 
     div {
       margin: 0.5em;
@@ -535,7 +541,7 @@ p {
 
 .mobilePaddingTop {
   @media screen and (max-width: 992px) {
-    padding-top: rem(185);
+    padding-top: rem(55);
   }
 }
 

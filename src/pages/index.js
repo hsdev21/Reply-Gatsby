@@ -149,7 +149,7 @@ const IndexPage = ({ data }) => {
             <Col
               lg={6}
               className={`quote ${homePageStyles.verticalCenter}`}
-              style={{ paddingLeft: "30px" }}
+
             >
             <img src={quoteWhite} alt="" />
               <p>Not until I found Reply... did I feel confident that I would ever have a child of my own.</p>
@@ -164,7 +164,7 @@ const IndexPage = ({ data }) => {
         </Container>
       </Container>
 
-      <Container fluid>
+      <Container fluid className={homePageStyles.mobilePaddingTop}>
         <Container className={homePageStyles.genericSection}>
           <Row>
             <Col lg={6} className={homePageStyles.verticalCenter}>
@@ -189,7 +189,7 @@ const IndexPage = ({ data }) => {
         </Container>
       </Container>
 
-      <Container id="we-partner" fluid className={homePageStyles.yellowBack}>
+      <Container id="we-partner" fluid className={`${homePageStyles.yellowBack} ${homePageStyles.mobilePaddingTop}`}>
         <Container className={homePageStyles.genericSection}>
           <Row>
             <Col lg={6} className={homePageStyles.verticalCenter}>
@@ -233,7 +233,7 @@ const IndexPage = ({ data }) => {
         </Container>
       </Container>
 
-      <Container fluid className={`video-story pos-1 bg-2`}>
+      <Container fluid className={`video-story pos-1 bg-2 ${homePageStyles.mobilePaddingTop}`}>
         <Container>
           <Row>
             <Col lg={6} className={homePageStyles.verticalCenter}>
@@ -244,7 +244,7 @@ const IndexPage = ({ data }) => {
             <Col
               lg={6}
               className={`quote ${homePageStyles.verticalCenter}`}
-              style={{ paddingLeft: "30px" }}
+
             >
               <img src={quoteGray} alt="" />
               <p>It was the first time that I felt that we were going to work together to figure it out. And that to me was the start of my path that no other doctor had given me.</p>
@@ -254,7 +254,7 @@ const IndexPage = ({ data }) => {
         </Container>
       </Container>
 
-      <Container fluid className={homePageStyles.yellowBack}>
+      <Container fluid className={`${homePageStyles.yellowBack} ${homePageStyles.mobilePaddingTop}`}>
         <Container className={homePageStyles.genericSection}>
           <Row>
             <Col
@@ -318,7 +318,7 @@ const IndexPage = ({ data }) => {
         </Container>
       </Container>
 
-      <Container fluid className={`video-story pos-1 bg-1`}>
+      <Container fluid className={`video-story pos-1 bg-1 ${homePageStyles.mobilePaddingTop}`}>
         <Container>
           <Row>
             <Col lg={6} className={homePageStyles.verticalCenter}>
@@ -329,7 +329,7 @@ const IndexPage = ({ data }) => {
             <Col
               lg={6}
               className={`quote ${homePageStyles.verticalCenter}`}
-              style={{ paddingLeft: "30px" }}
+
             >
               <img src={quoteWhite} alt="" />
               <p>A huge part of our journey and success story was uncovering an underlying issue; that made Reply different than anywhere else. And that for us was the game-changer.</p>
@@ -406,7 +406,7 @@ const IndexPage = ({ data }) => {
       <Container
         id="treatment-options"
         fluid
-        className={`${homePageStyles.yellowBack} ${homePageStyles.section4}`}
+        className={`${homePageStyles.yellowBack} ${homePageStyles.section4} ${homePageStyles.mobilePaddingTop}`}
       >
         <Container
           className={`${homePageStyles.genericSection} ${homePageStyles.fertilityChallenges}`}

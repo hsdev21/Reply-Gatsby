@@ -64,10 +64,11 @@
 }
 
 .video-story {
-  padding: 2.5em 0;
+
   background: #D9E0EA;
-  @media screen and (max-width: 991px) {
-    padding: 5em 0;
+  @media screen and (min-width: 992px) {
+    // padding: 5em 0;
+    padding: 2.5em 0;
   }
 
   .quote {
@@ -75,9 +76,10 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
+    padding: rem(20);
 
     @media screen and (max-width: 991px) {
-      padding: 2em 0;
+      // padding: 2em 0;
     }
 
     p {
