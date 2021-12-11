@@ -20,7 +20,7 @@ const Footer = () => (
           </Col>
           <Col lg={10}>
             <h2>
-              <strong>Schedule your free consultation<br />to learn more <a href="tel:+1-866.407.3010">866.407.3010</a></strong>
+              <strong>Schedule your free consultation<br />to learn more <a href="tel:9194436000">919.443.6000</a></strong>
             </h2>
             <p className={footerStyles.locationAddress}>
               7535 Carpenter Fire Station Road, Suite 105<br/>

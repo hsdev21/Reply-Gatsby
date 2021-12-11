@@ -93,7 +93,7 @@ const IndexPage = ({ data }) => {
                     />
                   </div>
                   <div className={homePageStyles.cta}>
-                    Call Now <a href="tel:+1.866.407.3010">866.407.3010</a>
+                    Call Now <a href="tel:9194436000">919.443.6000</a>
                   </div>
 
                   <div className={homePageStyles.cta}>
@@ -484,7 +484,7 @@ const IndexPage = ({ data }) => {
               </div>
 
               <div className={homePageStyles.cta}>
-                Call Now <a href="tel:+1.866.407.3010">866.407.3010</a>
+                Call Now <a href="tel:9194436000">919.443.6000</a>
               </div>
 
               <div className={homePageStyles.smaller}>
