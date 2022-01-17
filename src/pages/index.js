@@ -68,7 +68,7 @@ const IndexPage = ({ data }) => {
     },
   ]
 
-  const params = new URLSearchParams(window.location.search);
+  const params = new URLSearchParams(typeof window !== "undefined" ? window.location.search : '');
   const gclid = params.get('gclid') ? ('?gclid='+ params.get('gclid')) : '';
   const calendlyUrl = "https://calendly.com/rethinkyourfertility/learn-more" + gclid;
 

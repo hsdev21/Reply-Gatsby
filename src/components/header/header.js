@@ -7,7 +7,8 @@ import Img from "gatsby-image"
 import { PopupButton } from "react-calendly"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import "./header.scss"
-const params = new URLSearchParams(window.location.search);
+
+const params = new URLSearchParams(typeof window !== "undefined" ? window.location.search : '');
 const gclid = params.get('gclid') ? ('?gclid=' + params.get('gclid')) : '';
 const calendlyUrl = "https://calendly.com/rethinkyourfertility/learn-more" + gclid;
 
