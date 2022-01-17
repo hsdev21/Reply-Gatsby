@@ -68,6 +68,10 @@ const IndexPage = ({ data }) => {
     },
   ]
 
+  const params = new URLSearchParams(window.location.search);
+  const gclid = params.get('gclid') ? ('?gclid='+ params.get('gclid')) : '';
+  const calendlyUrl = "https://calendly.com/rethinkyourfertility/learn-more" + gclid;
+
   return (
     <Layout>
       <SEO seoInfo={seo} siteUrl={siteUrl} siteName={siteName} date={date} />
@@ -89,7 +93,7 @@ const IndexPage = ({ data }) => {
                   <div className="blue-box">
                     <PopupButton
                       text="Schedule Free Consultation"
-                      url="https://calendly.com/rethinkyourfertility/learn-more"
+                      url={calendlyUrl}
                     />
                   </div>
                   <div className={homePageStyles.cta}>
@@ -225,7 +229,7 @@ const IndexPage = ({ data }) => {
               <div className="blue-box">
                 <PopupButton
                   text="Schedule Your Free Consultation"
-                  url="https://calendly.com/rethinkyourfertility/learn-more"
+                  url={calendlyUrl}
                 />
               </div>
             </Col>
@@ -479,7 +483,7 @@ const IndexPage = ({ data }) => {
               <div className="blue-box">
                 <PopupButton
                   text="Schedule Free Consultation"
-                  url="https://calendly.com/rethinkyourfertility/learn-more"
+                  url={calendlyUrl}
                 />
               </div>
 
